@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stock Market AI: Multimodal Forecasting Platform | Project Portfolio</title>
+  <meta name="description" content="An end-to-end Machine Learning & NLP platform merging FinBERT sentiment analysis with technical indicators across LSTM, GRU, SVR, and ARIMA time-series models.">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220%22><text y=%2226%22 font-size=%2226%22>📈</text></svg>">
+</head>
+<body>
+
+  <!-- Sticky Navbar -->
+  <nav class="navbar">
+    <div class="container nav-container">
+      <a href="#overview" class="brand">
+        <div class="brand-icon">📈</div>
+        <span>StockMarket<span class="brand-highlight">.AI</span></span>
+      </a>
+
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="#overview" class="nav-link active">Overview</a></li>
+        <li><a href="#what-i-did" class="nav-link">What I Built</a></li>
+        <li><a href="#showcase" class="nav-link">Live App Showcase</a></li>
+        <li><a href="#results" class="nav-link">Benchmark Results</a></li>
+        <li><a href="#deep-dive" class="nav-link">Technical Deep-Dive</a></li>
+        <li><a href="#tech-stack" class="nav-link">Tech Stack</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <a href="https://github.com/SandyCompetent/stock-market-analysis" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+          GitHub Repo
+        </a>
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation menu">☰</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero" id="overview">
+    <div class="container">
+      <div class="badge-wrapper">
+        <span class="pill-badge">⚡ Machine Learning & FinTech NLP Engineering</span>
+      </div>
+
+      <h1 class="hero-title">
+        Multimodal Market Forecasting with <br>
+        <span class="gradient-text">FinBERT NLP & Deep Neural Networks</span>
+      </h1>
+
+      <p class="hero-subtitle">
+        Bridging qualitative news sentiment with quantitative price-action indicators. Combining PyTorch LSTMs, Support Vector Regressors, and statistical ARIMA models into an interactive, portfolio-grade demo platform.
+      </p>
+
+      <div class="hero-cta">
+        <a href="#showcase" class="btn btn-primary">
+          🖥️ View Interactive Demo Showcase
+        </a>
+        <a href="#results" class="btn btn-outline">
+          🏆 Explore Benchmark Leaderboard
+        </a>
+        <a href="https://github.com/SandyCompetent/stock-market-analysis" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
+          ⭐ Star on GitHub
+        </a>
+      </div>
+
+      <!-- Metrics Ribbon -->
+      <div class="metrics-ribbon">
+        <div class="metric-box">
+          <div class="metric-value">5 Models</div>
+          <div class="metric-label">LSTM, Enhanced LSTM, SVM, ARIMA, Naive</div>
+        </div>
+        <div class="metric-box">
+          <div class="metric-value">10+ Features</div>
+          <div class="metric-label">RSI, MACD, BB, OBV & FinBERT Sentiment</div>
+        </div>
+        <div class="metric-box">
+          <div class="metric-value">0% Leakage</div>
+          <div class="metric-label">Strict Train-Partition Sliding Scalers</div>
+        </div>
+        <div class="metric-box">
+          <div class="metric-value">99.4%</div>
+          <div class="metric-label">Git Bloat Reduction (360MB &rarr; &lt;2MB)</div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Section 1: What I Built & Achievements -->
+  <section class="section" id="what-i-did">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Engineering Highlights</span>
+        <h2 class="section-title">What I Built & Technical Milestones</h2>
+        <p class="section-desc">Key engineering challenges overcome while designing, refactoring, and delivering this production-grade machine learning system.</p>
+      </div>
+
+      <div class="grid-cards">
+        <!-- Card 1 -->
+        <div class="card">
+          <div class="card-icon">🔄</div>
+          <h3 class="card-title">Repository Consolidation</h3>
+          <p class="card-text">
+            Consolidated two fragmented projects (<code>stock-data-collection</code> and <code>stock-market-analysis</code>) into a unified, clean monorepo architecture. Eliminated broken file paths, untracked 360+ MB of raw bulk CSVs, and packaged a lightweight sample dataset (<200KB) for instantaneous offline demo execution.
+          </p>
+          <span class="card-badge">Monorepo Architecture</span>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="card">
+          <div class="card-icon">🧠</div>
+          <h3 class="card-title">FinBERT Sentiment Intelligence</h3>
+          <p class="card-text">
+            Integrated <code>ProsusAI/finbert</code> (a specialized BERT language model fine-tuned on financial phrasebanks) with automatic Apple Silicon (MPS), CUDA, and CPU detection. Aggregated headline polarity scores, positive/negative ratios, and article volumes into continuous daily time-series features.
+          </p>
+          <span class="card-badge">NLP & Transformers</span>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="card">
+          <div class="card-icon">🛡️</div>
+          <h3 class="card-title">Zero Lookahead Data Leakage</h3>
+          <p class="card-text">
+            Re-architected the time-series sliding window preprocessor. Scalers (MinMaxScaler) are fitted strictly on historical training partitions before transforming test windows, ensuring that test metrics realistically simulate live, real-world deployment without lookahead bias.
+          </p>
+          <span class="card-badge">Data Integrity</span>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="card">
+          <div class="card-icon">🏆</div>
+          <h3 class="card-title">Multi-Model Benchmarking</h3>
+          <p class="card-text">
+            Engineered modular PyTorch LSTM/GRU neural networks with early stopping and AdamW optimization. Implemented Support Vector Regression (SVR) on flattened sequence representations and statistical ARIMA baselines to validate performance gains under rigorous metrics.
+          </p>
+          <span class="card-badge">Deep Learning</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 2: Interactive App Showcase -->
+  <section class="section" id="showcase">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Interactive Demo</span>
+        <h2 class="section-title">Streamlit Web Application Showcase</h2>
+        <p class="section-desc">Experience the responsive interface built for real-time asset selection, technical exploration, and comparative model inference.</p>
+      </div>
+
+      <div class="showcase-wrapper">
+        <!-- Device Switcher Controls -->
+        <div class="device-switcher">
+          <button class="device-btn active" id="btnDesktop">🖥️ Desktop View (1440 × 900)</button>
+          <button class="device-btn" id="btnMobile">📱 Mobile View (390 × 844)</button>
+        </div>
+
+        <!-- Mockup Display Container -->
+        <div class="preview-display">
+          <div class="mockup-frame desktop-mode" id="mockupFrame">
+            <div class="mockup-bar">
+              <span class="bar-dot"></span>
+              <span class="bar-dot"></span>
+              <span class="bar-dot"></span>
+              <span class="bar-url" id="mockupUrl">localhost:8501 (Desktop 1440x900)</span>
+            </div>
+            <img src="assets/img/streamlit_desktop.png" alt="Desktop Streamlit Web Application" class="mockup-img" id="mockupImage">
+          </div>
+        </div>
+
+        <!-- Feature Pills -->
+        <div class="features-list">
+          <div class="feature-pill">
+            <span>✓</span> Interactive Stock Ticker Switcher
+          </div>
+          <div class="feature-pill">
+            <span>✓</span> Lookback & Epoch Sliders
+          </div>
+          <div class="feature-pill">
+            <span>✓</span> FinBERT News Sentiment Stream
+          </div>
+          <div class="feature-pill">
+            <span>✓</span> Multi-Model Live Forecasts
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 3: Empirical Benchmark Results -->
+  <section class="section" id="results">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Empirical Results</span>
+        <h2 class="section-title">Performance Benchmark Leaderboard</h2>
+        <p class="section-desc">Evaluating 5 forecasting models on 2 years of daily market data for NVIDIA (NVDA) with a 45-day lookback window.</p>
+      </div>
+
+      <!-- Leaderboard Table -->
+      <div class="leaderboard-table-wrapper">
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Rank</th>
+              <th>Model Architecture</th>
+              <th>Feature Set</th>
+              <th>RMSE ↓</th>
+              <th>MAE ↓</th>
+              <th>MAPE (%) ↓</th>
+              <th>Directional Accuracy (%) ↑</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="highlight-row">
+              <td><span class="rank-pill rank-1">🥇 #1</span></td>
+              <td><strong>Enhanced LSTM (FinBERT)</strong></td>
+              <td>Technical Indicators + News Sentiment</td>
+              <td><strong>25.3714</strong></td>
+              <td><strong>25.2677</strong></td>
+              <td>55.29%</td>
+              <td><strong>59.0%</strong></td>
+            </tr>
+            <tr>
+              <td><span class="rank-pill rank-2">🥈 #2</span></td>
+              <td>Baseline LSTM</td>
+              <td>Technical Indicators Only</td>
+              <td>26.0154</td>
+              <td>25.9085</td>
+              <td>56.69%</td>
+              <td>60.0%</td>
+            </tr>
+            <tr>
+              <td><span class="rank-pill rank-3">🥉 #3</span></td>
+              <td>Support Vector Regressor (SVM)</td>
+              <td>Flattened 2D Sequences</td>
+              <td>10.1076</td>
+              <td>9.5390</td>
+              <td>20.65%</td>
+              <td>55.0%</td>
+            </tr>
+            <tr>
+              <td><span class="rank-pill">#4</span></td>
+              <td>ARIMA (3, 1, 0)</td>
+              <td>1D Historical Series</td>
+              <td>20.8092</td>
+              <td>18.3930</td>
+              <td>40.17%</td>
+              <td>56.0%</td>
+            </tr>
+            <tr>
+              <td><span class="rank-pill">#5</span></td>
+              <td>Naive Persistence</td>
+              <td>Lag-1 Value ($P_t = P_{t-1}$)</td>
+              <td>1.0335</td>
+              <td>0.8125</td>
+              <td>1.80%</td>
+              <td>52.0%</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Forecast Comparison Chart Card -->
+      <div class="chart-card">
+        <div class="chart-header">
+          <h3 class="chart-title">Comparative Predictions vs. Ground Truth</h3>
+          <span class="card-badge">Click image to expand</span>
+        </div>
+        <img src="assets/img/NVDA_price_forecast_comparison.png" alt="Multi-Model Prediction Comparison" class="zoomable">
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 4: Quantitative & NLP Deep Dive -->
+  <section class="section" id="deep-dive">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Feature Engineering</span>
+        <h2 class="section-title">Technical Analysis & FinBERT Sentiment</h2>
+        <p class="section-desc">A dual-lens view combining quantitative momentum oscillators with qualitative sentiment polarity.</p>
+      </div>
+
+      <div class="two-col-grid">
+        <!-- Technical Summary Box -->
+        <div class="deepdive-box">
+          <h3 class="card-title">📊 Technical Indicator Suite</h3>
+          <p class="card-text">
+            Computes 7 mathematical market features: Simple Moving Averages (SMA 50, SMA 200), Exponential Moving Average (EMA 20), Relative Strength Index (RSI 14), Moving Average Convergence Divergence (MACD, Signal, Histogram), Bollinger Bands (20 periods, 2&sigma;), and On-Balance Volume (OBV).
+          </p>
+          <img src="assets/img/NVDA_technical_summary.png" alt="Technical Indicators Overview" class="zoomable">
+        </div>
+
+        <!-- Sentiment Summary Box -->
+        <div class="deepdive-box">
+          <h3 class="card-title">📰 FinBERT News Sentiment Engine</h3>
+          <p class="card-text">
+            Transforms unstructured news headlines into quantitative polarity scores $[-1.0, +1.0]$ using <code>ProsusAI/finbert</code>. Daily metrics capture market euphoria and panic: average sentiment polarity, news volume frequency, and positive-to-negative sentiment ratios.
+          </p>
+          <img src="assets/img/NVDA_sentiment_overview.png" alt="FinBERT Sentiment Overview" class="zoomable">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 5: Tech Stack & Tools -->
+  <section class="section" id="tech-stack">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Technologies</span>
+        <h2 class="section-title">Production Tech Stack</h2>
+        <p class="section-desc">Modern technologies powering data acquisition, deep learning inference, and interactive visualization.</p>
+      </div>
+
+      <div class="tech-grid">
+        <div class="tech-item">
+          <div class="tech-icon">🐍</div>
+          <div class="tech-name">Python 3.9+</div>
+          <div class="tech-role">Core Language</div>
+        </div>
+        <div class="tech-item">
+          <div class="tech-icon">🔥</div>
+          <div class="tech-name">PyTorch</div>
+          <div class="tech-role">LSTM / GRU Models</div>
+        </div>
+        <div class="tech-item">
+          <div class="tech-icon">🤗</div>
+          <div class="tech-name">Hugging Face</div>
+          <div class="tech-role">FinBERT Transformers</div>
+        </div>
+        <div class="tech-item">
+          <div class="tech-icon">👑</div>
+          <div class="tech-name">Streamlit</div>
+          <div class="tech-role">Interactive Web App</div>
+        </div>
+        <div class="tech-item">
+          <div class="tech-icon">⚙️</div>
+          <div class="tech-name">Scikit-Learn</div>
+          <div class="tech-role">SVR & Scalers</div>
+        </div>
+        <div class="tech-item">
+          <div class="tech-icon">🐼</div>
+          <div class="tech-name">Pandas</div>
+          <div class="tech-role">Time-Series Data</div>
+        </div>
+        <div class="tech-item">
+          <div class="tech-icon">📊</div>
+          <div class="tech-name">Matplotlib</div>
+          <div class="tech-role">Visual Analytics</div>
+        </div>
+        <div class="tech-item">
+          <div class="tech-icon">🚀</div>
+          <div class="tech-name">GitHub Actions</div>
+          <div class="tech-role">CI/CD & Testing</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div>
+          <div class="brand" style="margin-bottom: 6px;">
+            <div class="brand-icon">📈</div>
+            <span>StockMarket<span class="brand-highlight">.AI</span></span>
+          </div>
+          <p>Created by Sandy | Advanced Agentic Machine Learning & NLP Showcase</p>
+        </div>
+
+        <div class="footer-links">
+          <a href="https://github.com/SandyCompetent/stock-market-analysis" target="_blank" rel="noopener noreferrer" class="footer-link">GitHub Repository</a>
+          <a href="https://github.com/SandyCompetent" target="_blank" rel="noopener noreferrer" class="footer-link">GitHub Profile</a>
+          <a href="https://huggingface.co/ProsusAI/finbert" target="_blank" rel="noopener noreferrer" class="footer-link">FinBERT Model</a>
+        </div>
+      </div>
+      <p style="text-align: center; font-size: 0.8rem; color: #475569;">
+        MIT Open Source License &copy; 2026. Designed for performance, accessibility, and interactive demonstration.
+      </p>
+    </div>
+  </footer>
+
+  <!-- Lightbox Modal -->
+  <div class="modal" id="imageModal">
+    <button class="modal-close" id="modalClose">&times;</button>
+    <img src="" alt="Expanded View" class="modal-content" id="modalImg">
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
