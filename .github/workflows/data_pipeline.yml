@@ -1,0 +1,44 @@
+name: Data Pipeline Refresh
+
+on:
+  schedule:
+    - cron: '0 0 * * 1-5'  # Run at midnight UTC on weekdays
+  workflow_dispatch:
+    inputs:
+      symbol:
+        description: 'Stock symbol to update'
+        required: true
+        default: 'NVDA'
+
+jobs:
+  fetch-data:
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: write
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+
+      - name: Install dependencies
+        run: |
+          pip install yfinance pandas requests
+
+      - name: Run automated data collector
+        env:
+          ALPHAVANTAGE_API_KEY: ${{ secrets.ALPHAVANTAGE_API_KEY }}
+        run: |
+          python -c "
+          from src.data.fetcher import fetch_yfinance_data
+          import sys
+          symbol = '${{ github.event.inputs.symbol || 'NVDA' }}'
+          print(f'Refreshing data for {symbol}...')
+          df = fetch_yfinance_data(symbol, period='2y')
+          print(f'Fetched {len(df)} rows.')
+          "
