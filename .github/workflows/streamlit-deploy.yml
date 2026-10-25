@@ -1,0 +1,68 @@
+name: Streamlit Deployment & Healthcheck
+
+on:
+  push:
+    branches: [ main ]
+    paths:
+      - 'app.py'
+      - 'src/**'
+      - 'requirements.txt'
+      - '.streamlit/**'
+      - '.github/workflows/streamlit-deploy.yml'
+  schedule:
+    # Ping the deployed Streamlit Community Cloud app every 12 hours to prevent hibernation
+    - cron: '0 */12 * * *'
+  workflow_dispatch:
+
+jobs:
+  streamlit-smoke-test:
+    if: github.event_name != 'schedule'
+    runs-on: ubuntu-24.04
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v5
+
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: '3.10'
+          cache: 'pip'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Verify Streamlit app boots and passes healthcheck
+        env:
+          ALPHAVANTAGE_API_KEY: ${{ secrets.ALPHAVANTAGE_API_KEY }}
+          NEWS_API_KEY: ${{ secrets.NEWS_API_KEY }}
+        run: |
+          streamlit run app.py --server.headless true --server.port 8501 &
+          STREAMLIT_PID=$!
+          for i in {1..30}; do
+            if curl -fsS http://localhost:8501/_stcore/health > /dev/null; then
+              echo "Streamlit app is healthy!"
+              kill $STREAMLIT_PID || true
+              exit 0
+            fi
+            sleep 2
+          done
+          echo "Streamlit app failed to become healthy in time."
+          kill $STREAMLIT_PID || true
+          exit 1
+
+  streamlit-keep-alive:
+    runs-on: ubuntu-24.04
+    steps:
+      - name: Wake up deployed Streamlit Community Cloud instance
+        env:
+          STREAMLIT_APP_URL: ${{ vars.STREAMLIT_APP_URL || secrets.STREAMLIT_APP_URL }}
+        run: |
+          if [ -z "$STREAMLIT_APP_URL" ]; then
+            echo "STREAMLIT_APP_URL is not configured in repository variables/secrets. Skipping remote ping."
+            exit 0
+          fi
+          echo "Pinging deployed Streamlit app at $STREAMLIT_APP_URL..."
+          curl -fsSL "$STREAMLIT_APP_URL" > /dev/null && echo "Ping succeeded!"

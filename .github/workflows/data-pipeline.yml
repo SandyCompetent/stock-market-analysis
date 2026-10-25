@@ -2,16 +2,18 @@ name: Data Pipeline Refresh
 
 on:
   schedule:
-    - cron: '0 0 * * 1-5'  # Run at midnight UTC on weekdays
+    # Rotate through the 6 tickers Monday-Saturday at 00:00 UTC:
+    # Mon: NVDA | Tue: AAPL | Wed: MSFT | Thu: GOOGL | Fri: AMZN | Sat: TSLA
+    - cron: '0 0 * * 1-6'
   workflow_dispatch:
     inputs:
       symbol:
-        description: 'Stock symbol to update'
-        required: true
-        default: 'NVDA'
+        description: "Ticker to update ('AUTO' for weekday rotation, 'ALL', or e.g. 'NVDA', 'AAPL')"
+        required: false
+        default: 'AUTO'
 
 jobs:
-  fetch-data:
+  fetch-and-amend-data:
     runs-on: ubuntu-24.04
 
     permissions:
@@ -25,20 +27,28 @@ jobs:
         uses: actions/setup-python@v6
         with:
           python-version: '3.10'
+          cache: 'pip'
 
       - name: Install dependencies
         run: |
-          pip install yfinance pandas requests
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
 
-      - name: Run automated data collector
+      - name: Amend stock and news datasets in data/sample
         env:
           ALPHAVANTAGE_API_KEY: ${{ secrets.ALPHAVANTAGE_API_KEY }}
+          NEWS_API_KEY: ${{ secrets.NEWS_API_KEY }}
         run: |
-          python -c "
-          from src.data.fetcher import fetch_yfinance_data
-          import sys
-          symbol = '${{ github.event.inputs.symbol || 'NVDA' }}'
-          print(f'Refreshing data for {symbol}...')
-          df = fetch_yfinance_data(symbol, period='2y')
-          print(f'Fetched {len(df)} rows.')
-          "
+          python scripts/update_sample_data.py --symbol "${{ github.event.inputs.symbol || 'AUTO' }}"
+
+      - name: Commit and push updated sample datasets
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/sample/*.csv
+          if git diff --staged --quiet; then
+            echo "No new rows to commit."
+          else
+            git commit -m "chore(data): amend sample stock and news datasets [skip ci]"
+            git push
+          fi

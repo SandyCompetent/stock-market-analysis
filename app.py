@@ -5,7 +5,11 @@ import matplotlib.pyplot as plt
 import streamlit as st
 
 from src.config import PipelineConfig, TargetMode
-from src.data.fetcher import fetch_yfinance_data, load_sample_data
+from src.data.fetcher import (
+    fetch_live_news_data,
+    fetch_yfinance_data,
+    load_sample_data,
+)
 from src.data.processor import (
     calculate_technical_indicators,
     create_enhanced_dataset,
@@ -108,15 +112,14 @@ run_button = st.sidebar.button("🚀 Run Forecast & Benchmark", type="primary")
 
 
 # --- Data Loading Function ---
-@st.cache_data(show_spinner=False)
+@st.cache_data(ttl=3600, show_spinner=False)
 def get_data(selected_ticker: str, mode: str):
     if "Sample" in mode:
-        stock_df, news_df = load_sample_data(symbol="NVDA")
+        stock_df, news_df = load_sample_data(symbol=selected_ticker)
         return stock_df, news_df
     else:
         stock_df = fetch_yfinance_data(selected_ticker, period="2y", interval="1d")
-        # Load sample news as template
-        _, news_df = load_sample_data(symbol="NVDA")
+        news_df = fetch_live_news_data(symbol=selected_ticker)
         return stock_df, news_df
 
 
@@ -124,7 +127,10 @@ with st.spinner("Loading dataset and calculating indicators..."):
     stock_df, news_df = get_data(ticker, data_mode)
     tech_df = calculate_technical_indicators(stock_df)
     daily_sentiment_df = aggregate_daily_sentiment(news_df)
-    enhanced_df = create_enhanced_dataset(tech_df, daily_sentiment_df)
+    has_news_data = not news_df.empty and not daily_sentiment_df.empty
+    enhanced_df = (
+        create_enhanced_dataset(tech_df, daily_sentiment_df) if has_news_data else None
+    )
 
 # Top metrics cards
 col1, col2, col3, col4 = st.columns(4)
@@ -173,16 +179,6 @@ with tab_forecast:
         )
     )
 
-    X_train_e, X_test_e, y_train_e, y_test_e, scaler_e, _ = (
-        prepare_time_series_sequences(
-            enhanced_df,
-            enhanced_feats,
-            target_col,
-            sequence_length=seq_len,
-            test_size=0.2,
-        )
-    )
-
     # Actual values in original scale
     y_test_original = scaler_b.inverse_transform(y_test_b.reshape(-1, 1)).flatten()
 
@@ -203,15 +199,31 @@ with tab_forecast:
         ).flatten()
 
     if run_enhanced_lstm:
-        status_container.info("⚡ Training Sentiment-Enhanced LSTM...")
-        trainer_e = LSTMTrainer(
-            input_dim=len(enhanced_feats), hidden_dim=48, num_layers=2
-        )
-        trainer_e.fit(X_train_e, y_train_e, epochs=epochs, batch_size=32, verbose=False)
-        preds_e_scaled = trainer_e.predict(X_test_e)
-        predictions_dict["Enhanced LSTM (FinBERT)"] = scaler_e.inverse_transform(
-            preds_e_scaled.reshape(-1, 1)
-        ).flatten()
+        if has_news_data and enhanced_df is not None:
+            X_train_e, X_test_e, y_train_e, y_test_e, scaler_e, _ = (
+                prepare_time_series_sequences(
+                    enhanced_df,
+                    enhanced_feats,
+                    target_col,
+                    sequence_length=seq_len,
+                    test_size=0.2,
+                )
+            )
+            status_container.info("⚡ Training Sentiment-Enhanced LSTM...")
+            trainer_e = LSTMTrainer(
+                input_dim=len(enhanced_feats), hidden_dim=48, num_layers=2
+            )
+            trainer_e.fit(
+                X_train_e, y_train_e, epochs=epochs, batch_size=32, verbose=False
+            )
+            preds_e_scaled = trainer_e.predict(X_test_e)
+            predictions_dict["Enhanced LSTM (FinBERT)"] = scaler_e.inverse_transform(
+                preds_e_scaled.reshape(-1, 1)
+            ).flatten()
+        else:
+            st.warning(
+                f"⚠️ No news data available for **{ticker}** — skipping **Enhanced LSTM (FinBERT)** (no fallback used)."
+            )
 
     if run_svm:
         status_container.info("📐 Training Support Vector Regressor (SVM)...")
@@ -283,17 +295,23 @@ with tab_tech:
 # --- Tab 3: News Sentiment ---
 with tab_sentiment:
     st.subheader("FinBERT Financial Sentiment Intelligence")
-    fig_sent = plot_sentiment_overview(daily_sentiment_df, symbol=ticker)
-    st.pyplot(fig_sent)
-    plt.close(fig_sent)
+    if has_news_data:
+        fig_sent = plot_sentiment_overview(daily_sentiment_df, symbol=ticker)
+        st.pyplot(fig_sent)
+        plt.close(fig_sent)
 
-    st.markdown("### 📰 Recent Headlines & Sentiment Classification")
-    display_cols = [
-        c
-        for c in ["Date", "title", "sentiment_label", "sentiment_score"]
-        if c in news_df.columns
-    ]
-    st.dataframe(news_df[display_cols].tail(50), use_container_width=True)
+        st.markdown("### 📰 Recent Headlines & Sentiment Classification")
+        display_cols = [
+            c
+            for c in ["Date", "title", "sentiment_label", "sentiment_score"]
+            if c in news_df.columns
+        ]
+        st.dataframe(news_df[display_cols].tail(50), use_container_width=True)
+    else:
+        st.info(
+            f"ℹ️ No news headlines available for **{ticker}**. "
+            "Configure `ALPHAVANTAGE_API_KEY` and/or `NEWS_API_KEY` in `.env` or Streamlit Secrets to fetch live news."
+        )
 
 # --- Tab 4: Methodology ---
 with tab_methodology:

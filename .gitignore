@@ -77,3 +77,7 @@ htmlcov/
 # Environment Variables & Secrets
 .env
 .env.local
+.streamlit/secrets.toml
+
+# Local SQLite HTTP Caches
+*.sqlite

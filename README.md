@@ -3,7 +3,8 @@
 [![Python](https://img.shields.io/badge/Python-3.9%2B-blue.svg)](https://www.python.org/)
 [![PyTorch](https://img.shields.io/badge/PyTorch-2.0%2B-EE4C2C.svg)](https://pytorch.org/)
 [![Transformers](https://img.shields.io/badge/HuggingFace-FinBERT-FFD21E.svg)](https://huggingface.co/ProsusAI/finbert)
-[![Streamlit](https://img.shields.io/badge/Streamlit-Interactive_App-FF4B4B.svg)](https://streamlit.io/)
+[![Streamlit](https://img.shields.io/badge/Streamlit-Interactive_App-FF4B4B.svg)](https://stock-market-analysis.streamlit.app)
+[![Portfolio Showcase](https://img.shields.io/badge/Portfolio-Live_Showcase-8A2BE2.svg)](https://sandycompetent.github.io/stock-market-analysis/)
 [![CI](https://github.com/SandyCompetent/stock-market-analysis/actions/workflows/ci.yml/badge.svg)](https://github.com/SandyCompetent/stock-market-analysis/actions/workflows/ci.yml)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 

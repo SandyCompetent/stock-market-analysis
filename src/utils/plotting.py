@@ -135,6 +135,30 @@ def plot_sentiment_overview(
         2, 1, figsize=(14, 6), sharex=True, gridspec_kw={"height_ratios": [1.5, 1]}
     )
 
+    if daily_sentiment_df is None or daily_sentiment_df.empty:
+        ax1.set_title(
+            f"{symbol} FinBERT Daily News Sentiment & Volume (No News Data Available)",
+            fontsize=14,
+            fontweight="bold",
+        )
+        ax1.text(
+            0.5,
+            0.5,
+            f"No news sentiment records available for {symbol}",
+            ha="center",
+            va="center",
+            transform=ax1.transAxes,
+            fontsize=12,
+            color="#64748B",
+        )
+        ax1.set_ylabel("Sentiment Polarity (-1 to +1)")
+        ax2.set_ylabel("Articles Count")
+        ax2.set_xlabel("Date")
+        plt.tight_layout()
+        if save_path:
+            fig.savefig(save_path, dpi=300)
+        return fig
+
     # Polarity trend
     score_col = (
         "Avg_Sentiment"

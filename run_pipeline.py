@@ -5,7 +5,11 @@ import logging
 from pathlib import Path
 
 from src.config import PipelineConfig, TargetMode
-from src.data.fetcher import fetch_yfinance_data, load_sample_data
+from src.data.fetcher import (
+    fetch_live_news_data,
+    fetch_yfinance_data,
+    load_sample_data,
+)
 from src.data.processor import (
     calculate_technical_indicators,
     create_enhanced_dataset,
@@ -49,21 +53,28 @@ def run(
 
     # 1. Load Data
     if use_sample:
-        logger.info("Loading bundled sample datasets...")
-        stock_df, news_df = load_sample_data(symbol="NVDA")
+        logger.info(f"Loading bundled sample datasets for {symbol}...")
+        stock_df, news_df = load_sample_data(symbol=symbol)
     else:
         logger.info(f"Fetching live yfinance stock data for {symbol}...")
         stock_df = fetch_yfinance_data(symbol, period="2y", interval="1d")
-        _, news_df = load_sample_data(symbol="NVDA")
+        logger.info(
+            f"Fetching live/cached news data for {symbol} (AlphaVantage + NewsAPI, no fallback)..."
+        )
+        news_df = fetch_live_news_data(symbol=symbol)
 
     # 2. Process Technical Indicators
     logger.info("Computing technical indicators (SMA, EMA, RSI, MACD, BB, OBV)...")
     tech_df = calculate_technical_indicators(stock_df)
 
     # 3. Process News Sentiment
-    logger.info("Aggregating daily FinBERT news sentiment...")
-    daily_sentiment_df = aggregate_daily_sentiment(news_df)
-    enhanced_df = create_enhanced_dataset(tech_df, daily_sentiment_df)
+    has_news = news_df is not None and not news_df.empty
+    if has_news:
+        logger.info("Aggregating daily FinBERT news sentiment...")
+        daily_sentiment_df = aggregate_daily_sentiment(news_df)
+        has_news = not daily_sentiment_df.empty
+    else:
+        daily_sentiment_df = None
 
     # 4. Prepare Sequences
     baseline_feats = cfg.get_features(enhanced=False)
@@ -80,14 +91,6 @@ def run(
         )
     )
 
-    X_tr_e, X_te_e, y_tr_e, y_te_e, scaler_e, _ = prepare_time_series_sequences(
-        enhanced_df,
-        enhanced_feats,
-        target_col,
-        sequence_length=sequence_length,
-        test_size=0.2,
-    )
-
     y_test_original = scaler_b.inverse_transform(y_te_b.reshape(-1, 1)).flatten()
 
     predictions = {}
@@ -95,21 +98,52 @@ def run(
     # 5. Train Models
     # A. Baseline LSTM
     logger.info("Training Baseline LSTM (Technical Features Only)...")
-    lstm_b = LSTMTrainer(input_dim=len(baseline_feats), hidden_dim=hidden_dim, num_layers=num_layers)
-    lstm_b.fit(X_tr_b, y_tr_b, epochs=epochs, batch_size=32, learning_rate=learning_rate, verbose=False)
+    lstm_b = LSTMTrainer(
+        input_dim=len(baseline_feats), hidden_dim=hidden_dim, num_layers=num_layers
+    )
+    lstm_b.fit(
+        X_tr_b,
+        y_tr_b,
+        epochs=epochs,
+        batch_size=32,
+        learning_rate=learning_rate,
+        verbose=False,
+    )
     preds_b = scaler_b.inverse_transform(
         lstm_b.predict(X_te_b).reshape(-1, 1)
     ).flatten()
     predictions["Baseline LSTM"] = preds_b
 
-    # B. Enhanced LSTM
-    logger.info("Training Enhanced LSTM (Technical + FinBERT Sentiment)...")
-    lstm_e = LSTMTrainer(input_dim=len(enhanced_feats), hidden_dim=hidden_dim, num_layers=num_layers)
-    lstm_e.fit(X_tr_e, y_tr_e, epochs=epochs, batch_size=32, learning_rate=learning_rate, verbose=False)
-    preds_e = scaler_e.inverse_transform(
-        lstm_e.predict(X_te_e).reshape(-1, 1)
-    ).flatten()
-    predictions["Enhanced LSTM (FinBERT)"] = preds_e
+    # B. Enhanced LSTM (Only if news data is available)
+    if has_news:
+        enhanced_df = create_enhanced_dataset(tech_df, daily_sentiment_df)
+        X_tr_e, X_te_e, y_tr_e, y_te_e, scaler_e, _ = prepare_time_series_sequences(
+            enhanced_df,
+            enhanced_feats,
+            target_col,
+            sequence_length=sequence_length,
+            test_size=0.2,
+        )
+        logger.info("Training Enhanced LSTM (Technical + FinBERT Sentiment)...")
+        lstm_e = LSTMTrainer(
+            input_dim=len(enhanced_feats), hidden_dim=hidden_dim, num_layers=num_layers
+        )
+        lstm_e.fit(
+            X_tr_e,
+            y_tr_e,
+            epochs=epochs,
+            batch_size=32,
+            learning_rate=learning_rate,
+            verbose=False,
+        )
+        preds_e = scaler_e.inverse_transform(
+            lstm_e.predict(X_te_e).reshape(-1, 1)
+        ).flatten()
+        predictions["Enhanced LSTM (FinBERT)"] = preds_e
+    else:
+        logger.warning(
+            f"No news data available for {symbol} — skipping Enhanced LSTM (FinBERT)."
+        )
 
     # C. SVM
     logger.info("Fitting Support Vector Regressor (SVM)...")
