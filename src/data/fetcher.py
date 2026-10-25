@@ -63,18 +63,18 @@ def load_sample_data(
     if sample_dir is None:
         sample_dir = Path(__file__).resolve().parent.parent.parent / "data" / "sample"
 
-    stock_file = sample_dir / f"sample_{symbol.lower()}_stock.csv"
-    news_file = sample_dir / f"sample_{symbol.lower()}_news.csv"
+    stock_file = sample_dir / f"sample-{symbol.lower()}-stock.csv"
+    news_file = sample_dir / f"sample-{symbol.lower()}-news.csv"
 
     if not stock_file.exists():
         # Fallback to any sample stock file in the folder
-        stock_files = list(sample_dir.glob("sample_*_stock.csv"))
+        stock_files = list(sample_dir.glob("sample-*-stock.csv"))
         if not stock_files:
             raise FileNotFoundError(f"Sample stock file not found in {sample_dir}")
         stock_file = stock_files[0]
 
     if not news_file.exists():
-        news_files = list(sample_dir.glob("sample_*_news.csv"))
+        news_files = list(sample_dir.glob("sample-*-news.csv"))
         if not news_files:
             raise FileNotFoundError(f"Sample news file not found in {sample_dir}")
         news_file = news_files[0]

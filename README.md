@@ -120,14 +120,14 @@ stock-market-analysis/
 ├── .github/
 │   └── workflows/
 │       ├── ci.yml                 # Automated testing & linting CI pipeline
-│       └── data_pipeline.yml      # Scheduled market data update automation
+│       └── data-pipeline.yml      # Scheduled market data update automation
 ├── data/
 │   └── sample/                    # Zero-dependency sample datasets (<2MB)
-│       ├── sample_nvda_stock.csv  # 2 years of daily OHLCV NVDA stock data
-│       └── sample_nvda_news.csv   # Curated financial news headlines
+│       ├── sample-nvda-stock.csv  # 2 years of daily OHLCV NVDA stock data
+│       └── sample-nvda-news.csv   # Curated financial news headlines
 ├── notebooks/
-│   ├── 01_stock_and_sentiment_analysis.ipynb   # Technical analysis & FinBERT walkthrough
-│   └── 02_model_training_and_comparison.ipynb  # Multi-model training & benchmarking
+│   ├── 01-stock-and-sentiment-analysis.ipynb   # Technical analysis & FinBERT walkthrough
+│   └── 02-model-training-and-comparison.ipynb  # Multi-model training & benchmarking
 ├── src/
 │   ├── __init__.py
 │   ├── config.py                  # Dataclass configuration & target enum management

@@ -33,7 +33,7 @@ document.addEventListener("DOMContentLoaded", () => {
       btnMobile.classList.remove("active");
       mockupFrame.classList.remove("mobile-mode");
       mockupFrame.classList.add("desktop-mode");
-      mockupImage.src = "assets/img/streamlit_desktop.png";
+      mockupImage.src = "assets/img/streamlit-desktop.png";
       mockupImage.alt = "Desktop Streamlit Web Application";
       if (mockupUrl) mockupUrl.textContent = "localhost:8501 (Desktop 1440x900)";
     });
@@ -43,7 +43,7 @@ document.addEventListener("DOMContentLoaded", () => {
       btnDesktop.classList.remove("active");
       mockupFrame.classList.remove("desktop-mode");
       mockupFrame.classList.add("mobile-mode");
-      mockupImage.src = "assets/img/streamlit_mobile.png";
+      mockupImage.src = "assets/img/streamlit-mobile.png";
       mockupImage.alt = "Mobile Streamlit Web Application";
       if (mockupUrl) mockupUrl.textContent = "localhost:8501 (Mobile 390x844)";
     });

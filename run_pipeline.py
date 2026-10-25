@@ -136,7 +136,7 @@ def run(
     print("=" * 65 + "\n")
 
     # 7. Save Comparison Plot
-    plot_file = out_path / f"{symbol}_{target_mode}_forecast_comparison.png"
+    plot_file = out_path / f"{symbol.lower()}-{target_mode}-forecast-comparison.png"
     target_lbl = "Price ($)" if mode == TargetMode.PRICE else "Percentage Change (%)"
     fig = plot_model_comparison(
         dates=test_dates,
@@ -148,7 +148,7 @@ def run(
     )
     logger.info(f"Comparison plot saved to: {plot_file}")
 
-    leaderboard_csv = out_path / f"{symbol}_{target_mode}_leaderboard.csv"
+    leaderboard_csv = out_path / f"{symbol.lower()}-{target_mode}-leaderboard.csv"
     leaderboard.to_csv(leaderboard_csv)
     logger.info(f"Leaderboard metrics saved to: {leaderboard_csv}")
     logger.info("Pipeline execution completed successfully!")

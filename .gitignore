@@ -51,6 +51,7 @@ data/raw/
 data/processed/
 Dataset/
 Output/
+output/
 tuner_results/
 *.keras
 *.h5
