@@ -86,7 +86,7 @@ data_interval_choice = st.sidebar.selectbox(
     "Data Frequency / Interval",
     ["1 Day (1d)", "1 Hour (1h)", "1 Week (1wk)"],
     index=0,
-    help="Select bar interval frequency. Note: 1 Hour data is restricted to max 2 Years (730 days) by Yahoo Finance API.",
+    help="Select bar interval frequency. (Note: 1 Hour interval is restricted to max 2 Years by Yahoo Finance).",
 )
 
 interval_map = {
@@ -96,11 +96,21 @@ interval_map = {
 }
 selected_interval = interval_map[data_interval_choice]
 
+# Dynamically filter historical duration options based on interval choice
+if selected_interval == "1h":
+    duration_options = ["1 Year", "2 Years"]
+    default_duration_idx = 1
+    duration_help = "For 1 Hour interval data, Yahoo Finance API limits range to 2 Years (730 days) max."
+else:
+    duration_options = ["1 Year", "2 Years", "3 Years", "4 Years", "5 Years"]
+    default_duration_idx = 1
+    duration_help = "Select historical time range used for feature calculation, model training, and testing."
+
 history_period_choice = st.sidebar.selectbox(
     "Historical Data Duration",
-    ["1 Year", "2 Years", "3 Years", "4 Years", "5 Years"],
-    index=1,
-    help="Select historical time range used for market feature calculation, training, and testing (Applies to Live Data).",
+    duration_options,
+    index=default_duration_idx,
+    help=duration_help,
 )
 
 period_map = {
@@ -111,13 +121,6 @@ period_map = {
     "5 Years": "5y",
 }
 selected_period = period_map[history_period_choice]
-
-# Enforce yfinance API limit: 1h interval is restricted to max 2 years (730d)
-if selected_interval == "1h" and selected_period in ["3y", "4y", "5y"]:
-    st.sidebar.warning(
-        "⚠️ Yahoo Finance API limits **1 Hour** interval data to **2 Years** max. Capping duration to **2 Years**."
-    )
-    selected_period = "2y"
 
 target_mode_choice = st.sidebar.radio(
     "Target Prediction Variable",
@@ -199,15 +202,19 @@ tab_forecast, tab_tech, tab_sentiment, tab_methodology = st.tabs(
 
 # --- Tab 1: Forecasts & Leaderboard ---
 with tab_forecast:
-    st.subheader("Model Predictions vs. Ground Truth")
-
     cfg = PipelineConfig(
         symbol=ticker,
         target_mode=target_mode,
     )
     target_col = cfg.get_target_column()
     target_label = (
-        "Price ($)" if target_mode == TargetMode.PRICE else "Percentage Change (%)"
+        "Price ($ Close)" if target_mode == TargetMode.PRICE else "Daily Percentage Change (%)"
+    )
+
+    st.subheader(f"Model Predictions vs. Ground Truth ({target_label})")
+    st.info(
+        f"🎯 **Active Target Mode**: Predicting **{target_label}** for **{ticker}** | "
+        f"**Historical Duration**: {selected_period} | **Interval**: {selected_interval}"
     )
 
     # Sequence preparation

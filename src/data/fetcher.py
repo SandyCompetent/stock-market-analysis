@@ -98,8 +98,25 @@ def fetch_yfinance_data(
     Returns:
         DataFrame indexed by Date with columns ['Open', 'High', 'Low', 'Close', 'Volume', 'SP500_Close'].
     """
+    # Enforce Yahoo Finance API interval limits to prevent download failures
+    if interval in ["1h", "60m"] and period in ["3y", "4y", "5y", "10y", "max"]:
+        logger.warning(
+            f"Yahoo Finance limits '{interval}' interval data to 730 days (2 years). Adjusting requested period from '{period}' to '2y'."
+        )
+        period = "2y"
+    elif interval in ["15m", "30m"] and period in ["3mo", "6mo", "1y", "2y", "3y", "4y", "5y", "max"]:
+        logger.warning(
+            f"Yahoo Finance limits '{interval}' interval data to 60 days. Adjusting requested period from '{period}' to '60d'."
+        )
+        period = "60d"
+    elif interval == "1m" and period not in ["1d", "5d", "7d"]:
+        logger.warning(
+            f"Yahoo Finance limits '1m' interval data to 7 days. Adjusting requested period from '{period}' to '7d'."
+        )
+        period = "7d"
+
     logger.info(
-        f"Fetching data for {symbol} (period={period}, {start_date} to {end_date})..."
+        f"Fetching data for {symbol} (period={period}, {start_date} to {end_date}, interval={interval})..."
     )
     # Use ^GSPC for S&P 500 when just GSPC is requested, otherwise fetch symbol
     lookup_symbol = "^GSPC" if symbol.upper() == "GSPC" else symbol

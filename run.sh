@@ -70,6 +70,22 @@ case $choice in
         ticker=${ticker:-AAPL}
         read -p "Target mode (price/percentage) [default: price]: " target_mode
         target_mode=${target_mode:-price}
+
+        read -p "Data interval (1d/1h/1wk) [default: 1d]: " interval
+        interval=${interval:-1d}
+
+        if [[ "$interval" == "1h" || "$interval" == "60m" ]]; then
+            read -p "Historical data period (1y/2y - max 2y for 1h interval) [default: 2y]: " period
+            period=${period:-2y}
+            if [[ "$period" =~ ^(3y|4y|5y)$ ]]; then
+                echo -e "${YELLOW}Note: 1h interval is restricted to max 2y by Yahoo Finance. Setting period to 2y.${NC}"
+                period="2y"
+            fi
+        else
+            read -p "Historical data period (1y/2y/3y/4y/5y) [default: 2y]: " period
+            period=${period:-2y}
+        fi
+
         read -p "Save output to disk? (y/n) [default: n]: " save_output
         save_output=${save_output:-n}
 
@@ -78,8 +94,8 @@ case $choice in
             save_flag=""
         fi
 
-        echo -e "\n${BLUE}Running CLI Pipeline with Live Data for $ticker (Predicting ${target_mode}, 25 Epochs)...${NC}"
-        python run_pipeline.py --symbol "$ticker" --target "$target_mode" --live $save_flag --epochs 25
+        echo -e "\n${BLUE}Running CLI Pipeline with Live Data for $ticker (Target: ${target_mode}, Interval: ${interval}, Period: ${period}, 25 Epochs)...${NC}"
+        python run_pipeline.py --symbol "$ticker" --target "$target_mode" --interval "$interval" --period "$period" --live $save_flag --epochs 25
         ;;
     4)
         echo -e "\n${BLUE}Running Unit Tests...${NC}"

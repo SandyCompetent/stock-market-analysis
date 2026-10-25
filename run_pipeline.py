@@ -31,6 +31,8 @@ def run(
     symbol: str = "NVDA",
     target_mode: str = "price",
     use_sample: bool = True,
+    period: str = "2y",
+    interval: str = "1d",
     epochs: int = 25,
     sequence_length: int = 45,
     hidden_dim: int = 48,
@@ -48,7 +50,7 @@ def run(
     target_col = cfg.get_target_column()
 
     logger.info(
-        f"=== Starting Stock Market AI Pipeline for {symbol} (Target: {target_col}) ==="
+        f"=== Starting Stock Market AI Pipeline for {symbol} (Target: {target_col}, Period: {period}, Interval: {interval}) ==="
     )
 
     # 1. Load Data
@@ -56,8 +58,8 @@ def run(
         logger.info(f"Loading bundled sample datasets for {symbol}...")
         stock_df, news_df = load_sample_data(symbol=symbol)
     else:
-        logger.info(f"Fetching live yfinance stock data for {symbol}...")
-        stock_df = fetch_yfinance_data(symbol, period="2y", interval="1d")
+        logger.info(f"Fetching live yfinance stock data for {symbol} (period={period}, interval={interval})...")
+        stock_df = fetch_yfinance_data(symbol, period=period, interval=interval)
         logger.info(
             f"Fetching live/cached news data for {symbol} (AlphaVantage + NewsAPI, no fallback)..."
         )
@@ -217,6 +219,20 @@ if __name__ == "__main__":
         help="Target mode ('price' or 'percentage')",
     )
     parser.add_argument(
+        "--period",
+        type=str,
+        default="2y",
+        choices=["1y", "2y", "3y", "4y", "5y"],
+        help="Historical duration period ('1y', '2y', '3y', '4y', '5y')",
+    )
+    parser.add_argument(
+        "--interval",
+        type=str,
+        default="1d",
+        choices=["1d", "1h", "1wk"],
+        help="Data bar interval ('1d', '1h', '1wk')",
+    )
+    parser.add_argument(
         "--live",
         action="store_true",
         help="Fetch live data via yfinance instead of sample",
@@ -250,6 +266,8 @@ if __name__ == "__main__":
         symbol=args.symbol,
         target_mode=args.target,
         use_sample=not args.live,
+        period=args.period,
+        interval=args.interval,
         epochs=args.epochs,
         sequence_length=args.seq_len,
         hidden_dim=args.hidden_dim,
