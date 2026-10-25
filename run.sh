@@ -35,8 +35,8 @@ echo -e "${GREEN}Environment is ready!${NC}"
 echo ""
 echo -e "Please select an option to run:"
 echo -e "  ${YELLOW}1${NC}) Launch Interactive Streamlit Dashboard (app.py)"
-echo -e "  ${YELLOW}2${NC}) Run CLI Pipeline with Sample Data (NVDA)"
-echo -e "  ${YELLOW}3${NC}) Run CLI Pipeline with Live Data (AAPL)"
+echo -e "  ${YELLOW}2${NC}) Run CLI Pipeline with Sample Data (Choose Ticker)"
+echo -e "  ${YELLOW}3${NC}) Run CLI Pipeline with Live Data (Choose Ticker)"
 echo -e "  ${YELLOW}4${NC}) Run Unit Tests (pytest)"
 echo -e "  ${YELLOW}q${NC}) Quit"
 echo ""
@@ -50,12 +50,16 @@ case $choice in
         streamlit run app.py
         ;;
     2)
-        echo -e "\n${BLUE}Running CLI Pipeline with Sample Data (Predicting Price, 25 Epochs)...${NC}"
-        python run_pipeline.py --symbol NVDA --target price --epochs 25
+        read -p "Enter ticker symbol [default: NVDA]: " ticker
+        ticker=${ticker:-NVDA}
+        echo -e "\n${BLUE}Running CLI Pipeline with Sample Data for $ticker (Predicting Price, 25 Epochs)...${NC}"
+        python run_pipeline.py --symbol "$ticker" --target price --epochs 25
         ;;
     3)
-        echo -e "\n${BLUE}Running CLI Pipeline with Live Data (AAPL, 25 Epochs)...${NC}"
-        python run_pipeline.py --symbol AAPL --live --epochs 25
+        read -p "Enter ticker symbol [default: AAPL]: " ticker
+        ticker=${ticker:-AAPL}
+        echo -e "\n${BLUE}Running CLI Pipeline with Live Data for $ticker (25 Epochs)...${NC}"
+        python run_pipeline.py --symbol "$ticker" --live --epochs 25
         ;;
     4)
         echo -e "\n${BLUE}Running Unit Tests...${NC}"

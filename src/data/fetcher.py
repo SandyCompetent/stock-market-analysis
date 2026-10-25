@@ -38,6 +38,9 @@ def fetch_yfinance_data(
     if start_date and end_date:
         df = ticker.history(start=start_date, end=end_date, interval=interval)
     else:
+        # Use ^GSPC for S&P 500 when just GSPC is requested
+        lookup_symbol = "^GSPC" if symbol.upper() == "GSPC" else symbol
+        ticker = yf.Ticker(lookup_symbol)
         df = ticker.history(period=period, interval=interval)
 
     if df.empty:
