@@ -23,8 +23,8 @@ fi
 echo -e "${YELLOW}Activating virtual environment...${NC}"
 source .venv/bin/activate
 
-# Check if dependencies are installed by checking for streamlit
-if ! command -v streamlit &> /dev/null; then
+# Check if dependencies are installed by attempting to import pandas
+if ! python3 -c "import pandas, streamlit, torch" &> /dev/null; then
     echo -e "${YELLOW}Installing dependencies from requirements.txt...${NC}"
     pip install --upgrade pip
     pip install -r requirements.txt
