@@ -7,7 +7,11 @@ from typing import List, Optional, Tuple, Union
 
 import pandas as pd
 import requests
+import requests_cache
 import yfinance as yf
+
+# Install requests-cache globally for yfinance
+requests_cache.install_cache("yfinance_cache", expire_after=3600)
 
 logger = logging.getLogger(__name__)
 
@@ -34,24 +38,45 @@ def fetch_yfinance_data(
     logger.info(
         f"Fetching data for {symbol} (period={period}, {start_date} to {end_date})..."
     )
-    ticker = yf.Ticker(symbol)
-    if start_date and end_date:
-        df = ticker.history(start=start_date, end=end_date, interval=interval)
+    # Use ^GSPC for S&P 500 when just GSPC is requested, otherwise fetch symbol
+    lookup_symbol = "^GSPC" if symbol.upper() == "GSPC" else symbol
+    
+    # We fetch the target stock and SP500 together
+    if lookup_symbol != "^GSPC":
+        tickers = f"{lookup_symbol} ^GSPC"
     else:
-        # Use ^GSPC for S&P 500 when just GSPC is requested
-        lookup_symbol = "^GSPC" if symbol.upper() == "GSPC" else symbol
-        ticker = yf.Ticker(lookup_symbol)
-        df = ticker.history(period=period, interval=interval)
+        tickers = "^GSPC"
+        
+    if start_date and end_date:
+        raw_df = yf.download(tickers, start=start_date, end=end_date, interval=interval, group_by="ticker", auto_adjust=True)
+    else:
+        raw_df = yf.download(tickers, period=period, interval=interval, group_by="ticker", auto_adjust=True)
 
-    if df.empty:
+    if raw_df.empty:
         raise ValueError(f"No stock data found for ticker '{symbol}'.")
+
+    # If multiple tickers were requested, yf returns a MultiIndex column DataFrame
+    if lookup_symbol != "^GSPC":
+        df = raw_df[lookup_symbol].copy()
+        sp500_close = raw_df["^GSPC"]["Close"]
+    else:
+        # single ticker downloaded
+        df = raw_df.copy()
+        sp500_close = df["Close"]
 
     # Clean index and column casing
     df.index = pd.to_datetime(df.index).tz_localize(None)
     df.index.name = "Date"
+    
     cols = ["Open", "High", "Low", "Close", "Volume"]
     available_cols = [c for c in cols if c in df.columns]
-    return df[available_cols]
+    df = df[available_cols].copy()
+    
+    # Add SP500 Close
+    sp500_close.index = pd.to_datetime(sp500_close.index).tz_localize(None)
+    df["SP500_Close"] = sp500_close
+    
+    return df
 
 
 def load_sample_data(

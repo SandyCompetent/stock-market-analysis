@@ -62,6 +62,7 @@ class PipelineConfig:
             "BB_width",
             "OBV",
             "Volume",
+            "SP500_Close",
         ]
     )
 
@@ -74,6 +75,7 @@ class PipelineConfig:
             "BB_width",
             "OBV",
             "Volume",
+            "SP500_Close",
             "Avg_Sentiment",
             "Sentiment_Ratio",
             "News_Count",

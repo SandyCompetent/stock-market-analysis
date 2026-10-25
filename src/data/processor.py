@@ -64,6 +64,11 @@ def calculate_technical_indicators(df: pd.DataFrame) -> pd.DataFrame:
         close > close.shift(1), 1, np.where(close < close.shift(1), -1, 0)
     )
     data["OBV"] = (direction * data["Volume"]).fillna(0).cumsum()
+    
+    # 7. Exogenous Variable: SP500_Close
+    # If the feature is missing (e.g. sample data), backfill with Close to avoid NaNs
+    if "SP500_Close" not in data.columns:
+        data["SP500_Close"] = close
 
     # Fill any initial rolling edge cases
     data.bfill(inplace=True)

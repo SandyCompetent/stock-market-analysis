@@ -29,6 +29,9 @@ def run(
     use_sample: bool = True,
     epochs: int = 25,
     sequence_length: int = 45,
+    hidden_dim: int = 48,
+    num_layers: int = 2,
+    learning_rate: float = 0.001,
     output_dir: str = "output",
 ):
     out_path = Path(output_dir)
@@ -90,8 +93,8 @@ def run(
     # 5. Train Models
     # A. Baseline LSTM
     logger.info("Training Baseline LSTM (Technical Features Only)...")
-    lstm_b = LSTMTrainer(input_dim=len(baseline_feats), hidden_dim=48, num_layers=2)
-    lstm_b.fit(X_tr_b, y_tr_b, epochs=epochs, batch_size=32, verbose=False)
+    lstm_b = LSTMTrainer(input_dim=len(baseline_feats), hidden_dim=hidden_dim, num_layers=num_layers)
+    lstm_b.fit(X_tr_b, y_tr_b, epochs=epochs, batch_size=32, learning_rate=learning_rate, verbose=False)
     preds_b = scaler_b.inverse_transform(
         lstm_b.predict(X_te_b).reshape(-1, 1)
     ).flatten()
@@ -99,8 +102,8 @@ def run(
 
     # B. Enhanced LSTM
     logger.info("Training Enhanced LSTM (Technical + FinBERT Sentiment)...")
-    lstm_e = LSTMTrainer(input_dim=len(enhanced_feats), hidden_dim=48, num_layers=2)
-    lstm_e.fit(X_tr_e, y_tr_e, epochs=epochs, batch_size=32, verbose=False)
+    lstm_e = LSTMTrainer(input_dim=len(enhanced_feats), hidden_dim=hidden_dim, num_layers=num_layers)
+    lstm_e.fit(X_tr_e, y_tr_e, epochs=epochs, batch_size=32, learning_rate=learning_rate, verbose=False)
     preds_e = scaler_e.inverse_transform(
         lstm_e.predict(X_te_e).reshape(-1, 1)
     ).flatten()
@@ -178,6 +181,15 @@ if __name__ == "__main__":
         "--seq-len", type=int, default=45, help="Sequence lookback window"
     )
     parser.add_argument(
+        "--hidden-dim", type=int, default=48, help="Hidden dimensions for LSTM"
+    )
+    parser.add_argument(
+        "--num-layers", type=int, default=2, help="Number of LSTM layers"
+    )
+    parser.add_argument(
+        "--learning-rate", type=float, default=0.001, help="Learning rate for AdamW"
+    )
+    parser.add_argument(
         "--out-dir", type=str, default="output", help="Output directory"
     )
 
@@ -188,5 +200,8 @@ if __name__ == "__main__":
         use_sample=not args.live,
         epochs=args.epochs,
         sequence_length=args.seq_len,
+        hidden_dim=args.hidden_dim,
+        num_layers=args.num_layers,
+        learning_rate=args.learning_rate,
         output_dir=args.out_dir,
     )
