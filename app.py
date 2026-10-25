@@ -82,6 +82,22 @@ data_mode = st.sidebar.radio(
     help="Curated sample includes pre-matched FinBERT sentiment for zero-dependency instant demo.",
 )
 
+history_period_choice = st.sidebar.selectbox(
+    "Historical Data Duration",
+    ["1 Year", "2 Years", "3 Years", "4 Years", "5 Years"],
+    index=1,
+    help="Select historical time range used for market feature calculation, training, and testing (Applies to Live Data).",
+)
+
+period_map = {
+    "1 Year": "1y",
+    "2 Years": "2y",
+    "3 Years": "3y",
+    "4 Years": "4y",
+    "5 Years": "5y",
+}
+selected_period = period_map[history_period_choice]
+
 target_mode_choice = st.sidebar.radio(
     "Target Prediction Variable",
     ["Price ($ Close)", "Daily Percentage Change (%)"],
@@ -113,18 +129,18 @@ run_button = st.sidebar.button("🚀 Run Forecast & Benchmark", type="primary")
 
 # --- Data Loading Function ---
 @st.cache_data(ttl=3600, show_spinner=False)
-def get_data(selected_ticker: str, mode: str):
+def get_data(selected_ticker: str, mode: str, period: str = "2y"):
     if "Sample" in mode:
         stock_df, news_df = load_sample_data(symbol=selected_ticker)
         return stock_df, news_df
     else:
-        stock_df = fetch_yfinance_data(selected_ticker, period="2y", interval="1d")
+        stock_df = fetch_yfinance_data(selected_ticker, period=period, interval="1d")
         news_df = fetch_live_news_data(symbol=selected_ticker)
         return stock_df, news_df
 
 
 with st.spinner("Loading dataset and calculating indicators..."):
-    stock_df, news_df = get_data(ticker, data_mode)
+    stock_df, news_df = get_data(ticker, data_mode, selected_period)
     tech_df = calculate_technical_indicators(stock_df)
     daily_sentiment_df = aggregate_daily_sentiment(news_df)
     has_news_data = not news_df.empty and not daily_sentiment_df.empty

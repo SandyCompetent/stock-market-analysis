@@ -1,12 +1,12 @@
 # 📈 Stock Market AI: Multimodal Forecasting Platform
 
-[![Python](https://img.shields.io/badge/Python-3.9%2B-blue.svg)](https://www.python.org/)
-[![PyTorch](https://img.shields.io/badge/PyTorch-2.0%2B-EE4C2C.svg)](https://pytorch.org/)
-[![Transformers](https://img.shields.io/badge/HuggingFace-FinBERT-FFD21E.svg)](https://huggingface.co/ProsusAI/finbert)
-[![Streamlit](https://img.shields.io/badge/Streamlit-Interactive_App-FF4B4B.svg)](https://stock-market-analysis-sandy.streamlit.app/)
-[![Portfolio Showcase](https://img.shields.io/badge/Portfolio-Live_Showcase-8A2BE2.svg)](https://sandycompetent.github.io/stock-market-analysis/)
-[![CI](https://github.com/SandyCompetent/stock-market-analysis/actions/workflows/ci.yml/badge.svg)](https://github.com/SandyCompetent/stock-market-analysis/actions/workflows/ci.yml)
-[![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+<a href="https://www.python.org/" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/badge/Python-3.9%2B-blue.svg" alt="Python"></a>
+<a href="https://pytorch.org/" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/badge/PyTorch-2.0%2B-EE4C2C.svg" alt="PyTorch"></a>
+<a href="https://huggingface.co/ProsusAI/finbert" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/badge/HuggingFace-FinBERT-FFD21E.svg" alt="Transformers"></a>
+<a href="https://stock-market-analysis-sandy.streamlit.app/" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/badge/Streamlit-Interactive_App-FF4B4B.svg" alt="Streamlit"></a>
+<a href="https://sandycompetent.github.io/stock-market-analysis/" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/badge/Portfolio-Live_Showcase-8A2BE2.svg" alt="Portfolio Showcase"></a>
+<a href="https://github.com/SandyCompetent/stock-market-analysis/actions/workflows/ci.yml" target="_blank" rel="noopener noreferrer"><img src="https://github.com/SandyCompetent/stock-market-analysis/actions/workflows/ci.yml/badge.svg" alt="CI"></a>
+<a href="LICENSE" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/badge/License-MIT-green.svg" alt="License"></a>
 
 An end-to-end Machine Learning and NLP platform for financial asset forecasting. This project bridges **quantitative technical indicators** with **contextual financial news sentiment** extracted via **FinBERT** (`ProsusAI/finbert`), comparing deep recurrent neural networks (**LSTM, GRU**), statistical models (**ARIMA**), non-linear regression (**SVR**), and baseline benchmarks on both raw price and daily percentage return targets.
 
@@ -22,7 +22,7 @@ An end-to-end Machine Learning and NLP platform for financial asset forecasting.
   - **Support Vector Regressor (SVR)**: Non-linear kernel regression on flattened historical sequences.
   - **ARIMA**: Autoregressive Integrated Moving Average time-series model.
   - **Naive Persistence**: Today's forecast equals yesterday's observation ($P_t = P_{t-1}$).
-- **Interactive Streamlit Web Dashboard**: Explore technical indicators, examine news headlines with sentiment classifications, and visualize model forecasts live with interactive sliders. ([Live App Demo](https://stock-market-analysis-sandy.streamlit.app/))
+- **Interactive Streamlit Web Dashboard**: Explore technical indicators, examine news headlines with sentiment classifications, and visualize model forecasts live with interactive sliders. (<a href="https://stock-market-analysis-sandy.streamlit.app/" target="_blank" rel="noopener noreferrer">Live App Demo</a>)
 - **Zero-Config Demo Execution**: Includes lightweight, curated sample datasets (`data/sample/`) for instantaneous, offline testing without needing external API keys.
 
 ---
@@ -83,7 +83,7 @@ Below is an evaluation comparison on 2 years of daily data with a 45-day lookbac
 
 ### 🌐 Live Streamlit App
 Access the live deployed interactive application directly in your browser:
-👉 **[stock-market-analysis-sandy.streamlit.app](https://stock-market-analysis-sandy.streamlit.app/)**
+👉 **<a href="https://stock-market-analysis-sandy.streamlit.app/" target="_blank" rel="noopener noreferrer">stock-market-analysis-sandy.streamlit.app</a>**
 
 ### 1. Clone & Install
 ```bash

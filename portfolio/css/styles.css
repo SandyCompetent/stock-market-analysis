@@ -84,8 +84,9 @@ img {
   position: sticky;
   top: 0;
   z-index: 100;
-  background: rgba(7, 13, 24, 0.85);
-  backdrop-filter: blur(14px);
+  background: rgba(7, 13, 24, 0.88);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
   border-bottom: 1px solid var(--border-color);
   transition: var(--transition-normal);
 }
@@ -95,6 +96,7 @@ img {
   align-items: center;
   justify-content: space-between;
   height: 72px;
+  gap: 16px;
 }
 
 .brand {
@@ -104,18 +106,23 @@ img {
   font-size: 1.25rem;
   font-weight: 700;
   letter-spacing: -0.02em;
+  white-space: nowrap;
+  flex-shrink: 0;
+  text-decoration: none;
+  color: var(--text-primary);
 }
 
 .brand-icon {
-  width: 32px;
-  height: 32px;
+  width: 34px;
+  height: 34px;
   background: linear-gradient(135deg, var(--accent-cyan), var(--accent-indigo));
   border-radius: var(--radius-sm);
   display: flex;
   align-items: center;
   justify-content: center;
   color: #fff;
-  font-size: 1rem;
+  font-size: 1.1rem;
+  flex-shrink: 0;
 }
 
 .brand-highlight {
@@ -127,15 +134,24 @@ img {
 .nav-menu {
   display: flex;
   align-items: center;
-  gap: 28px;
+  gap: 22px;
   list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-menu li {
+  white-space: nowrap;
 }
 
 .nav-link {
-  font-size: 0.95rem;
+  font-size: 0.92rem;
   font-weight: 500;
   color: var(--text-secondary);
+  white-space: nowrap;
+  text-decoration: none;
   transition: color var(--transition-fast);
+  padding: 4px 0;
 }
 
 .nav-link:hover, .nav-link.active {
@@ -145,19 +161,23 @@ img {
 .nav-actions {
   display: flex;
   align-items: center;
-  gap: 16px;
+  gap: 10px;
+  flex-shrink: 0;
 }
 
 .btn {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  padding: 10px 20px;
-  font-size: 0.9rem;
+  padding: 8px 16px;
+  font-size: 0.88rem;
   font-weight: 600;
   border-radius: var(--radius-md);
   border: 1px solid transparent;
   cursor: pointer;
+  white-space: nowrap;
+  flex-shrink: 0;
+  text-decoration: none;
   transition: all var(--transition-fast);
 }
 
@@ -170,6 +190,20 @@ img {
 .btn-primary:hover {
   transform: translateY(-2px);
   box-shadow: 0 6px 20px rgba(6, 182, 212, 0.45);
+}
+
+.btn-streamlit {
+  background: rgba(255, 75, 75, 0.12);
+  border: 1px solid rgba(255, 75, 75, 0.4);
+  color: #ff4b4b;
+}
+
+.btn-streamlit:hover {
+  background: rgba(255, 75, 75, 0.22);
+  border-color: #ff4b4b;
+  color: #ffffff;
+  box-shadow: 0 0 16px rgba(255, 75, 75, 0.35);
+  transform: translateY(-1px);
 }
 
 .btn-outline {
@@ -190,6 +224,7 @@ img {
   color: var(--text-primary);
   font-size: 1.5rem;
   cursor: pointer;
+  padding: 4px;
 }
 
 /* --- Hero Section --- */
@@ -715,7 +750,7 @@ img {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .nav-menu {
     display: none;
     position: absolute;
@@ -727,6 +762,7 @@ img {
     flex-direction: column;
     padding: 20px;
     gap: 16px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
   }
 
   .nav-menu.open {
