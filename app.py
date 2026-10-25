@@ -82,6 +82,20 @@ data_mode = st.sidebar.radio(
     help="Curated sample includes pre-matched FinBERT sentiment for zero-dependency instant demo.",
 )
 
+data_interval_choice = st.sidebar.selectbox(
+    "Data Frequency / Interval",
+    ["1 Day (1d)", "1 Hour (1h)", "1 Week (1wk)"],
+    index=0,
+    help="Select bar interval frequency. Note: 1 Hour data is restricted to max 2 Years (730 days) by Yahoo Finance API.",
+)
+
+interval_map = {
+    "1 Day (1d)": "1d",
+    "1 Hour (1h)": "1h",
+    "1 Week (1wk)": "1wk",
+}
+selected_interval = interval_map[data_interval_choice]
+
 history_period_choice = st.sidebar.selectbox(
     "Historical Data Duration",
     ["1 Year", "2 Years", "3 Years", "4 Years", "5 Years"],
@@ -98,6 +112,13 @@ period_map = {
 }
 selected_period = period_map[history_period_choice]
 
+# Enforce yfinance API limit: 1h interval is restricted to max 2 years (730d)
+if selected_interval == "1h" and selected_period in ["3y", "4y", "5y"]:
+    st.sidebar.warning(
+        "⚠️ Yahoo Finance API limits **1 Hour** interval data to **2 Years** max. Capping duration to **2 Years**."
+    )
+    selected_period = "2y"
+
 target_mode_choice = st.sidebar.radio(
     "Target Prediction Variable",
     ["Price ($ Close)", "Daily Percentage Change (%)"],
@@ -108,7 +129,7 @@ target_mode = (
 )
 
 seq_len = st.sidebar.slider(
-    "Lookback Window (Days)", min_value=15, max_value=90, value=45, step=5
+    "Lookback Window (Sequence Length)", min_value=15, max_value=90, value=45, step=5
 )
 epochs = st.sidebar.slider(
     "LSTM Training Epochs", min_value=5, max_value=50, value=25, step=5
@@ -129,18 +150,22 @@ run_button = st.sidebar.button("🚀 Run Forecast & Benchmark", type="primary")
 
 # --- Data Loading Function ---
 @st.cache_data(ttl=3600, show_spinner=False)
-def get_data(selected_ticker: str, mode: str, period: str = "2y"):
+def get_data(
+    selected_ticker: str, mode: str, period: str = "2y", interval: str = "1d"
+):
     if "Sample" in mode:
         stock_df, news_df = load_sample_data(symbol=selected_ticker)
         return stock_df, news_df
     else:
-        stock_df = fetch_yfinance_data(selected_ticker, period=period, interval="1d")
+        stock_df = fetch_yfinance_data(
+            selected_ticker, period=period, interval=interval
+        )
         news_df = fetch_live_news_data(symbol=selected_ticker)
         return stock_df, news_df
 
 
 with st.spinner("Loading dataset and calculating indicators..."):
-    stock_df, news_df = get_data(ticker, data_mode, selected_period)
+    stock_df, news_df = get_data(ticker, data_mode, selected_period, selected_interval)
     tech_df = calculate_technical_indicators(stock_df)
     daily_sentiment_df = aggregate_daily_sentiment(news_df)
     has_news_data = not news_df.empty and not daily_sentiment_df.empty
@@ -158,7 +183,7 @@ avg_sentiment_val = (
 )
 
 col1.metric("Latest Close", f"${latest_close:.2f}", f"{pct_change_day:+.2f}%")
-col2.metric("Trading Days Analyzed", f"{len(tech_df)} days")
+col2.metric("Trading Bars Analyzed", f"{len(tech_df)} bars ({selected_interval})")
 col3.metric("News Headlines Processed", f"{len(news_df)} articles")
 col4.metric("Avg Sentiment Score", f"{avg_sentiment_val:+.3f}", "FinBERT Polarity")
 
