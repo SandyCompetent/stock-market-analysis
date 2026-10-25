@@ -60,10 +60,11 @@ tuner_results/
 *.pth
 *.pkl
 
-# Ignore all CSV and PNG files by default, but permit data/sample/*.csv
+# Ignore all CSV and PNG files by default, but permit data/sample/*.csv and portfolio assets
 *.csv
 *.png
 !data/sample/*.csv
+!portfolio/assets/img/*
 
 # Legacy untracked folder
 stock-data-collection/
