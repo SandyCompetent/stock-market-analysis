@@ -35,7 +35,7 @@ document.addEventListener("DOMContentLoaded", () => {
       mockupFrame.classList.add("desktop-mode");
       mockupImage.src = "assets/img/streamlit-desktop.png";
       mockupImage.alt = "Desktop Streamlit Web Application";
-      if (mockupUrl) mockupUrl.textContent = "localhost:8501 (Desktop 1440x900)";
+      if (mockupUrl) mockupUrl.textContent = "stock-market-analysis-sandy.streamlit.app (Desktop 1440x900)";
     });
 
     btnMobile.addEventListener("click", () => {
@@ -45,7 +45,7 @@ document.addEventListener("DOMContentLoaded", () => {
       mockupFrame.classList.add("mobile-mode");
       mockupImage.src = "assets/img/streamlit-mobile.png";
       mockupImage.alt = "Mobile Streamlit Web Application";
-      if (mockupUrl) mockupUrl.textContent = "localhost:8501 (Mobile 390x844)";
+      if (mockupUrl) mockupUrl.textContent = "stock-market-analysis-sandy.streamlit.app (Mobile 390x844)";
     });
   }
 

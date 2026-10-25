@@ -3,7 +3,7 @@
 [![Python](https://img.shields.io/badge/Python-3.9%2B-blue.svg)](https://www.python.org/)
 [![PyTorch](https://img.shields.io/badge/PyTorch-2.0%2B-EE4C2C.svg)](https://pytorch.org/)
 [![Transformers](https://img.shields.io/badge/HuggingFace-FinBERT-FFD21E.svg)](https://huggingface.co/ProsusAI/finbert)
-[![Streamlit](https://img.shields.io/badge/Streamlit-Interactive_App-FF4B4B.svg)](https://stock-market-analysis.streamlit.app)
+[![Streamlit](https://img.shields.io/badge/Streamlit-Interactive_App-FF4B4B.svg)](https://stock-market-analysis-sandy.streamlit.app/)
 [![Portfolio Showcase](https://img.shields.io/badge/Portfolio-Live_Showcase-8A2BE2.svg)](https://sandycompetent.github.io/stock-market-analysis/)
 [![CI](https://github.com/SandyCompetent/stock-market-analysis/actions/workflows/ci.yml/badge.svg)](https://github.com/SandyCompetent/stock-market-analysis/actions/workflows/ci.yml)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
@@ -22,7 +22,7 @@ An end-to-end Machine Learning and NLP platform for financial asset forecasting.
   - **Support Vector Regressor (SVR)**: Non-linear kernel regression on flattened historical sequences.
   - **ARIMA**: Autoregressive Integrated Moving Average time-series model.
   - **Naive Persistence**: Today's forecast equals yesterday's observation ($P_t = P_{t-1}$).
-- **Interactive Streamlit Web Dashboard**: Explore technical indicators, examine news headlines with sentiment classifications, and visualize model forecasts live with interactive sliders.
+- **Interactive Streamlit Web Dashboard**: Explore technical indicators, examine news headlines with sentiment classifications, and visualize model forecasts live with interactive sliders. ([Live App Demo](https://stock-market-analysis-sandy.streamlit.app/))
 - **Zero-Config Demo Execution**: Includes lightweight, curated sample datasets (`data/sample/`) for instantaneous, offline testing without needing external API keys.
 
 ---
@@ -80,6 +80,10 @@ Below is an evaluation comparison on 2 years of daily data with a 45-day lookbac
 ---
 
 ## 🚀 Quick Start
+
+### 🌐 Live Streamlit App
+Access the live deployed interactive application directly in your browser:
+👉 **[stock-market-analysis-sandy.streamlit.app](https://stock-market-analysis-sandy.streamlit.app/)**
 
 ### 1. Clone & Install
 ```bash
