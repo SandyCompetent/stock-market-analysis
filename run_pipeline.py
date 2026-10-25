@@ -33,9 +33,11 @@ def run(
     num_layers: int = 2,
     learning_rate: float = 0.001,
     output_dir: str = "output",
+    save_output: bool = True,
 ):
     out_path = Path(output_dir)
-    out_path.mkdir(parents=True, exist_ok=True)
+    if save_output:
+        out_path.mkdir(parents=True, exist_ok=True)
 
     mode = TargetMode.PRICE if target_mode.lower() == "price" else TargetMode.PERCENTAGE
     cfg = PipelineConfig(symbol=symbol, target_mode=mode)
@@ -132,28 +134,39 @@ def run(
     is_pct = mode == TargetMode.PERCENTAGE
     leaderboard = compare_models(predictions, y_test_original, is_percentage=is_pct)
 
-    print("\n" + "=" * 65)
-    print("               🏆 MODEL PERFORMANCE LEADERBOARD")
-    print("=" * 65)
+    # Calculate dataset date ranges for the report
+    split_idx = int(len(tech_df) * 0.8)
+    train_dates = tech_df.index[:split_idx]
+    train_start = train_dates.min().strftime("%Y-%m-%d") if not train_dates.empty else "Unknown"
+    train_end = train_dates.max().strftime("%Y-%m-%d") if not train_dates.empty else "Unknown"
+    test_start = test_dates.min().strftime("%Y-%m-%d") if not test_dates.empty else "Unknown"
+    test_end = test_dates.max().strftime("%Y-%m-%d") if not test_dates.empty else "Unknown"
+
+    print("\n" + "=" * 80)
+    print(f"    🏆 MODEL PERFORMANCE LEADERBOARD | {symbol} | Predicting: {target_mode.capitalize()}    ")
+    print(f"    📅 Train Period: {train_start} to {train_end} | Test Period (Predicted): {test_start} to {test_end}")
+    print("=" * 80)
     print(leaderboard.to_string())
-    print("=" * 65 + "\n")
+    print("=" * 80 + "\n")
 
-    # 7. Save Comparison Plot
-    plot_file = out_path / f"{symbol.lower()}-{target_mode}-forecast-comparison.png"
-    target_lbl = "Price ($)" if mode == TargetMode.PRICE else "Percentage Change (%)"
-    fig = plot_model_comparison(
-        dates=test_dates,
-        actual=y_test_original,
-        predictions=predictions,
-        symbol=symbol,
-        target_label=target_lbl,
-        save_path=str(plot_file),
-    )
-    logger.info(f"Comparison plot saved to: {plot_file}")
+    # 7. Save Results (if enabled)
+    if save_output:
+        plot_file = out_path / f"{symbol.lower()}-{target_mode}-forecast-comparison.png"
+        target_lbl = "Price ($)" if mode == TargetMode.PRICE else "Percentage Change (%)"
+        fig = plot_model_comparison(
+            dates=test_dates,
+            actual=y_test_original,
+            predictions=predictions,
+            symbol=symbol,
+            target_label=target_lbl,
+            save_path=str(plot_file),
+        )
+        logger.info(f"Comparison plot saved to: {plot_file}")
 
-    leaderboard_csv = out_path / f"{symbol.lower()}-{target_mode}-leaderboard.csv"
-    leaderboard.to_csv(leaderboard_csv)
-    logger.info(f"Leaderboard metrics saved to: {leaderboard_csv}")
+        leaderboard_csv = out_path / f"{symbol.lower()}-{target_mode}-leaderboard.csv"
+        leaderboard.to_csv(leaderboard_csv)
+        logger.info(f"Leaderboard metrics saved to: {leaderboard_csv}")
+    
     logger.info("Pipeline execution completed successfully!")
 
 
@@ -190,6 +203,11 @@ if __name__ == "__main__":
         "--learning-rate", type=float, default=0.001, help="Learning rate for AdamW"
     )
     parser.add_argument(
+        "--no-save",
+        action="store_true",
+        help="Do not save plots and CSV leaderboard to output directory",
+    )
+    parser.add_argument(
         "--out-dir", type=str, default="output", help="Output directory"
     )
 
@@ -204,4 +222,5 @@ if __name__ == "__main__":
         num_layers=args.num_layers,
         learning_rate=args.learning_rate,
         output_dir=args.out_dir,
+        save_output=not args.no_save,
     )

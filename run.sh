@@ -52,14 +52,34 @@ case $choice in
     2)
         read -p "Enter ticker symbol [default: NVDA]: " ticker
         ticker=${ticker:-NVDA}
-        echo -e "\n${BLUE}Running CLI Pipeline with Sample Data for $ticker (Predicting Price, 25 Epochs)...${NC}"
-        python run_pipeline.py --symbol "$ticker" --target price --epochs 25
+        read -p "Target mode (price/percentage) [default: price]: " target_mode
+        target_mode=${target_mode:-price}
+        read -p "Save output to disk? (y/n) [default: n]: " save_output
+        save_output=${save_output:-n}
+
+        save_flag="--no-save"
+        if [[ "$save_output" =~ ^[Yy]$ ]]; then
+            save_flag=""
+        fi
+
+        echo -e "\n${BLUE}Running CLI Pipeline with Sample Data for $ticker (Predicting ${target_mode}, 25 Epochs)...${NC}"
+        python run_pipeline.py --symbol "$ticker" --target "$target_mode" $save_flag --epochs 25
         ;;
     3)
         read -p "Enter ticker symbol [default: AAPL]: " ticker
         ticker=${ticker:-AAPL}
-        echo -e "\n${BLUE}Running CLI Pipeline with Live Data for $ticker (25 Epochs)...${NC}"
-        python run_pipeline.py --symbol "$ticker" --live --epochs 25
+        read -p "Target mode (price/percentage) [default: price]: " target_mode
+        target_mode=${target_mode:-price}
+        read -p "Save output to disk? (y/n) [default: n]: " save_output
+        save_output=${save_output:-n}
+
+        save_flag="--no-save"
+        if [[ "$save_output" =~ ^[Yy]$ ]]; then
+            save_flag=""
+        fi
+
+        echo -e "\n${BLUE}Running CLI Pipeline with Live Data for $ticker (Predicting ${target_mode}, 25 Epochs)...${NC}"
+        python run_pipeline.py --symbol "$ticker" --target "$target_mode" --live $save_flag --epochs 25
         ;;
     4)
         echo -e "\n${BLUE}Running Unit Tests...${NC}"
