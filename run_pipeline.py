@@ -17,7 +17,9 @@ from src.models.lstm import LSTMTrainer
 from src.sentiment.finbert import aggregate_daily_sentiment
 from src.utils.plotting import plot_model_comparison
 
-logging.basicConfig(level=logging.INFO, format="%(asctime)s [%(levelname)s] %(message)s")
+logging.basicConfig(
+    level=logging.INFO, format="%(asctime)s [%(levelname)s] %(message)s"
+)
 logger = logging.getLogger("PipelineRunner")
 
 
@@ -36,7 +38,9 @@ def run(
     cfg = PipelineConfig(symbol=symbol, target_mode=mode)
     target_col = cfg.get_target_column()
 
-    logger.info(f"=== Starting Stock Market AI Pipeline for {symbol} (Target: {target_col}) ===")
+    logger.info(
+        f"=== Starting Stock Market AI Pipeline for {symbol} (Target: {target_col}) ==="
+    )
 
     # 1. Load Data
     if use_sample:
@@ -61,12 +65,22 @@ def run(
     enhanced_feats = cfg.get_features(enhanced=True)
 
     logger.info("Building time-series sequences...")
-    X_tr_b, X_te_b, y_tr_b, y_te_b, scaler_b, test_dates = prepare_time_series_sequences(
-        tech_df, baseline_feats, target_col, sequence_length=sequence_length, test_size=0.2
+    X_tr_b, X_te_b, y_tr_b, y_te_b, scaler_b, test_dates = (
+        prepare_time_series_sequences(
+            tech_df,
+            baseline_feats,
+            target_col,
+            sequence_length=sequence_length,
+            test_size=0.2,
+        )
     )
 
     X_tr_e, X_te_e, y_tr_e, y_te_e, scaler_e, _ = prepare_time_series_sequences(
-        enhanced_df, enhanced_feats, target_col, sequence_length=sequence_length, test_size=0.2
+        enhanced_df,
+        enhanced_feats,
+        target_col,
+        sequence_length=sequence_length,
+        test_size=0.2,
     )
 
     y_test_original = scaler_b.inverse_transform(y_te_b.reshape(-1, 1)).flatten()
@@ -78,14 +92,18 @@ def run(
     logger.info("Training Baseline LSTM (Technical Features Only)...")
     lstm_b = LSTMTrainer(input_dim=len(baseline_feats), hidden_dim=48, num_layers=2)
     lstm_b.fit(X_tr_b, y_tr_b, epochs=epochs, batch_size=32, verbose=False)
-    preds_b = scaler_b.inverse_transform(lstm_b.predict(X_te_b).reshape(-1, 1)).flatten()
+    preds_b = scaler_b.inverse_transform(
+        lstm_b.predict(X_te_b).reshape(-1, 1)
+    ).flatten()
     predictions["Baseline LSTM"] = preds_b
 
     # B. Enhanced LSTM
     logger.info("Training Enhanced LSTM (Technical + FinBERT Sentiment)...")
     lstm_e = LSTMTrainer(input_dim=len(enhanced_feats), hidden_dim=48, num_layers=2)
     lstm_e.fit(X_tr_e, y_tr_e, epochs=epochs, batch_size=32, verbose=False)
-    preds_e = scaler_e.inverse_transform(lstm_e.predict(X_te_e).reshape(-1, 1)).flatten()
+    preds_e = scaler_e.inverse_transform(
+        lstm_e.predict(X_te_e).reshape(-1, 1)
+    ).flatten()
     predictions["Enhanced LSTM (FinBERT)"] = preds_e
 
     # C. SVM
@@ -138,7 +156,9 @@ def run(
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Run Stock Forecasting Pipeline")
-    parser.add_argument("--symbol", type=str, default="NVDA", help="Asset ticker symbol")
+    parser.add_argument(
+        "--symbol", type=str, default="NVDA", help="Asset ticker symbol"
+    )
     parser.add_argument(
         "--target",
         type=str,
@@ -147,11 +167,19 @@ if __name__ == "__main__":
         help="Target mode ('price' or 'percentage')",
     )
     parser.add_argument(
-        "--live", action="store_true", help="Fetch live data via yfinance instead of sample"
+        "--live",
+        action="store_true",
+        help="Fetch live data via yfinance instead of sample",
     )
-    parser.add_argument("--epochs", type=int, default=25, help="Number of training epochs")
-    parser.add_argument("--seq-len", type=int, default=45, help="Sequence lookback window")
-    parser.add_argument("--out-dir", type=str, default="output", help="Output directory")
+    parser.add_argument(
+        "--epochs", type=int, default=25, help="Number of training epochs"
+    )
+    parser.add_argument(
+        "--seq-len", type=int, default=45, help="Sequence lookback window"
+    )
+    parser.add_argument(
+        "--out-dir", type=str, default="output", help="Output directory"
+    )
 
     args = parser.parse_args()
     run(

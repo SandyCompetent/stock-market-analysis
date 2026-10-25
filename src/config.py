@@ -8,6 +8,7 @@ from typing import List
 
 class TargetMode(str, Enum):
     """Target prediction modes."""
+
     PRICE = "Close"
     PERCENTAGE = "Pct_Change"
 
@@ -15,6 +16,7 @@ class TargetMode(str, Enum):
 @dataclass
 class ModelConfig:
     """Hyperparameters and architecture configuration for forecasting models."""
+
     sequence_length: int = 60
     test_size: float = 0.2
     epochs: int = 40
@@ -29,39 +31,54 @@ class ModelConfig:
 @dataclass
 class PipelineConfig:
     """Global configuration for the data, sentiment, and modeling pipelines."""
+
     # Target stock symbol
     symbol: str = "NVDA"
     target_mode: TargetMode = TargetMode.PRICE
 
     # Data paths
-    project_root: Path = field(default_factory=lambda: Path(__file__).resolve().parent.parent)
-    sample_data_dir: Path = field(default_factory=lambda: Path(__file__).resolve().parent.parent / "data" / "sample")
-    raw_data_dir: Path = field(default_factory=lambda: Path(__file__).resolve().parent.parent / "data" / "raw")
-    output_dir: Path = field(default_factory=lambda: Path(__file__).resolve().parent.parent / "output")
+    project_root: Path = field(
+        default_factory=lambda: Path(__file__).resolve().parent.parent
+    )
+    sample_data_dir: Path = field(
+        default_factory=lambda: Path(__file__).resolve().parent.parent
+        / "data"
+        / "sample"
+    )
+    raw_data_dir: Path = field(
+        default_factory=lambda: Path(__file__).resolve().parent.parent / "data" / "raw"
+    )
+    output_dir: Path = field(
+        default_factory=lambda: Path(__file__).resolve().parent.parent / "output"
+    )
 
     # Feature definitions
-    baseline_features: List[str] = field(default_factory=lambda: [
-        "Close",
-        "SMA_50",
-        "RSI",
-        "MACD_line",
-        "BB_width",
-        "OBV",
-        "Volume",
-    ])
+    baseline_features: List[str] = field(
+        default_factory=lambda: [
+            "Close",
+            "SMA_50",
+            "RSI",
+            "MACD_line",
+            "BB_width",
+            "OBV",
+            "Volume",
+        ]
+    )
 
-    enhanced_features: List[str] = field(default_factory=lambda: [
-        "Close",
-        "SMA_50",
-        "RSI",
-        "MACD_line",
-        "BB_width",
-        "OBV",
-        "Volume",
-        "Avg_Sentiment",
-        "Sentiment_Ratio",
-        "News_Count",
-    ])
+    enhanced_features: List[str] = field(
+        default_factory=lambda: [
+            "Close",
+            "SMA_50",
+            "RSI",
+            "MACD_line",
+            "BB_width",
+            "OBV",
+            "Volume",
+            "Avg_Sentiment",
+            "Sentiment_Ratio",
+            "News_Count",
+        ]
+    )
 
     model_config: ModelConfig = field(default_factory=ModelConfig)
 

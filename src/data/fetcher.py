@@ -1,10 +1,7 @@
 """Data fetching and merging utility for yfinance and AlphaVantage APIs."""
 
-import glob
-import json
 import logging
 import os
-from datetime import date
 from pathlib import Path
 from typing import List, Optional, Tuple, Union
 
@@ -34,7 +31,9 @@ def fetch_yfinance_data(
     Returns:
         DataFrame indexed by Date with columns ['Open', 'High', 'Low', 'Close', 'Volume'].
     """
-    logger.info(f"Fetching data for {symbol} (period={period}, {start_date} to {end_date})...")
+    logger.info(
+        f"Fetching data for {symbol} (period={period}, {start_date} to {end_date})..."
+    )
     ticker = yf.Ticker(symbol)
     if start_date and end_date:
         df = ticker.history(start=start_date, end=end_date, interval=interval)
@@ -126,7 +125,9 @@ def fetch_alphavantage_intraday_month(
         "datatype": "csv",
     }
     try:
-        res = requests.get("https://www.alphavantage.co/query", params=params, timeout=30)
+        res = requests.get(
+            "https://www.alphavantage.co/query", params=params, timeout=30
+        )
         res.raise_for_status()
         if "Error Message" in res.text or "Information" in res.text:
             logger.warning(f"AlphaVantage API response error: {res.text[:200]}")
@@ -184,5 +185,7 @@ def merge_and_sort_csvs(
     output_path = Path(output_file)
     output_path.parent.mkdir(parents=True, exist_ok=True)
     merged.to_csv(output_path, index=False)
-    logger.info(f"Successfully merged {len(csv_files)} files into {output_path} ({len(merged)} rows)")
+    logger.info(
+        f"Successfully merged {len(csv_files)} files into {output_path} ({len(merged)} rows)"
+    )
     return merged

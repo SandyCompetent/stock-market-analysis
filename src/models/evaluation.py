@@ -84,7 +84,9 @@ def compare_models(
     df.set_index("Model", inplace=True)
 
     # Rank primarily by RMSE ascending, then Directional Accuracy descending
-    df.sort_values(by=["RMSE", "Directional Accuracy (%)"], ascending=[True, False], inplace=True)
+    df.sort_values(
+        by=["RMSE", "Directional Accuracy (%)"], ascending=[True, False], inplace=True
+    )
     df["Rank"] = range(1, len(df) + 1)
 
     cols = ["Rank", "RMSE", "MAE", "MAPE (%)", "Directional Accuracy (%)"]

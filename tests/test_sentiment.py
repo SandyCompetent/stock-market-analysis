@@ -29,7 +29,11 @@ def test_aggregate_daily_sentiment():
     mock_data = pd.DataFrame(
         {
             "Date": ["2023-01-01", "2023-01-01", "2023-01-02"],
-            "title": ["Great earnings beat", "Bullish rally continues", "Stock slumps today"],
+            "title": [
+                "Great earnings beat",
+                "Bullish rally continues",
+                "Stock slumps today",
+            ],
             "sentiment_score": [0.8, 0.6, -0.5],
             "sentiment_label": ["positive", "positive", "negative"],
         }

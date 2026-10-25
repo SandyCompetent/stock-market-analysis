@@ -2,7 +2,7 @@
 
 import copy
 import logging
-from typing import Dict, List, Optional, Tuple
+from typing import Dict, List, Optional
 
 import numpy as np
 import torch
@@ -106,7 +106,9 @@ class LSTMTrainer:
             val_loader = DataLoader(val_ds, batch_size=batch_size, shuffle=False)
 
         criterion = nn.MSELoss()
-        optimizer = torch.optim.AdamW(self.model.parameters(), lr=learning_rate, weight_decay=1e-4)
+        optimizer = torch.optim.AdamW(
+            self.model.parameters(), lr=learning_rate, weight_decay=1e-4
+        )
         scheduler = torch.optim.lr_scheduler.ReduceLROnPlateau(
             optimizer, mode="min", factor=0.5, patience=3
         )
@@ -151,7 +153,9 @@ class LSTMTrainer:
             scheduler.step(val_epoch_loss)
 
             if verbose and (epoch % 5 == 0 or epoch == 1 or epoch == epochs):
-                logger.info(f"Epoch {epoch}/{epochs} - Train Loss: {train_epoch_loss:.5f} | Val Loss: {val_epoch_loss:.5f}")
+                logger.info(
+                    f"Epoch {epoch}/{epochs} - Train Loss: {train_epoch_loss:.5f} | Val Loss: {val_epoch_loss:.5f}"
+                )
 
             # Early stopping check
             monitored_loss = val_epoch_loss if val_loader else train_epoch_loss

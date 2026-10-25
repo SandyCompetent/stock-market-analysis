@@ -64,8 +64,10 @@ def test_prepare_time_series_sequences():
 
     seq_len = 20
     test_size = 0.2
-    X_train, X_test, y_train, y_test, scaler, test_dates = prepare_time_series_sequences(
-        tech_df, features, "Close", sequence_length=seq_len, test_size=test_size
+    X_train, X_test, y_train, y_test, scaler, test_dates = (
+        prepare_time_series_sequences(
+            tech_df, features, "Close", sequence_length=seq_len, test_size=test_size
+        )
     )
 
     assert X_train.ndim == 3

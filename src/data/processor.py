@@ -60,7 +60,9 @@ def calculate_technical_indicators(df: pd.DataFrame) -> pd.DataFrame:
     data["BB_width"] = (data["BB_high"] - data["BB_low"]) / (rolling_mean_20 + 1e-9)
 
     # 6. On-Balance Volume (OBV)
-    direction = np.where(close > close.shift(1), 1, np.where(close < close.shift(1), -1, 0))
+    direction = np.where(
+        close > close.shift(1), 1, np.where(close < close.shift(1), -1, 0)
+    )
     data["OBV"] = (direction * data["Volume"]).fillna(0).cumsum()
 
     # Fill any initial rolling edge cases
@@ -159,7 +161,9 @@ def prepare_time_series_sequences(
     # Chronological train/test split index
     split_idx = int(total_samples * (1 - test_size))
     train_df = df_sorted.iloc[:split_idx]
-    test_df = df_sorted.iloc[split_idx - sequence_length :]  # include lookback for first test point
+    test_df = df_sorted.iloc[
+        split_idx - sequence_length :
+    ]  # include lookback for first test point
 
     # Fit scalers strictly on training data
     feature_scaler = MinMaxScaler(feature_range=(0, 1))

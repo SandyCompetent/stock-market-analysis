@@ -1,9 +1,8 @@
 """FinBERT sentiment analyzer and daily aggregation engine."""
 
 import logging
-from typing import List, Optional, Tuple
+from typing import List, Tuple
 
-import numpy as np
 import pandas as pd
 import torch
 
@@ -44,7 +43,9 @@ class FinBERTSentimentAnalyzer:
 
             logger.info(f"Loading {self.model_name} onto {self.device}...")
             self.tokenizer = AutoTokenizer.from_pretrained(self.model_name)
-            self.model = AutoModelForSequenceClassification.from_pretrained(self.model_name)
+            self.model = AutoModelForSequenceClassification.from_pretrained(
+                self.model_name
+            )
             self.model.to(self.device)
             self.model.eval()
 
@@ -103,7 +104,9 @@ class FinBERTSentimentAnalyzer:
                 polarity = (probs[:, self.pos_id] - probs[:, self.neg_id]).cpu().numpy()
 
                 for p, c, s in zip(preds.cpu().numpy(), confs.cpu().numpy(), polarity):
-                    all_sentiments.append(self.sentiment_map.get(int(p), "neutral").lower())
+                    all_sentiments.append(
+                        self.sentiment_map.get(int(p), "neutral").lower()
+                    )
                     all_confidences.append(float(c))
                     all_scores.append(float(s))
             except Exception as e:
@@ -119,8 +122,34 @@ class FinBERTSentimentAnalyzer:
         self, texts: List[str]
     ) -> Tuple[List[str], List[float], List[float]]:
         """Fast financial keyword sentiment scoring when transformer models are unavailable."""
-        pos_words = {"surge", "gain", "soar", "jump", "record", "profit", "bull", "rally", "growth", "beat", "high", "upgrade"}
-        neg_words = {"slump", "drop", "plunge", "fall", "loss", "bear", "miss", "crash", "down", "risk", "debt", "downgrade"}
+        pos_words = {
+            "surge",
+            "gain",
+            "soar",
+            "jump",
+            "record",
+            "profit",
+            "bull",
+            "rally",
+            "growth",
+            "beat",
+            "high",
+            "upgrade",
+        }
+        neg_words = {
+            "slump",
+            "drop",
+            "plunge",
+            "fall",
+            "loss",
+            "bear",
+            "miss",
+            "crash",
+            "down",
+            "risk",
+            "debt",
+            "downgrade",
+        }
 
         sentiments, confs, scores = [], [], []
         for t in texts:
@@ -190,9 +219,15 @@ def aggregate_daily_sentiment(news_df: pd.DataFrame) -> pd.DataFrame:
             break
 
     if label_col:
-        df["is_pos"] = df[label_col].astype(str).str.lower().str.contains("pos|bull").astype(int)
-        df["is_neg"] = df[label_col].astype(str).str.lower().str.contains("neg|bear").astype(int)
-        df["is_neu"] = df[label_col].astype(str).str.lower().str.contains("neu").astype(int)
+        df["is_pos"] = (
+            df[label_col].astype(str).str.lower().str.contains("pos|bull").astype(int)
+        )
+        df["is_neg"] = (
+            df[label_col].astype(str).str.lower().str.contains("neg|bear").astype(int)
+        )
+        df["is_neu"] = (
+            df[label_col].astype(str).str.lower().str.contains("neu").astype(int)
+        )
     else:
         df["is_pos"] = (df[score_col] > 0.1).astype(int)
         df["is_neg"] = (df[score_col] < -0.1).astype(int)

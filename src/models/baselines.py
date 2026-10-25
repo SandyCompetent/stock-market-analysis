@@ -12,7 +12,12 @@ logger = logging.getLogger(__name__)
 class SVMPredictor:
     """Support Vector Machine for regression on flattened time-series sequences."""
 
-    def __init__(self, C: float = 100.0, gamma: Union[str, float] = "scale", epsilon: float = 0.05):
+    def __init__(
+        self,
+        C: float = 100.0,
+        gamma: Union[str, float] = "scale",
+        epsilon: float = 0.05,
+    ):
         self.model = SVR(kernel="rbf", C=C, gamma=gamma, epsilon=epsilon)
 
     def _flatten_input(self, X: np.ndarray) -> np.ndarray:
@@ -48,14 +53,18 @@ class ARIMAPredictor:
             model = ARIMA(series, order=self.order)
             self.fitted_model = model.fit()
         except ImportError:
-            logger.warning("statsmodels not installed. ARIMA will use linear extrapolation fallback.")
+            logger.warning(
+                "statsmodels not installed. ARIMA will use linear extrapolation fallback."
+            )
             self.fitted_model = None
         except Exception as e:
             logger.warning(f"ARIMA fit failed ({e}). Using linear trend fallback.")
             self.fitted_model = None
         return self
 
-    def forecast(self, steps: int, last_history: Optional[np.ndarray] = None) -> np.ndarray:
+    def forecast(
+        self, steps: int, last_history: Optional[np.ndarray] = None
+    ) -> np.ndarray:
         """Forecasts the next n steps."""
         if self.fitted_model is not None:
             try:
@@ -67,7 +76,9 @@ class ARIMAPredictor:
         # Fallback extrapolation
         if last_history is not None and len(last_history) >= 2:
             trend = last_history[-1] - last_history[-2]
-            return np.array([last_history[-1] + (i + 1) * trend * 0.5 for i in range(steps)])
+            return np.array(
+                [last_history[-1] + (i + 1) * trend * 0.5 for i in range(steps)]
+            )
         return np.zeros(steps)
 
 
