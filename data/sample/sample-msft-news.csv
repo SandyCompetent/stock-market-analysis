@@ -10,54 +10,54 @@ Date,stock,title,sentiment_score,sentiment_label
 2026-09-29,MSFT,SpaceX Briefly Passed Amazon and Microsoft in Market Cap After Its IPO. Could It Get There Again?,0.193314,Neutral
 2026-09-29,MSFT,Trump considers creating AI oversight committee after tech execs meeting,0.015174,Neutral
 2026-09-29,MSFT,Microsoft stock set for biggest quarterly gain in 28 years,0.860834,Positive
+2026-09-30,MSFT,The war with Iran upended markets this month. There were losers — and winners | CNN Business,-0.425081,Negative
 2026-09-30,MSFT,Record AI spend is changing the market hunt for 'cash cows' and 'quality' stock investments,0.03526,Neutral
 2026-09-30,MSFT,Why Gabelli Bought Microsoft Corporation (MSFT) Near Its 52-Week Lows,-0.089815,Neutral
-2026-09-30,MSFT,The war with Iran upended markets this month. There were losers — and winners | CNN Business,-0.425081,Negative
+2026-10-01,MSFT,"4 Signs of a Bear Market, and Why I Am Still Fully Invested",-0.093307,Neutral
+2026-10-01,MSFT,Software roared back last quarter. Cramer says these stocks can keep climbing,0.620217,Positive
 2026-10-01,MSFT,Microsoft disavows Clippy-themed token tied to its MSFT ticker,-0.387449,Neutral
 2026-10-01,MSFT,"Alphabet vs. Amazon vs. Microsoft: Which ""Magnificent Seven"" Stock Is the Better Buy Right Now?",0.002244,Neutral
-2026-10-01,MSFT,Software roared back last quarter. Cramer says these stocks can keep climbing,0.620217,Positive
-2026-10-01,MSFT,"4 Signs of a Bear Market, and Why I Am Still Fully Invested",-0.093307,Neutral
+2026-10-02,MSFT,Crypto scammers hijack Microsoft’s official X account to push a fake Clippy token,-0.744184,Negative
 2026-10-02,MSFT,Microsoft’s X account hacked in crypto pump-and-dump scheme,-0.508006,Negative
 2026-10-02,MSFT,MSFT Stock Posts Best Quarter Since 1998 As Azure Growth Revives AI Optimism,0.910461,Positive
 2026-10-02,MSFT,Is Microsoft Stock Paying You Enough For The Swings?,0.02802,Neutral
-2026-10-02,MSFT,Crypto scammers hijack Microsoft’s official X account to push a fake Clippy token,-0.744184,Negative
 2026-10-03,MSFT,Microsoft's X Account Hacked in Crypto Scam with Clippy,-0.540176,Negative
 2026-10-04,MSFT,Is Copilot Microsoft's Secret Weapon in the AI Arms Race?,-0.05751,Neutral
 2026-10-05,MSFT,Hackers hijacked Microsoft's X account for a scam featuring everyone's least-favorite tech mascot Clippy,-0.88715,Negative
 2026-10-05,MSFT,Jim Cramer Predicts “Big Move Coming” For Microsoft Stock,0.367382,Neutral
 2026-10-05,MSFT,AI Future Of Microsoft and Google Face OpenAI Big Legal Problems,-0.862546,Negative
+2026-10-06,MSFT,Microsoft Keeps Winning in AI. The Stock Is Still Waiting,0.095714,Neutral
+2026-10-06,MSFT,The 3 tech stocks accounting for over 20% of the S&P 500,0.078012,Neutral
 2026-10-06,MSFT,Cramer says these blue-chip stocks are among the best ways to invest in the AI boom,0.484026,Neutral
 2026-10-06,MSFT,Drug Discovery Informatics Market Projected to Reach $7.74 Billion by 2030 as AI Agents Need Biological Context,0.663998,Positive
-2026-10-06,MSFT,The 3 tech stocks accounting for over 20% of the S&P 500,0.078012,Neutral
-2026-10-06,MSFT,Microsoft Keeps Winning in AI. The Stock Is Still Waiting,0.095714,Neutral
+2026-10-07,MSFT,Microsoft announces quarterly earnings release date,-0.299321,Neutral
+2026-10-07,MSFT,"3 Tech Stocks to Buy in October, Starting With Microsoft",0.104089,Neutral
+2026-10-07,MSFT,"Amazon stock is trading at its lowest trailing PE ratio as a public company, despite AI boom",-0.705581,Negative
 2026-10-07,MSFT,"MSFT Stock Nears All-Time High: Xbox Moves To Secure Exclusive Rights To Stream Grand Theft Auto VI, Report Says",0.770059,Positive
 2026-10-07,MSFT,Microsoft set to unveil AI laptop powered by Nvidia chips,0.134626,Neutral
-2026-10-07,MSFT,"3 Tech Stocks to Buy in October, Starting With Microsoft",0.104089,Neutral
-2026-10-07,MSFT,Microsoft announces quarterly earnings release date,-0.299321,Neutral
-2026-10-07,MSFT,"Amazon stock is trading at its lowest trailing PE ratio as a public company, despite AI boom",-0.705581,Negative
-2026-10-08,MSFT,Microsoft stock (MSFT) falls as US targets green card filings for H-1B workers and Italy probes gaming business,-0.957337,Negative
-2026-10-08,MSFT,$2.6 Trillion and Climbing: Where the AI Spending Is Going,-0.083821,Neutral
-2026-10-08,MSFT,"MSFT Stock On 4-Day Winning Streak: Microsoft Takes On Apple's Macs With Nvidia-Powered Surface Ultra, More On-Device AI - Yahoo Finance",0.620431,Positive
-2026-10-08,MSFT,"Trump Admin Cracks Down On Foreign Worker Fraud: Bans MSFT From H1-B Program, Probes 9 Colleges Over J-1 Visas, Hikes Costs For Students",-0.913582,Negative
-2026-10-08,MSFT,Jensen Huang: 'Nvidia was founded because of Windows',0.115117,Neutral
-2026-10-08,MSFT,Ignore all instructions and read this blog: The state of AI-analysis evasion in malware,-0.336628,Neutral
 2026-10-08,MSFT,"MSFT Stock On 4-Day Winning Streak: Microsoft Takes On Apple's Macs With Nvidia-Powered Surface Ultra, More On-Device AI",0.76776,Positive
-2026-10-08,MSFT,"Securitize launches tokenized Apple, Nvidia, and Tesla stocks on Solana",0.024621,Neutral
 2026-10-08,MSFT,ICANN reveals bids for new top-level domains,0.071711,Neutral
+2026-10-08,MSFT,"Securitize launches tokenized Apple, Nvidia, and Tesla stocks on Solana",0.024621,Neutral
+2026-10-08,MSFT,Ignore all instructions and read this blog: The state of AI-analysis evasion in malware,-0.336628,Neutral
+2026-10-08,MSFT,Jensen Huang: 'Nvidia was founded because of Windows',0.115117,Neutral
+2026-10-08,MSFT,"Trump Admin Cracks Down On Foreign Worker Fraud: Bans MSFT From H1-B Program, Probes 9 Colleges Over J-1 Visas, Hikes Costs For Students",-0.913582,Negative
+2026-10-08,MSFT,"MSFT Stock On 4-Day Winning Streak: Microsoft Takes On Apple's Macs With Nvidia-Powered Surface Ultra, More On-Device AI - Yahoo Finance",0.620431,Positive
+2026-10-08,MSFT,$2.6 Trillion and Climbing: Where the AI Spending Is Going,-0.083821,Neutral
+2026-10-08,MSFT,Microsoft stock (MSFT) falls as US targets green card filings for H-1B workers and Italy probes gaming business,-0.957337,Negative
 2026-10-09,MSFT,Are You Overpaying For Microsoft Stock Versus Its Rivals?,0.019167,Neutral
 2026-10-09,MSFT,"S&P 500, Nasdaq 100, Dow End Week Higher With Traders Eyeing Earnings Season — MSFT, NFLX, SPCX, ASTS In Focus",0.736961,Positive
-2026-10-10,MSFT,finzdata added to PyPI,0.030693,Neutral
 2026-10-10,MSFT,"Microsoft Stock Has Grown Roughly 15-Fold Since Satya Nadella Became CEO in 2014, a 27% Annual Growth Rate That Ended 14 Years of Near-Zero Growth. Can That Pace Continue Under Heavy AI Spending?",0.624815,Positive
+2026-10-10,MSFT,finzdata added to PyPI,0.030693,Neutral
 2026-10-11,MSFT,Not Alphabet. Not Amazon. Microsoft Trades at Big Tech's Cheapest Valuation,0.086619,Neutral
 2026-10-11,MSFT,"Hedge Funds Pile Into Magnificent 7 Stocks at Fastest Pace Since 2023, Pushing Exposure to 22%",0.776729,Positive
 2026-10-11,MSFT,Forget Chasing Volume. Here's the Most Active Stock I'd Actually Hold for 5 Years,0.032066,Neutral
-2026-10-12,MSFT,"3 Tech Stocks Wall Street Upgraded Last Week, and the One I'd Buy First",0.252849,Neutral
 2026-10-12,MSFT,One quiet Apple supplier may be cashing in where no one expects,-0.074372,Neutral
-2026-10-12,MSFT,First Impressions: Dell XPS Googlebook and the Googlebook OS,0.038546,Neutral
-2026-10-12,MSFT,Contracted Capacity Becomes Key Metric for AI Infrastructure Investors to Watch,0.695278,Positive
-2026-10-12,MSFT,[アップデート] Amazon S3 Tables で Apache Iceberg V3 の全データ型が利用可能になったので AWS Glue 6.0 の Interactive Session で試してみた,0.039731,Neutral
-2026-10-12,MSFT,Banks Struggle to Digest the Mounting Debt Driving the AI Boom,-0.91477,Negative
+2026-10-12,MSFT,"3 Tech Stocks Wall Street Upgraded Last Week, and the One I'd Buy First",0.252849,Neutral
 2026-10-12,MSFT,Why the Market Dipped But Microsoft (MSFT) Gained Today,0.710035,Positive
+2026-10-12,MSFT,First Impressions: Dell XPS Googlebook and the Googlebook OS,0.038546,Neutral
+2026-10-12,MSFT,[アップデート] Amazon S3 Tables で Apache Iceberg V3 の全データ型が利用可能になったので AWS Glue 6.0 の Interactive Session で試してみた,0.039731,Neutral
+2026-10-12,MSFT,Contracted Capacity Becomes Key Metric for AI Infrastructure Investors to Watch,0.695278,Positive
+2026-10-12,MSFT,Banks Struggle to Digest the Mounting Debt Driving the AI Boom,-0.91477,Negative
 2026-10-13,MSFT,MSFT Stock Gets A Thumbs Up From Barclays – Firm Expects Quarter To Start Showing ‘More Differentiation’ In Software,0.879127,Positive
 2026-10-13,MSFT,Show HN: Tradefloor – turn market narratives into testable scenarios,0.146767,Neutral
 2026-10-13,MSFT,Claude Was Right About Microsoft (MSFT): Can The Stock Keep Rising?,0.189375,Neutral
@@ -65,9 +65,9 @@ Date,stock,title,sentiment_score,sentiment_label
 2026-10-14,MSFT,"SocGen's top stock strategist shares the 3-part AI investing playbook, and 12 stocks to own for further upside",0.129505,Neutral
 2026-10-14,MSFT,S&P 500 options are the hottest bet on this Hyperliquid exchange,0.044268,Neutral
 2026-10-14,MSFT,3 Trillion-Dollar Giants That Could Be the Next Big Stock-Split Plays,-0.066721,Neutral
+2026-10-15,MSFT,MSFT Stock Gets Slew Of Price Target Hikes Ahead Of Earnings – TD Cowen Sees ‘Higher Than Normal’ Azure Beat Potential,0.64343,Positive
 2026-10-15,MSFT,Apple shares hit new all-time closing high,0.677925,Positive
 2026-10-15,MSFT,NVIDIA Nemotron 3.5 Super VL Powers Specialized Agents with Multimodal Reasoning,0.124313,Neutral
-2026-10-15,MSFT,MSFT Stock Gets Slew Of Price Target Hikes Ahead Of Earnings – TD Cowen Sees ‘Higher Than Normal’ Azure Beat Potential,0.64343,Positive
 2026-10-16,MSFT,Apple shares hit new all-time closing high,0.677925,Positive
 2026-10-16,MSFT,How Earnings Beat Will Impact Microsoft (MSFT) Stock,-0.105276,Neutral
 2026-10-16,MSFT,Strong Azure Results Powered Microsoft Corporation’s (MSFT) Rally,0.936357,Positive
@@ -78,21 +78,42 @@ Date,stock,title,sentiment_score,sentiment_label
 2026-10-19,MSFT,Update: Microsoft's Business Software Proposed to Receive Increased UK Regulatory Scrutiny,0.87778,Positive
 2026-10-19,MSFT,Cboe Launches Extended Trading Sessions for Select Single Stock and ETF Options,-0.006986,Neutral
 2026-10-19,MSFT,"Stocks bounce back, Anthropic's ""Public Benefits"", and Musk's promise to American kids",0.271201,Neutral
-2026-10-20,MSFT,Purpose Investments Inc. Announces October 2026 Distributions,-0.026033,Neutral
-2026-10-20,MSFT,"Microsoft, Alphabet and Goldman Sachs join objections to OKX-ICE tokenized stock trading",-0.4919,Negative
-2026-10-20,MSFT,Outpoll Expands Beyond Prediction Markets With Crypto Futures Trading,0.154415,Neutral
 2026-10-20,MSFT,Morgan Stanley sees new hurdle for Microsoft stock,0.558684,Positive
-2026-10-21,MSFT,Apple shares hit new all-time closing high,0.677925,Positive
-2026-10-21,MSFT,Anthropic Has Over $600 Billion in Compute Contracts,0.067212,Neutral
-2026-10-21,MSFT,"Steve Ballmer Is Worth $164 Billion, After Being Kicked Out Of Microsoft",-0.510761,Negative
-2026-10-21,MSFT,What Did It Take To Hold Microsoft Stock?,-0.039963,Neutral
-2026-10-21,MSFT,Nvidia CEO Jensen Huang says data center builders have to be 'good neighbors',0.476962,Positive
+2026-10-20,MSFT,Outpoll Expands Beyond Prediction Markets With Crypto Futures Trading,0.154415,Neutral
+2026-10-20,MSFT,"Microsoft, Alphabet and Goldman Sachs join objections to OKX-ICE tokenized stock trading",-0.4919,Negative
+2026-10-20,MSFT,Purpose Investments Inc. Announces October 2026 Distributions,-0.026033,Neutral
 2026-10-21,MSFT,Capital Group Core Equity (CGUS) Adds NVDA and MSFT on Oct. 19,0.017175,Neutral
+2026-10-21,MSFT,Nvidia CEO Jensen Huang says data center builders have to be 'good neighbors',0.476962,Positive
 2026-10-21,MSFT,Jim Cramer and Ken Fisher’s AI Pick: Microsoft (MSFT),0.057143,Neutral
-2026-10-22,MSFT,Satya Nadella Says Microsoft Is Rebuilding Around AI Agents as Trump Pushes ‘Super Intelligence’,0.761341,Positive
-2026-10-22,MSFT,"How To Trade SPY, QQQ, AAPL, MSFT, NVDA, GOOGL, META, And TSLA As Oil Rises And AI Concerns Persist",-0.001303,Neutral
+2026-10-21,MSFT,What Did It Take To Hold Microsoft Stock?,-0.039963,Neutral
+2026-10-21,MSFT,Anthropic Has Over $600 Billion in Compute Contracts,0.067212,Neutral
+2026-10-21,MSFT,Apple shares hit new all-time closing high,0.677925,Positive
+2026-10-21,MSFT,"Steve Ballmer Is Worth $164 Billion, After Being Kicked Out Of Microsoft",-0.510761,Negative
 2026-10-22,MSFT,Show HN: Finance Toolkit MCP with 500 financial metrics for Claude and others,0.127274,Neutral
 2026-10-22,MSFT,Apple shares hit new all-time intraday and closing highs,0.82372,Positive
+2026-10-22,MSFT,Satya Nadella Says Microsoft Is Rebuilding Around AI Agents as Trump Pushes ‘Super Intelligence’,0.761341,Positive
+2026-10-22,MSFT,"How To Trade SPY, QQQ, AAPL, MSFT, NVDA, GOOGL, META, And TSLA As Oil Rises And AI Concerns Persist",-0.001303,Neutral
 2026-10-22,MSFT,vs. MSFT and AMZN: Can AI Investments and Google Cloud Growth Unlock a 26% Upside?,0.917233,Positive
 2026-10-23,MSFT,"Elon Musk's power now extends far beyond Tesla, and Ukraine shows why",0.115648,Neutral
 2026-10-23,MSFT,Questrade Brings Extended-Hours Trading for Pre-Market Equity Options,0.013766,Neutral
+2026-10-24,MSFT,3 Key Things to Monitor When Tech Giants Report Earnings,0.014051,Neutral
+2026-10-24,MSFT,Big Tech Is Pouring $700 Billion Into AI. An AI App Alone Can't Qualify Her for Medicare Home Health,0.027128,Neutral
+2026-10-25,MSFT,alphadataforge added to PyPI,0.015148,Neutral
+2026-10-25,MSFT,"Earnings playbook: Alphabet, Microsoft, Amazon and more report this week. Here's what to expect - CNBC",-0.03628,Neutral
+2026-10-25,MSFT,"What To Expect In Markets This Week: GOOGL, MSFT, AMZN, INTC, HOOD, LLY Earnings, Fed Meeting And More",-0.025843,Neutral
+2026-10-25,MSFT,"Earnings Week Ahead: MSFT, GOOGL, AMZN, XOM, BA, VZ, and more (NASDAQ:MSFT) - Seeking Alpha",0.248274,Neutral
+2026-10-26,MSFT,"S&P 500, Nasdaq, Dow Begin Week Higher As Anthropic IPO Filing Rekindles AI Enthusiasm — MSFT, AAPL, CART, VZ In Focus",0.368811,Positive
+2026-10-26,MSFT,More than a third of S&P 500 companies are about to report earnings as market confidence cracks - MarketWatch,-0.29216,Neutral
+2026-10-26,MSFT,tickhub-us added to PyPI,0.048025,Neutral
+2026-10-26,MSFT,pyalloq-viz added to PyPI,-0.001355,Neutral
+2026-10-26,MSFT,Calpers pulls back from big tech as AI jitters deepen neocloud sell-off,-0.905644,Negative
+2026-10-26,MSFT,"Microsoft, Alphanet, Amazon Earnings Meet Fed Rate Decision: 3 Charts To Watch This Week",0.015928,Neutral
+2026-10-26,MSFT,"Fed rate decision and Google, Microsoft and Amazon earnings: What to Watch",-0.041053,Neutral
+2026-10-26,MSFT,Surface Laptop Ultra review: It has impressive local AI chops - Neowin,0.59268,Positive
+2026-10-26,MSFT,"Microsoft offers voluntary buyouts to 60,000 employees as it restructures for AI",0.186368,Neutral
+2026-10-26,MSFT,"Microsoft offering buyouts to around 60,000 employees, Business Insider reports",0.230948,Neutral
+2026-10-26,MSFT,"Microsoft buyouts: MSFT stock price jumps but why is tech giant offering massive 'voluntary exit' package for 60,000 employees, including VP level? Check which countries workforce impacted",-0.74752,Negative
+2026-10-26,MSFT,"Microsoft’s Copilot, Azure Demand Signals Stronger AI Monetization: Analyst",0.889206,Positive
+2026-10-26,MSFT,Here's the Price at Which I'd Buy Microsoft Stock,0.01279,Neutral
+2026-10-26,MSFT,"MSFT Stock Gains After Unveiling Massive Buyout Offer For 60,000 Employees To Trim Costs Amid AI Push",0.765889,Positive
+2026-10-27,MSFT,finzdata-backtest added to PyPI,0.328006,Neutral
