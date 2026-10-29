@@ -15,8 +15,8 @@ Date,stock,title,sentiment_score,sentiment_label
 2026-09-30,GOOGL,"Google, Anthropic, Meta, Nvidia, OpenAI, xAI Executives Sign White House Accord on 'Super Intelligence'",0.782969,Positive
 2026-09-30,GOOGL,Two trades that just happened in 'Magnificent Seven' stocks point to big gains ahead,0.880709,Positive
 2026-10-01,GOOGL,$1.99 | The Body: A Guide for Occupants (eBook) by Bill Bryson,0.055195,Neutral
-2026-10-01,GOOGL,"Berkshire Hathaway Parks 45.52% of $357,000,000,000 Portfolio in Three AI-Powered Stocks, Including Apple and Alphabet",0.028171,Neutral
 2026-10-01,GOOGL,Hydro-Québec asks provincial regulator to hike energy rates for large data centres,-0.056617,Neutral
+2026-10-01,GOOGL,"Berkshire Hathaway Parks 45.52% of $357,000,000,000 Portfolio in Three AI-Powered Stocks, Including Apple and Alphabet",0.028171,Neutral
 2026-10-01,GOOGL,"Google wins dismissal of Chegg, Penske Media lawsuits over AI overviews",-0.898616,Negative
 2026-10-01,GOOGL,"Alphabet vs. Amazon vs. Microsoft: Which ""Magnificent Seven"" Stock Is the Better Buy Right Now?",0.002244,Neutral
 2026-10-01,GOOGL,Will Google Turn The Tables In AI Race? Wall Street Reacts To Gemini 4,0.045211,Neutral
@@ -27,37 +27,37 @@ Date,stock,title,sentiment_score,sentiment_label
 2026-10-04,GOOGL,$3.99 | The Saxon Tales Collection: Books #5-8: Action Adventure Epics of War and Survival in the Bestselling Historical Series (eBook) by Bernard Cornwell,0.050556,Neutral
 2026-10-04,GOOGL,Alphabet Reported Negative Free Cash Flow for the First Time Ever. Here's Why That Milestone Matters for Shareholders,-0.892685,Negative
 2026-10-05,GOOGL,"GOOGL, GOOG Investors Have Opportunity to Lead Alphabet Inc. Securities Fraud Lawsuit",0.074432,Neutral
-2026-10-06,GOOGL,Google Nuke Deal Jolts Constellation Energy To Top Of S&P 500,0.309587,Neutral
-2026-10-06,GOOGL,Google enters massive power deal with Constellation Energy,0.275075,Neutral
-2026-10-06,GOOGL,Google signs 20-year nuclear deal with Constellation Energy to power AI build-out,0.858297,Positive
 2026-10-06,GOOGL,Constellation Energy commits over $4.3 billion to nuclear reactor upgrades in Google deal,0.4681,Neutral
 2026-10-06,GOOGL,Google signs 20-year nuclear deal with Constellation Energy to power AI buildout,0.792801,Positive
-2026-10-06,GOOGL,"Paramount-Warner Bros. finally merger closes, creating media giant Skydance",-0.242701,Neutral
+2026-10-06,GOOGL,Google Nuke Deal Jolts Constellation Energy To Top Of S&P 500,0.309587,Neutral
+2026-10-06,GOOGL,Google signs 20-year nuclear deal with Constellation Energy to power AI build-out,0.858297,Positive
+2026-10-06,GOOGL,Google enters massive power deal with Constellation Energy,0.275075,Neutral
+2026-10-06,GOOGL,Is the stock market boom too good to be true? Plus the growing divide in AI adoption,-0.088641,Neutral
 2026-10-06,GOOGL,"GOOG, GOOGL Stock Notice: Alphabet Inc. Stock Plummeted 4% after AI Issues Disclosed - Securities Fraud Class Action Filed",-0.958757,Negative
 2026-10-06,GOOGL,"Zacks Investment Ideas feature highlights: NVIDIA's, Alphabet's, Meta, Expedia, Apple and MongoDB",0.040626,Neutral
 2026-10-06,GOOGL,Alphabet vs. Meta Platforms: Which AI Stock Will Make You Richer?,0.053429,Neutral
-2026-10-06,GOOGL,Is the stock market boom too good to be true? Plus the growing divide in AI adoption,-0.088641,Neutral
+2026-10-06,GOOGL,"Paramount-Warner Bros. finally merger closes, creating media giant Skydance",-0.242701,Neutral
+2026-10-07,GOOGL,Google Just Sent AI to Space – Here’s What That Means for Investors,0.009344,Neutral
 2026-10-07,GOOGL,Constellation Energy's sweeping nuclear deal sparks rally in power sector stocks (CEG:NASDAQ),0.410187,Positive
 2026-10-07,GOOGL,"GOOGL/GOOG Shareholder Alert: December 1, 2026 Lead Plaintiff Deadline in Alphabet Inc. Securities Class Action - Contact Levi & Korsinsky",-0.121224,Neutral
-2026-10-07,GOOGL,Google Just Sent AI to Space – Here’s What That Means for Investors,0.009344,Neutral
-2026-10-08,GOOGL,Alphabet Inc. (GOOGL) Shareholders Who Lost Money Have Opportunity to Lead Securities Fraud Lawsuit,-0.712472,Negative
-2026-10-08,GOOGL,Google's nuclear shortcut hands one power stock a record deal,0.254564,Positive
 2026-10-08,GOOGL,Base records $500 million in weekly trading volume as tokenized stocks gain ground,0.888168,Positive
 2026-10-08,GOOGL,Alphabet shares rise as Google pushes Gemini deeper into enterprise AI,0.603379,Positive
+2026-10-08,GOOGL,Alphabet Inc. (GOOGL) Shareholders Who Lost Money Have Opportunity to Lead Securities Fraud Lawsuit,-0.712472,Negative
+2026-10-08,GOOGL,Google's nuclear shortcut hands one power stock a record deal,0.254564,Positive
+2026-10-09,GOOGL,Here are the Compelling Reasons to Add Alphabet (GOOGL),0.02089,Neutral
 2026-10-09,GOOGL,Google's $10 Million Purchase of Spirit Airlines Data Raises Concerns From US Lawmakers,-0.785418,Negative
 2026-10-09,GOOGL,Alphabet Inc. (GOOGL) Shareholders Who Lost Money Have Opportunity to Lead Securities Fraud Lawsuit,-0.712472,Negative
-2026-10-09,GOOGL,Here are the Compelling Reasons to Add Alphabet (GOOGL),0.02089,Neutral
 2026-10-10,GOOGL,"GOOGL, GOOG Investors Have Opportunity to Lead Alphabet Inc. Securities Fraud Lawsuit",0.074432,Neutral
 2026-10-10,GOOGL,"Sundar Pichai Reported Alphabet's Cloud Revenue Grew 82% to $24.8 Billion Last Quarter, With the Gemini App Reaching 950 Million Monthly Users. Is Google Cloud Becoming a Bigger Growth Driver Than Search?",0.858666,Positive
 2026-10-11,GOOGL,"Hedge Funds Pile Into Magnificent 7 Stocks at Fastest Pace Since 2023, Pushing Exposure to 22%",0.776729,Positive
 2026-10-11,GOOGL,"Alphabet's Google Cloud Is Surging at 82%, and the Heavy Spending Is Starting to Make Sense",0.865291,Positive
 2026-10-11,GOOGL,Amazon and Alphabet Just Committed $420 Billion to Data Centers. 1 Stock Is the Better Buy,0.079604,Neutral
 2026-10-11,GOOGL,Not Alphabet. Not Amazon. Microsoft Trades at Big Tech's Cheapest Valuation,0.086619,Neutral
+2026-10-12,GOOGL,GOOG/GOOGL Stockholder Notice: Shareholder Rights Law Firm Robbins LLP Reminds Investors of the Securities Class Action Lawsuit Filed Against Alphabet Inc.,-0.025942,Neutral
 2026-10-12,GOOGL,"$10,000 Invested Equally in Alphabet and Nvidia Could Be Worth This Much by 2030",0.152137,Neutral
 2026-10-12,GOOGL,Banks Struggle to Digest the Mounting Debt Driving the AI Boom,-0.91477,Negative
-2026-10-12,GOOGL,GOOG/GOOGL Stockholder Notice: Shareholder Rights Law Firm Robbins LLP Reminds Investors of the Securities Class Action Lawsuit Filed Against Alphabet Inc.,-0.025942,Neutral
-2026-10-12,GOOGL,"$1.99 | Revenge of the Tipping Point: Overstories, Superspreaders, and the Rise of Social Engineering (eBook) by Malcolm Gladwell",0.034149,Neutral
 2026-10-12,GOOGL,Salesforce CEO's 11-word post reveals a new pressure on tech giants,-0.846534,Negative
+2026-10-12,GOOGL,"$1.99 | Revenge of the Tipping Point: Overstories, Superspreaders, and the Rise of Social Engineering (eBook) by Malcolm Gladwell",0.034149,Neutral
 2026-10-12,GOOGL,"Nvidia, AMD, Google, and Meta team up on global blueprint for data center design",0.576932,Positive
 2026-10-13,GOOGL,"GOOG, GOOGL Stock Alert: Alphabet AI Issues and Subsequent 4% Stock Drop Trigger Securities Fraud Class Action for Investors",-0.929136,Negative
 2026-10-13,GOOGL,STARTRADER Adds 48 US Stock CFDs with 24-Hour Weekday Trading,0.043501,Neutral
@@ -65,27 +65,49 @@ Date,stock,title,sentiment_score,sentiment_label
 2026-10-13,GOOGL,Apple shares hit new all-time high,0.648118,Positive
 2026-10-13,GOOGL,Does the Risk-Reward Profile Still Favor Alphabet (GOOGL) Investors?,0.093979,Neutral
 2026-10-14,GOOGL,Apple is finally taking the smart home seriously,0.300928,Neutral
-2026-10-15,GOOGL,"GOOGL, GOOG Investors Have Opportunity to Lead Alphabet Inc. Securities Fraud Lawsuit",0.074432,Neutral
 2026-10-15,GOOGL,Apple shares hit new all-time closing high,0.677925,Positive
+2026-10-15,GOOGL,"GOOGL, GOOG Investors Have Opportunity to Lead Alphabet Inc. Securities Fraud Lawsuit",0.074432,Neutral
 2026-10-16,GOOGL,Apple shares hit new all-time closing high,0.677925,Positive
 2026-10-16,GOOGL,Prediction: Alphabet Will Be a Larger Company Than Apple by the End of 2027,0.468641,Neutral
-2026-10-18,GOOGL,Can Alphabet Stock Double By 2030?,0.147479,Neutral
 2026-10-18,GOOGL,"Alphabet’s (GOOGL) Low P/E Is Misleading, but the AI Opportunity Is Real",-0.234706,Neutral
+2026-10-18,GOOGL,Can Alphabet Stock Double By 2030?,0.147479,Neutral
 2026-10-19,GOOGL,The Trillion-Dollar AI Bet: What It Means for Hyperscaler Investors,0.058909,Neutral
-2026-10-19,GOOGL,Cboe Launches Extended Trading Sessions for Select Single Stock and ETF Options,-0.006986,Neutral
 2026-10-19,GOOGL,2 charts show why Wall Street is right to worry about tech stocks,0.094659,Neutral
+2026-10-19,GOOGL,Cboe Launches Extended Trading Sessions for Select Single Stock and ETF Options,-0.006986,Neutral
 2026-10-20,GOOGL,Purpose Investments Inc. Announces October 2026 Distributions,-0.026033,Neutral
 2026-10-20,GOOGL,"Microsoft, Alphabet and Goldman Sachs join objections to OKX-ICE tokenized stock trading",-0.4919,Negative
 2026-10-20,GOOGL,"GOOGL, GOOG Investors Have Opportunity to Lead Alphabet Inc. Securities Fraud Lawsuit",0.074432,Neutral
+2026-10-21,GOOGL,"Netflix has 2 problems behind the stock slide — and they aren't YouTube, co-CEO Ted Sarandos says",-0.674209,Negative
+2026-10-21,GOOGL,"If Alphabet Does This on Oct. 28, the Stock Could Skyrocket",-0.663014,Negative
 2026-10-21,GOOGL,Apple shares hit new all-time closing high,0.677925,Positive
 2026-10-21,GOOGL,Bank of America sees a $300 billion test for Google stock,0.393188,Neutral
 2026-10-21,GOOGL,"Amazon or Alphabet: If I Could Only Own One for the Next Decade, It Would Be This One",0.017727,Neutral
-2026-10-21,GOOGL,"If Alphabet Does This on Oct. 28, the Stock Could Skyrocket",-0.663014,Negative
-2026-10-21,GOOGL,"Netflix has 2 problems behind the stock slide — and they aren't YouTube, co-CEO Ted Sarandos says",-0.674209,Negative
-2026-10-22,GOOGL,"If Alphabet Does This on Oct. 28, the Stock Could Skyrocket",-0.663014,Negative
-2026-10-22,GOOGL,"How To Trade SPY, QQQ, AAPL, MSFT, NVDA, GOOGL, META, And TSLA As Oil Rises And AI Concerns Persist",-0.001303,Neutral
 2026-10-22,GOOGL,One Reason Alphabet Stock Looks Better Than Its Price,0.699836,Positive
 2026-10-22,GOOGL,What Should Alphabet Inc. Investors Know After 7.13% Stock Drop? The Law Offices of Frank R. Cruz Outlines Securities Fraud Class Action Lead Plaintiff Deadline,-0.561905,Negative
-2026-10-22,GOOGL,Apple shares hit new all-time intraday and closing highs,0.82372,Positive
+2026-10-22,GOOGL,"If Alphabet Does This on Oct. 28, the Stock Could Skyrocket",-0.663014,Negative
 2026-10-22,GOOGL,vs. MSFT and AMZN: Can AI Investments and Google Cloud Growth Unlock a 26% Upside?,0.917233,Positive
+2026-10-22,GOOGL,Apple shares hit new all-time intraday and closing highs,0.82372,Positive
+2026-10-22,GOOGL,"How To Trade SPY, QQQ, AAPL, MSFT, NVDA, GOOGL, META, And TSLA As Oil Rises And AI Concerns Persist",-0.001303,Neutral
 2026-10-23,GOOGL,What Does Alphabet Inc.'s 7.13% Stock Drop Mean for Investors? The Law Offices of Howard G. Smith Outlines Securities Fraud Class Action Lead Plaintiff Deadline,-0.719486,Negative
+2026-10-24,GOOGL,3 Key Things to Monitor When Tech Giants Report Earnings,0.014051,Neutral
+2026-10-25,GOOGL,alphadataforge added to PyPI,0.015148,Neutral
+2026-10-25,GOOGL,Alphabet's 2 Classes of Common Stock Trade About 1% Apart. Here's the One I'd Buy,-0.024686,Neutral
+2026-10-25,GOOGL,"Earnings playbook: Alphabet, Microsoft, Amazon and more report this week. Here's what to expect - CNBC",-0.03628,Neutral
+2026-10-25,GOOGL,"What To Expect In Markets This Week: GOOGL, MSFT, AMZN, INTC, HOOD, LLY Earnings, Fed Meeting And More",-0.025843,Neutral
+2026-10-25,GOOGL,Google's next TV gadget may do much more than stream,0.070678,Neutral
+2026-10-25,GOOGL,"Earnings Week Ahead: MSFT, GOOGL, AMZN, XOM, BA, VZ, and more (NASDAQ:MSFT) - Seeking Alpha",0.248273,Neutral
+2026-10-26,GOOGL,More than a third of S&P 500 companies are about to report earnings as market confidence cracks - MarketWatch,-0.292161,Neutral
+2026-10-26,GOOGL,tickhub-us added to PyPI,0.048025,Neutral
+2026-10-26,GOOGL,"Microsoft, Alphanet, Amazon Earnings Meet Fed Rate Decision: 3 Charts To Watch This Week",0.015928,Neutral
+2026-10-26,GOOGL,AI giant Anthropic publicly files for listing on the U.S. stock market,-0.58371,Negative
+2026-10-27,GOOGL,"'We're Trading Them Like Baseball Cards': Mark Cuban Warns ‘Everything’s a Meme Stock’ as AAPL, GOOGL and MU Fuel Market Bubble Fears",-0.624498,Negative
+2026-10-27,GOOGL,"'We're Trading Them Like Baseball Cards': Mark Cuban Warns ‘Everything’s a Meme Stock’ as AAPL, GOOGL and MU…",-0.099737,Neutral
+2026-10-27,GOOGL,"PrimeXBT Brings Tesla, SpaceX, NVIDIA and More to Crypto Futures with New Tokenised Stocks",0.357158,Neutral
+2026-10-27,GOOGL,"PrimeXBT Expands Into Tokenized Stocks, Bringing Tesla, SpaceX, and NVIDIA to Crypto Futures",0.352185,Neutral
+2026-10-27,GOOGL,"Prediction: The Stock Market Could Crash in 2027, and Elon Musk Just Explained Why",-0.359285,Neutral
+2026-10-27,GOOGL,vs. MSFT and GOOGL: Is the Post-Earnings Selloff Creating a Long-Term Buying Opportunity?,0.030454,Neutral
+2026-10-27,GOOGL,"Oracle, in effort to reduce reliance on Nvidia, adds AI chips from Google, Cerebras, and SambaNova",0.570349,Positive
+2026-10-27,GOOGL,"How To Trade SPY, QQQ, AAPL, MSFT, NVDA, GOOGL, META, And TSLA",0.01021,Neutral
+2026-10-27,GOOGL,"Google to report Q3 results as investors focus on AI growth, weigh Meta Muse AI risk",0.051524,Neutral
+2026-10-27,GOOGL,Alphabet earnings: what to look for from GOOGL,0.008887,Neutral
+2026-10-27,GOOGL,"Google earnings checklist: Why YouTube, Search, & Cloud are key",-0.027708,Neutral
