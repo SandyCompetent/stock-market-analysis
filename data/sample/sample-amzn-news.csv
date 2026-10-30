@@ -1,11 +1,11 @@
 Date,stock,title,sentiment_score,sentiment_label
 2026-10-21,AMZN,Playground 2024 1080p AMZN WEB-DL H264-ANARCHY,0.025895,Neutral
 2026-10-21,AMZN,Varshangalkku Shesham 2024 1080p AMZN WEB-DL Atmos H264-CPTN5DW,0.043982,Neutral
+2026-10-22,AMZN,Amorosa 2025 1080p AMZN WEB-DL H264-BobDobbs,0.023672,Neutral
 2026-10-22,AMZN,Rocky Mountain Wreckers S02E02 1080p AMZN WEB-DL H264-RAWR,0.018637,Neutral
 2026-10-22,AMZN,"AMZN Oct 2026 150.000 call (AMZN261023C00150000) Stock Price, News, Quote & History",-0.023848,Neutral
 2026-10-22,AMZN,Honor Thy Mother S01E13 1080p AMZN WEB-DL H264-playWEB,0.028067,Neutral
 2026-10-22,AMZN,Missing 2012 S01 1080p AMZN WEB-DL H264-IndianaJones,0.01786,Neutral
-2026-10-22,AMZN,Blessed - Live Laugh Run 2026 1080p AMZN WEB-DL H264-BobDobbs,0.023527,Neutral
 2026-10-22,AMZN,Bettys Revenge 2026 1080p AMZN WEB-DL H264-BobDobbs,0.016504,Neutral
 2026-10-22,AMZN,Axes and Os 2024 1080p AMZN WEB-DL H264-BobDobbs,0.028555,Neutral
 2026-10-22,AMZN,Alien AI-Discovered 2025 1080p AMZN WEB-DL H264-BobDobbs,0.04525,Neutral
@@ -20,19 +20,19 @@ Date,stock,title,sentiment_score,sentiment_label
 2026-10-22,AMZN,Sleep Stalker 2025 1080p AMZN WEB-DL H264-BobDobbs,0.027374,Neutral
 2026-10-22,AMZN,Broken Soul-The New World 2025 1080p AMZN WEB-DL H264-BobDobbs,0.039715,Neutral
 2026-10-22,AMZN,Bougainvillea 2024 1080p AMZN WEB-DL Atmos H264-CPTN5DW,0.037259,Neutral
-2026-10-22,AMZN,Amorosa 2025 1080p AMZN WEB-DL H264-BobDobbs,0.023672,Neutral
-2026-10-22,AMZN,Honor Thy Mother S01E14 1080p AMZN WEB-DL H264-playWEB,0.026819,Neutral
+2026-10-22,AMZN,Untold Stories of the ER S16E02 1080p AMZN WEB-DL H264-Kitsune,0.015846,Neutral
+2026-10-22,AMZN,Blessed - Live Laugh Run 2026 1080p AMZN WEB-DL H264-BobDobbs,0.023527,Neutral
 2026-10-22,AMZN,Air Shift 2025 1080p AMZN WEB-DL H264-BobDobbs,0.029645,Neutral
+2026-10-22,AMZN,Honor Thy Mother S01E14 1080p AMZN WEB-DL H264-playWEB,0.026819,Neutral
 2026-10-22,AMZN,The Serial Killer Connection S01E03 1080p AMZN WEB-DL H264-RAWR,0.006479,Neutral
 2026-10-22,AMZN,Ms Apocalypse 2024 1008p AMZN WEB-DL H264-ANARCHY,0.033327,Neutral
 2026-10-22,AMZN,Frontline S2026E11 1080p AMZN WEB-DL H264-RAWR,0.01888,Neutral
 2026-10-22,AMZN,Pickleballers 2026 720p AMZN WEB-DL H264-playWEB,0.019168,Neutral
-2026-10-22,AMZN,The Weird Kidz 2026 1080p AMZN WEB-DL H264-cinepth,0.042282,Neutral
 2026-10-22,AMZN,Ashes Never Rest 2025 1080p AMZN WEB-DL H264-BobDobbs,0.023419,Neutral
 2026-10-22,AMZN,Sin City Rehab S02E03 1080p AMZN WEB-DL H264-Kitsune,0.039875,Neutral
 2026-10-22,AMZN,Botched Homes S01E08 1080p AMZN WEB-DL H264-Kitsune,-0.047064,Neutral
 2026-10-22,AMZN,Aussie Shore S03E01 1080p AMZN WEB-DL H264-RAWR,0.05355,Neutral
-2026-10-22,AMZN,Untold Stories of the ER S16E02 1080p AMZN WEB-DL H264-Kitsune,0.015846,Neutral
+2026-10-22,AMZN,The Weird Kidz 2026 1080p AMZN WEB-DL H264-cinepth,0.042282,Neutral
 2026-10-22,AMZN,Chronicles Of My Crew 2023 1080p AMZN WEB-DL H264-cinepth,0.032571,Neutral
 2026-10-22,AMZN,1 Analyst Says Amazon Stock Has 30% Upside. What's the Bull Case for Buying Amazon Right Now?,-0.034603,Neutral
 2026-10-22,AMZN,The Mephistophiliac 2026 1080p AMZN WEB-DL H264-BobDobbs,0.034943,Neutral
@@ -42,44 +42,43 @@ Date,stock,title,sentiment_score,sentiment_label
 2026-10-22,AMZN,Prank Night 2026 1080p AMZN WEB-DL H264-ANARCHY,0.027476,Neutral
 2026-10-22,AMZN,Aussie Shore S03E02 1080p AMZN WEB-DL H264-RAWR,0.054663,Neutral
 2026-10-22,AMZN,Patagonian Chimeras 2026 1080p AMZN WEB-DL H264-playWEB,0.037007,Neutral
-2026-10-23,AMZN,Slo Pitch 2026 S01E09 1080p AMZN WEB-DL H264-RAWR,0.02634,Neutral
-2026-10-23,AMZN,Junk 2026 1080p AMZN WEB-DL H264-Kitsune,0.025237,Neutral
-2026-10-23,AMZN,Brother Unknown 2026 1080p AMZN WEB-DL H264-BobDobbs,0.024972,Neutral
-2026-10-23,AMZN,Coral-The Haunted Assignment 2025 1080p AMZN WEB-DL H264-BobDobbs,0.026413,Neutral
-2026-10-23,AMZN,Bud 2025 1080p AMZN WEB-DL H264-BobDobbs,0.027345,Neutral
-2026-10-23,AMZN,Scheme Queens 2 Caribbean Heist 2026 1080p AMZN WEB-DL H264-ANARCHY,0.035224,Neutral
-2026-10-23,AMZN,Slo Pitch 2026 S01E10 1080p AMZN WEB-DL H264-RAWR,0.031476,Neutral
-2026-10-23,AMZN,The 3 Killer Pigs 2026 720p AMZN WEB-DL H264-BYNDR,0.03136,Neutral
-2026-10-23,AMZN,The Cycle 2026 1080p AMZN WEB-DL H264-CHORTLE,0.045604,Neutral
 2026-10-23,AMZN,Queen At Sea 2026 1080p AMZN WEB-DL H264-cinepth,0.047943,Neutral
-2026-10-23,AMZN,Land Of Wolves 2026 1080p AMZN WEB-DL H264-playWEB,0.030117,Neutral
-2026-10-23,AMZN,Snooki The Paranormal Rookie S01E08 1080p AMZN WEB-DL H264-Kitsune,0.0356,Neutral
-2026-10-23,AMZN,Prediction: Amazon Could Double by 2030 if This Part of Its Business Delivers,0.818038,Positive
-2026-10-23,AMZN,Butthole Surfers The Hole Truth And Nothing Butt 2026 1080p AMZN WEB-DL H264-Phallus,0.008337,Neutral
-2026-10-23,AMZN,Rescued 2026 1080p AMZN WEB-DL H264-playWEB,0.026488,Neutral
-2026-10-23,AMZN,Fettered 2026 1080p AMZN WEB-DL H264-playWEB,0.03266,Neutral
-2026-10-23,AMZN,The Best Friend 2024 REPACK 1080p AMZN WEB-DL H264-BiOMA,0.05397,Neutral
-2026-10-23,AMZN,The American Miracle 2025 720p AMZN WEB-DL H264-playWEB,0.02546,Neutral
-2026-10-23,AMZN,Baggage 2008 720p AMZN WEB-DL H264-playWEB,0.0284,Neutral
-2026-10-23,AMZN,Fenomeno Rockets 2024 720p AMZN WEB-DL H264-playWEB,0.029472,Neutral
-2026-10-23,AMZN,Secrets In The Ice S05E02 1080p AMZN WEB-DL H264-RAWR,0.021654,Neutral
-2026-10-23,AMZN,Enable cross-Region fine-grained data access with AWS Lake Formation and Trusted Identity Propagation,0.377904,Neutral
-2026-10-23,AMZN,Written In Blood 2026 1080p AMZN WEB-DL H264-BobDobbs,0.007195,Neutral
+2026-10-23,AMZN,The Cycle 2026 1080p AMZN WEB-DL H264-CHORTLE,0.045604,Neutral
 2026-10-23,AMZN,Alien In The Heartland 2026 1080p AMZN WEB-DL H264-BobDobbs,0.055041,Neutral
-2026-10-23,AMZN,Camp Blood Christmas 2025 1080p AMZN WEB-DL H264-BobDobbs,0.019338,Neutral
-2026-10-23,AMZN,"Amazon used AI tool to track risk of unionization in Canadian warehouses, documents show",-0.418554,Neutral
-2026-10-23,AMZN,LOL Last One Laughing Halloween UK S01E02 Ive Only Got Real 1080p AMZN WEB-DL H264-RAWR,0.076011,Neutral
+2026-10-23,AMZN,Scheme Queens 2 Caribbean Heist 2026 1080p AMZN WEB-DL H264-ANARCHY,0.035224,Neutral
+2026-10-23,AMZN,Junk 2026 1080p AMZN WEB-DL H264-Kitsune,0.025237,Neutral
+2026-10-23,AMZN,Coral-The Haunted Assignment 2025 1080p AMZN WEB-DL H264-BobDobbs,0.026413,Neutral
+2026-10-23,AMZN,Brother Unknown 2026 1080p AMZN WEB-DL H264-BobDobbs,0.024972,Neutral
+2026-10-23,AMZN,Slo Pitch 2026 S01E09 1080p AMZN WEB-DL H264-RAWR,0.02634,Neutral
+2026-10-23,AMZN,Land Of Wolves 2026 1080p AMZN WEB-DL H264-playWEB,0.030117,Neutral
+2026-10-23,AMZN,Bud 2025 1080p AMZN WEB-DL H264-BobDobbs,0.027345,Neutral
+2026-10-23,AMZN,The 3 Killer Pigs 2026 720p AMZN WEB-DL H264-BYNDR,0.03136,Neutral
+2026-10-23,AMZN,Butthole Surfers The Hole Truth And Nothing Butt 2026 1080p AMZN WEB-DL H264-Phallus,0.008337,Neutral
+2026-10-23,AMZN,Enable cross-Region fine-grained data access with AWS Lake Formation and Trusted Identity Propagation,0.377904,Neutral
+2026-10-23,AMZN,Snooki The Paranormal Rookie S01E08 1080p AMZN WEB-DL H264-Kitsune,0.0356,Neutral
+2026-10-23,AMZN,Fenomeno Rockets 2024 720p AMZN WEB-DL H264-playWEB,0.029472,Neutral
+2026-10-23,AMZN,Baggage 2008 720p AMZN WEB-DL H264-playWEB,0.0284,Neutral
+2026-10-23,AMZN,The American Miracle 2025 720p AMZN WEB-DL H264-playWEB,0.02546,Neutral
+2026-10-23,AMZN,Secrets In The Ice S05E02 1080p AMZN WEB-DL H264-RAWR,0.021654,Neutral
+2026-10-23,AMZN,Fettered 2026 1080p AMZN WEB-DL H264-playWEB,0.03266,Neutral
+2026-10-23,AMZN,Rescued 2026 1080p AMZN WEB-DL H264-playWEB,0.026488,Neutral
+2026-10-23,AMZN,The Best Friend 2024 REPACK 1080p AMZN WEB-DL H264-BiOMA,0.05397,Neutral
+2026-10-23,AMZN,Written In Blood 2026 1080p AMZN WEB-DL H264-BobDobbs,0.007195,Neutral
+2026-10-23,AMZN,Prediction: Amazon Could Double by 2030 if This Part of Its Business Delivers,0.818038,Positive
+2026-10-23,AMZN,Slo Pitch 2026 S01E10 1080p AMZN WEB-DL H264-RAWR,0.031476,Neutral
 2026-10-23,AMZN,LOL Last One Laughing Halloween UK S01E01 1080p AMZN WEB-DL H264-RAWR,0.038394,Neutral
-2026-10-23,AMZN,Duniya Ki Thain Thain S01 1080p AMZN WEB-DL H264-playWEB,0.028721,Neutral
-2026-10-23,AMZN,Wheel Of Fortune S44E29 1080p AMZN WEB-DL H264-Kitsune,0.026425,Neutral
-2026-10-23,AMZN,Love Language 2026 1080p AMZN WEB-DL H264-CHORTLE,0.048247,Neutral
-2026-10-23,AMZN,The Exit State 2026 1080p AMZN WEB-DL H264-BYNDR,0.017121,Neutral
-2026-10-23,AMZN,Human 2025 1080p AMZN WEB-DL H264-BYNDR,0.025853,Neutral
-2026-10-23,AMZN,ZombieCON Vol 1 2024 1080p AMZN WEB-DL DD H264-BobDobbs,0.025836,Neutral
-2026-10-23,AMZN,LOL Last One Laughing Halloween UK S01E03 1080p AMZN WEB-DL H264-RAWR,0.030819,Neutral
-2026-10-23,AMZN,The Heiress 2 2026 1080p AMZN WEB-DL H264-ANARCHY,0.035643,Neutral
-2026-10-23,AMZN,EDtv 1999 1080p AMZN WEB-DL H264-PiRaTeS,0.027477,Neutral
 2026-10-23,AMZN,The Torment S01E04 1080p AMZN WEB-DL H264-BiOMA,0.031976,Neutral
+2026-10-23,AMZN,LOL Last One Laughing Halloween UK S01E03 1080p AMZN WEB-DL H264-RAWR,0.030819,Neutral
+2026-10-23,AMZN,ZombieCON Vol 1 2024 1080p AMZN WEB-DL DD H264-BobDobbs,0.025836,Neutral
+2026-10-23,AMZN,Human 2025 1080p AMZN WEB-DL H264-BYNDR,0.025853,Neutral
+2026-10-23,AMZN,The Exit State 2026 1080p AMZN WEB-DL H264-BYNDR,0.017121,Neutral
+2026-10-23,AMZN,Wheel Of Fortune S44E29 1080p AMZN WEB-DL H264-Kitsune,0.026425,Neutral
+2026-10-23,AMZN,Duniya Ki Thain Thain S01 1080p AMZN WEB-DL H264-playWEB,0.028721,Neutral
+2026-10-23,AMZN,LOL Last One Laughing Halloween UK S01E02 Ive Only Got Real 1080p AMZN WEB-DL H264-RAWR,0.076011,Neutral
+2026-10-23,AMZN,The Heiress 2 2026 1080p AMZN WEB-DL H264-ANARCHY,0.035643,Neutral
+2026-10-23,AMZN,Camp Blood Christmas 2025 1080p AMZN WEB-DL H264-BobDobbs,0.019338,Neutral
+2026-10-23,AMZN,EDtv 1999 1080p AMZN WEB-DL H264-PiRaTeS,0.027477,Neutral
+2026-10-23,AMZN,Love Language 2026 1080p AMZN WEB-DL H264-CHORTLE,0.048247,Neutral
 2026-10-23,AMZN,14 February 2025 1080p AMZN WEB-DL H264-ANARCHY,0.022059,Neutral
 2026-10-23,AMZN,Law and Order Toronto Criminal Intent S04E05 1080p AMZN WEB-DL H264-NTb,-0.006466,Neutral
 2026-10-23,AMZN,World War Bigfoot 2026 1080p AMZN WEB-DL H264-BobDobbs,0.002592,Neutral
@@ -88,14 +87,114 @@ Date,stock,title,sentiment_score,sentiment_label
 2026-10-23,AMZN,Walking Street 2016 1080p AMZN WEB-DL H264-Dwarf,0.026438,Neutral
 2026-10-23,AMZN,The Torment S01E04 1080p AMZN WEB-DL DUAL H264-RAWR,0.024665,Neutral
 2026-10-23,AMZN,The Traitors US S05E07 1080p AMZN WEB-DL H264-RAWR,0.026491,Neutral
-2026-10-23,AMZN,Love After Lockup Relationship Rehab S01E04 1080p AMZN WEB-DL H264-RAWR,0.040808,Neutral
 2026-10-23,AMZN,Hostage 2005 1080p AMZN WEB-DL H264-PiRaTeS,0.028157,Neutral
-2026-10-24,AMZN,Nobodys Son 2026 1080p AMZN WEB-DL H264-playWEB,0.02525,Neutral
-2026-10-24,AMZN,Dreams of Spring 2025 1080p AMZN WEB-DL H264-Tequila,0.03437,Neutral
-2026-10-24,AMZN,Gold Rush S17E04 1080p AMZN WEB-DL H264-Kitsune,0.039938,Neutral
-2026-10-24,AMZN,Azzurrina 2023 1080p AMZN WEB-DL H264-BobDobbs,0.039962,Neutral
+2026-10-23,AMZN,"Amazon used AI tool to track risk of unionization in Canadian warehouses, documents show",-0.418554,Neutral
+2026-10-23,AMZN,Love After Lockup Relationship Rehab S01E04 1080p AMZN WEB-DL H264-RAWR,0.040808,Neutral
 2026-10-24,AMZN,Cemetery Man 1994 720p AMZN WEB-DL H264-BFM,0.040452,Neutral
-2026-10-24,AMZN,Cassex 2021 1080p AMZN WEB-DL H264-MADSKY,0.031049,Neutral
 2026-10-24,AMZN,Chaar Yaar S01 1080p AMZN WEB-DL H264-playWEB,0.02678,Neutral
-2026-10-24,AMZN,Papi Ricky La Pelicula 2026 1080p AMZN WEB-DL H264-Tequila,0.034416,Neutral
+2026-10-24,AMZN,Cassex 2021 1080p AMZN WEB-DL H264-MADSKY,0.031049,Neutral
+2026-10-24,AMZN,Azzurrina 2023 1080p AMZN WEB-DL H264-BobDobbs,0.039962,Neutral
 2026-10-24,AMZN,State and Main 2000 1080p AMZN WEB-DL H264-TEPES,0.029206,Neutral
+2026-10-24,AMZN,Dreams of Spring 2025 1080p AMZN WEB-DL H264-Tequila,0.03437,Neutral
+2026-10-24,AMZN,Nobodys Son 2026 1080p AMZN WEB-DL H264-playWEB,0.02525,Neutral
+2026-10-24,AMZN,Papi Ricky La Pelicula 2026 1080p AMZN WEB-DL H264-Tequila,0.034416,Neutral
+2026-10-24,AMZN,Gold Rush S17E04 1080p AMZN WEB-DL H264-Kitsune,0.039938,Neutral
+2026-10-25,AMZN,"Earnings playbook: Alphabet, Microsoft, Amazon and more report this week. Here's what to expect - CNBC",-0.03628,Neutral
+2026-10-25,AMZN,A Second Life 2026 1080p AMZN WEB-DL H264-cinepth,0.048016,Neutral
+2026-10-25,AMZN,"What To Expect In Markets This Week: GOOGL, MSFT, AMZN, INTC, HOOD, LLY Earnings, Fed Meeting And More",-0.025843,Neutral
+2026-10-25,AMZN,Can Walmart's New Bundled Subscription Beat Amazon?,0.693475,Positive
+2026-10-25,AMZN,Hangar Rojo 2026 1080p AMZN WEB-DL H264-cinepth,0.04925,Neutral
+2026-10-25,AMZN,Lamour Cest Surcote 2025 720p AMZN WEB-DL H264-Kitsune,0.040966,Neutral
+2026-10-25,AMZN,"Earnings Week Ahead: MSFT, GOOGL, AMZN, XOM, BA, VZ, and more (NASDAQ:MSFT) - Seeking Alpha",0.248273,Neutral
+2026-10-25,AMZN,The Narco Hack S01E01 1080p AMZN WEB-DL DUAL H264-RAWR,0.039736,Neutral
+2026-10-25,AMZN,The Narco Hack S01E03 1080p AMZN WEB-DL DUAL H264-NORViNE,0.034883,Neutral
+2026-10-25,AMZN,Mock The Week S23E07 720p AMZN WEB-DL H264-RAWR,0.02418,Neutral
+2026-10-25,AMZN,Forgotten Holiday 2026 720p AMZN WEB-DL H264-CHORTLE,0.035795,Neutral
+2026-10-25,AMZN,Prediction: Amazon Stock Will Skyrocket After Oct. 29 Thanks to AWS Growth,0.850634,Positive
+2026-10-26,AMZN,The Box in the Attic 2026 1080p AMZN WEB-DL DD H264-BobDobbs,0.019362,Neutral
+2026-10-26,AMZN,Veins 2025 1080p AMZN WEB-DL H264-Kitsune,0.026442,Neutral
+2026-10-26,AMZN,Sister Wives S21E04 720p AMZN WEB-DL H264-NTb,0.023782,Neutral
+2026-10-26,AMZN,AI giant Anthropic publicly files for listing on the U.S. stock market,-0.58371,Negative
+2026-10-26,AMZN,Anthropic IPO reminds this former Amazon board member of Jeff Bezos's AWS bet,0.026716,Neutral
+2026-10-26,AMZN,Amazon Stock Gains as UBS Bets on AWS Margin Beat,0.414252,Positive
+2026-10-26,AMZN,Tracing failures across Terraform state boundaries with AWS DevOps Agent,0.005782,Neutral
+2026-10-26,AMZN,"Anthropic is leasing data centers to reduce reliance on Amazon, Google, others",0.660083,Positive
+2026-10-26,AMZN,Migrate production SMS traffic to a short code with AWS End User Messaging,0.0219,Neutral
+2026-10-26,AMZN,Reptilians They Walk Among Us 2026 720p AMZN WEB-DL H264-playWEB,0.034802,Neutral
+2026-10-26,AMZN,Halloween Bakeshop S02E06 1080p AMZN WEB-DL H264-RAWR,0.042395,Neutral
+2026-10-26,AMZN,Halloween Bakeshop S02E07 1080p AMZN WEB-DL H264-RAWR,0.043805,Neutral
+2026-10-26,AMZN,Bigfoot Primal Fear 2026 1080p AMZN WEB-DL DD H264-BobDobbs,0.009841,Neutral
+2026-10-26,AMZN,Nikola Tesla 19hz 2026 1080p AMZN WEB-DL DD H264-BobDobbs,0.037068,Neutral
+2026-10-26,AMZN,Sense And Sensibility 2026 1080p AMZN WEB-DL H264-SPWEB,0.03284,Neutral
+2026-10-26,AMZN,Sense And Sensibility 1995 1080p AMZN WEB-DL H264-PiRaTeS,0.02846,Neutral
+2026-10-26,AMZN,"Fed rate decision and Google, Microsoft and Amazon earnings: What to Watch",-0.041053,Neutral
+2026-10-26,AMZN,53 ETFs Add to Amazon (AMZN) Holdings on Oct. 22,0.072909,Neutral
+2026-10-26,AMZN,Is Amazon Spending Too Much On AI?,-0.491804,Negative
+2026-10-26,AMZN,The Dog Stars 2026 1080p AMZN WEB-DL H264-KyoGo,0.038014,Neutral
+2026-10-26,AMZN,Maigret 2025 S02E02 1080p AMZN WEB-DL H264-RAWR,0.033535,Neutral
+2026-10-26,AMZN,Surrogates 2009 1080p AMZN WEB-DL H264-PiRaTeS,0.05292,Neutral
+2026-10-26,AMZN,The Devil Dared Me To 2007 1080p AMZN WEB-DL H264-PiRaTeS,0.029772,Neutral
+2026-10-26,AMZN,The Distinguished Gentleman 1992 1080p AMZN WEB-DL H264-PiRaTeS,0.039925,Neutral
+2026-10-26,AMZN,More than a third of S&P 500 companies are about to report earnings as market confidence cracks - MarketWatch,-0.292161,Neutral
+2026-10-26,AMZN,I Don’t Like It Here 2026 1080p AMZN WEB-DL DD H264-BobDobbs,-0.027965,Neutral
+2026-10-26,AMZN,Superfast 2015 1080p AMZN WEB-DL H265-HONE,0.044865,Neutral
+2026-10-26,AMZN,Big Brother 2023 S04E38 1080p AMZN WEB-DL H264-Kitsune,0.032774,Neutral
+2026-10-26,AMZN,Nine Lives 2016 1080p AMZN WEB-DL H265-HONE,0.032615,Neutral
+2026-10-26,AMZN,Cyberwar 2022 2023 1080p AMZN WEB-DL H264-AXON,0.030957,Neutral
+2026-10-26,AMZN,Dont Let Them Shoot The Kite 1989 1080p AMZN WEB-DL H264-Kitsune,0.013772,Neutral
+2026-10-26,AMZN,This Is Not A Murder Mystery S01E01 1080p AMZN WEB-DL H264-Kitsune,-0.02716,Neutral
+2026-10-26,AMZN,This Is Not A Murder Mystery S01E02 1080p AMZN WEB-DL H264-Kitsune,-0.027878,Neutral
+2026-10-26,AMZN,This Is Not A Murder Mystery S01E03 1080p AMZN WEB-DL H264-Kitsune,-0.029138,Neutral
+2026-10-26,AMZN,Catfish Murders S01E02 1080p AMZN WEB-DL H264-RAWR,0.024786,Neutral
+2026-10-26,AMZN,Calpers pulls back from big tech as AI jitters deepen neocloud sell-off,-0.905643,Negative
+2026-10-26,AMZN,Zombie School 2014 1080p AMZN WEB-DL DUAL H264-AXON,0.024307,Neutral
+2026-10-26,AMZN,Haps Crime Doesnt Pay 2025 1080p AMZN WEB-DL H264-playWEB,0.002358,Neutral
+2026-10-27,AMZN,The Lost Ones 2026 1080p AMZN WEB-DL H264-CHORTLE,0.037677,Neutral
+2026-10-27,AMZN,Beyond The Gates S02E198 1080p AMZN WEB-DL H264-ZdS,0.067648,Neutral
+2026-10-27,AMZN,Sunphlowers 2025 1080p AMZN WEB-DL H264-BiOMA,0.043098,Neutral
+2026-10-27,AMZN,Rewind and Play 2023 1080p AMZN WEB-DL H264-PTerWEB,0.020168,Neutral
+2026-10-27,AMZN,Sangria 2024 720p AMZN WEB-DL H264-BiOMA,0.047481,Neutral
+2026-10-27,AMZN,Richard Hammonds Workshop S06E01 720p AMZN WEB-DL H264-RAWR,0.008756,Neutral
+2026-10-27,AMZN,Police Hunt Sweden S01E06 1080p AMZN WEB-DL H264-NORViNE,0.000504,Neutral
+2026-10-27,AMZN,Head Like A Hole 2026 1080p AMZN WEB-DL H264-cinepth,0.019919,Neutral
+2026-10-27,AMZN,Hellbilly Hollow 2026 1080p AMZN WEB-DL H264-cinepth,0.038237,Neutral
+2026-10-27,AMZN,Home Town Takeover Canada S01E01 720p AMZN WEB-DL H264-NTb,0.022621,Neutral
+2026-10-27,AMZN,"Prediction: The Stock Market Could Crash in 2027, and Elon Musk Just Explained Why",-0.359285,Neutral
+2026-10-27,AMZN,Company Of Shadows 2026 1080p AMZN WEB-DL H264-playWEB,0.02767,Neutral
+2026-10-27,AMZN,In Vitro S01E04 1080p AMZN WEB-DL H264-RAWR,0.027286,Neutral
+2026-10-27,AMZN,Pati Jinich Explores Panamericana S02E01 1080p AMZN WEB-DL H264-RAWR,0.056764,Neutral
+2026-10-27,AMZN,Written In The Sand 2025 1080p AMZN WEB-DL H264-AXON,-0.001732,Neutral
+2026-10-27,AMZN,"An AI label alone no longer wins lenders, JPMorgan says",-0.118585,Neutral
+2026-10-27,AMZN,Never After Dark 2026 1080p AMZN WEB-DL H264-CHORTLE,0.038144,Neutral
+2026-10-27,AMZN,THE TEENAGE VAMPIRE 2026 720p AMZN WEB-DL H264-BYNDR,0.013474,Neutral
+2026-10-27,AMZN,Ever After 2025 720p AMZN WEB-DL H264-BYNDR,0.026921,Neutral
+2026-10-27,AMZN,Due West 2025 1080p AMZN WEB-DL H264-playWEB,0.022537,Neutral
+2026-10-27,AMZN,Concessions 2025 1080p AMZN WEB-DL H264-BYNDR,0.022659,Neutral
+2026-10-27,AMZN,Mum Im Alien Pregnant 2026 1080p AMZN WEB-DL H264-BYNDR,0.029155,Neutral
+2026-10-27,AMZN,Verity 2026 1080p AMZN WEB-DL Atmos H264-BYNDR,0.035231,Neutral
+2026-10-27,AMZN,Filipinana 2026 1080p AMZN WEB-DL H264-CHORTLE,0.061673,Neutral
+2026-10-27,AMZN,Kourtney and Khloe Take the Hamptons S01 1080p AMZN WEB-DL H264-NTb,0.022081,Neutral
+2026-10-27,AMZN,Last Night Out S02E07 1080p AMZN WEB-DL H264-RAWR,0.038102,Neutral
+2026-10-27,AMZN,The Stunt Driver 2026 720p AMZN WEB-DL H264-CHORTLE,0.037031,Neutral
+2026-10-28,AMZN,Pet Shop Days 2025 1080p AMZN WEB-DL H264-Kitsune,0.021227,Neutral
+2026-10-28,AMZN,"3 ""Magnificent Seven"" Stocks to Buy Hand Over Fist in November",0.082855,Neutral
+2026-10-28,AMZN,"Yahoo Finance drives the new Slate EV, a $27,000 truck with hand-crank windows",0.080867,Neutral
+2026-10-28,AMZN,Prosecuting Evil with Kelly Siegler S03E04 1080p AMZN WEB-DL H264-RAWR,-0.035658,Neutral
+2026-10-28,AMZN,Taskmaster S22E09 1080p AMZN WEB-DL H264-Kitsune,0.034261,Neutral
+2026-10-28,AMZN,Billy The Early Years 2008 1080p AMZN WEB-DL H264-NTb,0.027839,Neutral
+2026-10-28,AMZN,vs. MSFT and GOOGL: Can Higher-Margin Businesses Turn Amazon Into an AI-Driven Compounder?,0.189431,Neutral
+2026-10-28,AMZN,Accelerating software delivery with agentic QA automation using Amazon Nova Act – Part 3,0.107236,Neutral
+2026-10-28,AMZN,The Terrors Of Jordan Mendoza S01E07 Real 1080p AMZN WEB-DL H264-playWEB,0.009121,Neutral
+2026-10-28,AMZN,Jet 2026 1080p AMZN WEB-DL H264-playWEB,0.0292,Neutral
+2026-10-28,AMZN,Dream Theatre 2025 1080p AMZN WEB-DL H264-BobDobbs,0.024334,Neutral
+2026-10-28,AMZN,All The Queens Men S05E11 1080p AMZN WEB-DL H264-RAWR,0.027215,Neutral
+2026-10-28,AMZN,The Railway Children 1970 1080p AMZN WEB-DL H264-FORTKNOX,0.006056,Neutral
+2026-10-28,AMZN,Vovo Ninja 2024 720p AMZN WEB-DL H264-BiOMA,0.03976,Neutral
+2026-10-28,AMZN,24 Hour Party People 2002 1080p AMZN WEB-DL H264-alfaHD,0.034764,Neutral
+2026-10-28,AMZN,Through the Night 2023 720p AMZN WEB-DL H264-BiOMA,0.037765,Neutral
+2026-10-28,AMZN,Wild Heart 2025 1080p AMZN WEB-DL H264-BiOMA,0.051983,Neutral
+2026-10-28,AMZN,The Ref 1994 1080p AMZN WEB-DL H264-PiRaTeS,0.027425,Neutral
+2026-10-28,AMZN,Shardana 2026 1080p AMZN WEB-DL H264-playWEB,0.033259,Neutral
+2026-10-28,AMZN,Wild Guitar 1962 1080p AMZN WEB-DL H264-BLOOM,0.043036,Neutral
+2026-10-28,AMZN,"Google, Microsoft, and Amazon have to justify the AI spending boom this week",0.085346,Neutral
+2026-10-29,AMZN,The Headless Woman 2008 1080p AMZN WEB-DL H264-cinepth,0.021793,Neutral
