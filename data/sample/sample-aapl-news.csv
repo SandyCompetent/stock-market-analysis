@@ -8,148 +8,217 @@ Date,stock,title,sentiment_score,sentiment_label
 2026-10-11,AAPL,Microsoft、「Microsoft 365/Office for Mac」でmacOS 27 Golden Gateのサポートを開始。今後はmacOS 14 Sonomaが非サポートに。,0.064241,Neutral
 2026-10-11,AAPL,"Hedge Funds Pile Into Magnificent 7 Stocks at Fastest Pace Since 2023, Pushing Exposure to 22%",0.776729,Positive
 2026-10-11,AAPL,Not Alphabet. Not Amazon. Microsoft Trades at Big Tech's Cheapest Valuation,0.086619,Neutral
+2026-10-12,AAPL,Amazonプライム感謝祭先行セールで、AppleのiPhone AirやAirPods Pro 3、Beats Studio Buds +、Apple Pencil Proなどが特別価格となるAppleのお買い得セールが開催中。,0.333908,Neutral
 2026-10-12,AAPL,"Show HN: Folio – my portfolio inside Raycast (read-only, open source)",0.014254,Neutral
 2026-10-12,AAPL,'Welcome home': What to expect from Apple's big event on Tuesday,0.053243,Neutral
 2026-10-12,AAPL,Apple gets a $360 price target from JP Morgan despite iPhone demand concerns,0.491867,Positive
 2026-10-12,AAPL,[アップデート] Amazon S3 Tables で Apache Iceberg V3 の全データ型が利用可能になったので AWS Glue 6.0 の Interactive Session で試してみた,0.039732,Neutral
 2026-10-12,AAPL,"SpaceX's Starlink could pose 3 big risks to Apple, BofA warns",-0.639751,Negative
-2026-10-12,AAPL,Amazonプライム感謝祭先行セールで、AppleのiPhone AirやAirPods Pro 3、Beats Studio Buds +、Apple Pencil Proなどが特別価格となるAppleのお買い得セールが開催中。,0.333908,Neutral
+2026-10-12,AAPL,Microsoft reclaims $4 trillion market cap,-0.488411,Negative
 2026-10-12,AAPL,"Apple smart home announcement, Big Bank earnings, September CPI: What to Watch",-0.006888,Neutral
 2026-10-12,AAPL,Tokenized stock DEX volume tops $3.4 billion a week after Robinhood Chain launch,0.193545,Neutral
-2026-10-12,AAPL,New Apple TV and HomePod Mini Expected: What Matters for AAPL Stock,0.082851,Neutral
-2026-10-12,AAPL,Microsoft reclaims $4 trillion market cap,-0.488411,Negative
 2026-10-12,AAPL,quantsupport added to PyPI,0.03043,Neutral
 2026-10-12,AAPL,"Bybit Supports Stocks Trading, Giving Eligible Global Users Access to 1,000+ U.S. Stocks and ETFs",0.414972,Neutral
-2026-10-13,AAPL,Apple shares hit new all-time high,0.648118,Positive
+2026-10-12,AAPL,New Apple TV and HomePod Mini Expected: What Matters for AAPL Stock,0.082851,Neutral
 2026-10-13,AAPL,Jim Cramer isn't giving up on semiconductor stocks despite the sell off. Here's why,0.0383,Neutral
 2026-10-13,AAPL,1 Stat That Makes Apple Hard to Ignore Right Now,-0.232808,Neutral
 2026-10-13,AAPL,Apple debuts HomeView hub as it reinvents smart home strategy,0.664691,Positive
-2026-10-13,AAPL,Belkin、待機電力をほぼゼロに抑えるZSPやUSB-C PD 3.2 AVS/PPSに対応した最大75W出力のUSB充電器「UltraCharge 75W GaN 充電器 ZSP」を発売。,0.041634,Neutral
+2026-10-13,AAPL,Apple shares hit new all-time high,0.648118,Positive
 2026-10-13,AAPL,Show HN: Tradefloor – turn market narratives into testable scenarios,0.146767,Neutral
+2026-10-13,AAPL,Belkin、待機電力をほぼゼロに抑えるZSPやUSB-C PD 3.2 AVS/PPSに対応した最大75W出力のUSB充電器「UltraCharge 75W GaN 充電器 ZSP」を発売。,0.041634,Neutral
 2026-10-13,AAPL,"Apple unveils new smart home products, showcasing updated Siri AI",0.272931,Neutral
 2026-10-14,AAPL,Parallels、Intel Macをサポートする旧Parallels Desktop 26向けに複数の不具合を修正した「Parallels Desktop 26 for Mac 26.5.0」をリリース。,0.047587,Neutral
 2026-10-14,AAPL,S&P 500 options are the hottest bet on this Hyperliquid exchange,0.044268,Neutral
 2026-10-14,AAPL,roicai added to PyPI,0.018948,Neutral
 2026-10-14,AAPL,"Amazon、AmazonベーシックブランドからNintendo Switch 2にも対応する「microSD Expressメモリーカード 256GB, 512GB, 1TB」を発売。",0.021622,Neutral
 2026-10-14,AAPL,Apple Just Passed $5 Trillion. Here’s What Comes Next,-0.000364,Neutral
+2026-10-15,AAPL,Is Apple the Ultimate Stock to Buy Right Now?,0.016158,Neutral
 2026-10-15,AAPL,A 20% Drop in Smartphone Shipments Shows Who Wins When Memory Gets Expensive,-0.935467,Negative
 2026-10-15,AAPL,Apple iPhone Duo available for pre-order Friday,0.11856,Neutral
-2026-10-15,AAPL,Is Apple the Ultimate Stock to Buy Right Now?,0.016158,Neutral
+2026-10-15,AAPL,"Premarket Movers: AAPL Gains On China AI Approval Report — Why WMT, NFLX Stocks Are Also Rising",0.834922,Positive
 2026-10-15,AAPL,Apple shares hit new all-time closing high,0.677925,Positive
 2026-10-15,AAPL,"S&P 500, Nasdaq See Worst Day In Over Two Months As Chipmaker Rout Deepens, CPI Data Comes In Hot — AAPL, SPCX, DRAM, SOXX In Focus",-0.722001,Negative
-2026-10-15,AAPL,"Premarket Movers: AAPL Gains On China AI Approval Report — Why WMT, NFLX Stocks Are Also Rising",0.834922,Positive
-2026-10-16,AAPL,"Apple iPhone Duo preorders sell out, deliveries extend to late January",0.613987,Positive
-2026-10-16,AAPL,From AI laggard to $5 Trillion: Apple's winning strategy,0.210931,Neutral
-2026-10-16,AAPL,Amazonプライム感謝祭で、Dolby Audioに対応した「Soundcore Liberty 5」やAI機能付きの「AeroFit 2 AI Assistant」、寝ホン「Sleep A30」などが過去最安価格で販売中。,0.090741,Neutral
-2026-10-16,AAPL,iPhone/iPad用ローカルAIクライアント「Locally AI」がTernary Bonsai 2モデルやM5 Neural Acceleratorsに対応。,0.029076,Neutral
-2026-10-16,AAPL,Can Apple's Duo hype offset soft iPhone 18 demand?,0.353444,Neutral
-2026-10-16,AAPL,Prediction: Alphabet Will Be a Larger Company Than Apple by the End of 2027,0.468641,Neutral
 2026-10-16,AAPL,Apple shares hit new all-time closing high,0.677925,Positive
+2026-10-16,AAPL,Prediction: Alphabet Will Be a Larger Company Than Apple by the End of 2027,0.468641,Neutral
 2026-10-16,AAPL,"Nasdaq 100 Records Worst Week In 18 Months As Investors Steer Clear Of Chipmakers — AAPL, MSTR, UBER, SOXX In Focus",-0.908502,Negative
+2026-10-16,AAPL,Can Apple's Duo hype offset soft iPhone 18 demand?,0.353444,Neutral
+2026-10-16,AAPL,"Apple iPhone Duo preorders sell out, deliveries extend to late January",0.613987,Positive
+2026-10-16,AAPL,Amazonプライム感謝祭で、Dolby Audioに対応した「Soundcore Liberty 5」やAI機能付きの「AeroFit 2 AI Assistant」、寝ホン「Sleep A30」などが過去最安価格で販売中。,0.090741,Neutral
+2026-10-16,AAPL,From AI laggard to $5 Trillion: Apple's winning strategy,0.210931,Neutral
+2026-10-16,AAPL,iPhone/iPad用ローカルAIクライアント「Locally AI」がTernary Bonsai 2モデルやM5 Neural Acceleratorsに対応。,0.029076,Neutral
 2026-10-17,AAPL,Apple's Market Value Grew From $350 Billion to $5 Trillion During Tim Cook's 15 Years as CEO. Here's What That Growth Curve Means for Apple's Next Chapter Under John Ternus,0.044141,Neutral
 2026-10-17,AAPL,Apple Hit a Record Close Ahead of Its November 2 Report. Here’s What Charging for Extra Siri AI Could Mean for the Stock,0.029894,Neutral
 2026-10-17,AAPL,Apple's New Home Collection Gives Investors Another Reason to Remain Bullish,0.533794,Positive
 2026-10-17,AAPL,Only 10.7% of tokenized stock market cap is issuer-sponsored,-0.001578,Neutral
 2026-10-17,AAPL,Amazonプライム感謝祭で、PCやSwitchだけでなくAppleデバイスにも対応する「8BitDo Ultimate 2/Pro 3」コントローラーやGameSirのiPhone/iPad mini対応コントローラーがセール中。,0.137217,Neutral
+2026-10-18,AAPL,iPhone Duo Preorders Sell Out Rapidly As Delivery Estimates Slip Into January,-0.88279,Negative
 2026-10-18,AAPL,Apple Keeps Hitting Record Highs. Bitcoin Hasn’t Set One All Year. Which Is the Better Buy?,0.017209,Neutral
 2026-10-18,AAPL,Show HN: CLI for your financial data (and Costco and Amazon),0.013781,Neutral
-2026-10-18,AAPL,iPhone Duo Preorders Sell Out Rapidly As Delivery Estimates Slip Into January,-0.88279,Negative
 2026-10-18,AAPL,tidelight added to PyPI,0.074997,Neutral
-2026-10-18,AAPL,"The $5 Trillion Club: Which Is the Better Stock to Own, Apple or Nvidia?",0.014615,Neutral
 2026-10-18,AAPL,TablePlusのApple Silicon Mac向け仮想化ソフトウェア「VMPal」がDockerをサポート。,0.031797,Neutral
-2026-10-19,AAPL,Jim Cramer’s 4-word Apple rule could save you real money,0.101942,Neutral
-2026-10-19,AAPL,agent-wire-cli added to PyPI,-0.00479,Neutral
-2026-10-19,AAPL,Samsung is making an unexpected move against Apple,-0.050332,Neutral
-2026-10-19,AAPL,Experimental Facilities,0.002665,Neutral
-2026-10-19,AAPL,"AAPL, TSLA, NFLX, GME, RKLB: Why Retail Traders Couldn’t Take Their Eyes Off These Stocks Last Week",-0.072219,Neutral
+2026-10-18,AAPL,"The $5 Trillion Club: Which Is the Better Stock to Own, Apple or Nvidia?",0.014615,Neutral
 2026-10-19,AAPL,Elon Musk pledges to give one SpaceX share to every american child next year — a gift worth roughly $10.5 billion,0.147892,Neutral
+2026-10-19,AAPL,"AAPL, TSLA, NFLX, GME, RKLB: Why Retail Traders Couldn’t Take Their Eyes Off These Stocks Last Week",-0.072219,Neutral
+2026-10-19,AAPL,Experimental Facilities,0.002665,Neutral
 2026-10-19,AAPL,Cboe Launches Extended Trading Sessions for Select Single Stock and ETF Options,-0.006986,Neutral
-2026-10-20,AAPL,2026年7月以降「Microsoft 365/Office for Mac/Windows」で修正された脆弱性の数が急増しているので注意を。,0.047528,Neutral
-2026-10-20,AAPL,Apple shares aren't cheap. Here's how to get long for less,0.008246,Neutral
-2026-10-20,AAPL,Robot Wars – How China Has the Robotics Industry in Its Grip,0.066579,Neutral
-2026-10-20,AAPL,Purpose Investments Inc. Announces October 2026 Distributions,-0.026033,Neutral
-2026-10-20,AAPL,pyfinews added to PyPI,-0.013636,Neutral
-2026-10-20,AAPL,Small independent firm downgrades Apple,-0.892922,Negative
-2026-10-20,AAPL,Outpoll Expands Beyond Prediction Markets With Crypto Futures Trading,0.154415,Neutral
+2026-10-19,AAPL,agent-wire-cli added to PyPI,-0.00479,Neutral
+2026-10-19,AAPL,Jim Cramer’s 4-word Apple rule could save you real money,0.101942,Neutral
+2026-10-19,AAPL,Samsung is making an unexpected move against Apple,-0.050332,Neutral
 2026-10-20,AAPL,apiverve-balancesheet added to PyPI,0.006545,Neutral
+2026-10-20,AAPL,Outpoll Expands Beyond Prediction Markets With Crypto Futures Trading,0.154415,Neutral
+2026-10-20,AAPL,Small independent firm downgrades Apple,-0.892922,Negative
+2026-10-20,AAPL,pyfinews added to PyPI,-0.013636,Neutral
+2026-10-20,AAPL,Robot Wars – How China Has the Robotics Industry in Its Grip,0.066579,Neutral
+2026-10-20,AAPL,Apple shares aren't cheap. Here's how to get long for less,0.008246,Neutral
+2026-10-20,AAPL,2026年7月以降「Microsoft 365/Office for Mac/Windows」で修正された脆弱性の数が急増しているので注意を。,0.047528,Neutral
 2026-10-20,AAPL,Meet the Dividend King Stock That Yields More Than Quintuple the Nasdaq-100. Here's Why It's a Buy in October,0.049674,Neutral
+2026-10-20,AAPL,Purpose Investments Inc. Announces October 2026 Distributions,-0.026033,Neutral
+2026-10-21,AAPL,43 ETFs Add to Apple (AAPL) Holdings on Oct. 19,0.124244,Neutral
+2026-10-21,AAPL,米Belkin、2つのUSB-A/-CポートとHDMIポートを搭載した「Connect 5-Port USB-C Hub」にMacBook Neoカラーのバリエーションを追加。,0.05769,Neutral
 2026-10-21,AAPL,Apple shares hit new all-time closing high,0.677925,Positive
 2026-10-21,AAPL,The Magnificent 7 Are Splitting Apart. Here's Who's Winning,-0.010125,Neutral
-2026-10-21,AAPL,米Belkin、2つのUSB-A/-CポートとHDMIポートを搭載した「Connect 5-Port USB-C Hub」にMacBook Neoカラーのバリエーションを追加。,0.05769,Neutral
-2026-10-21,AAPL,43 ETFs Add to Apple (AAPL) Holdings on Oct. 19,0.124244,Neutral
-2026-10-22,AAPL,Show HN: Finance Toolkit MCP with 500 financial metrics for Claude and others,0.127274,Neutral
-2026-10-22,AAPL,"How To Trade SPY, QQQ, AAPL, MSFT, NVDA, GOOGL, META, And TSLA As Oil Rises And AI Concerns Persist",-0.001303,Neutral
-2026-10-22,AAPL,"Apple's $1,999 foldable iPhone to hit stores amid limited supplies",0.853532,Positive
-2026-10-22,AAPL,"Apple's $1,999 iPhone Duo hits stores Friday amid limited supplies",0.232899,Positive
-2026-10-22,AAPL,Apple shares hit new all-time intraday and closing highs,0.82372,Positive
 2026-10-22,AAPL,"Buy vs. build is now also a UX decision, especially in enterprise",0.058332,Neutral
-2026-10-22,AAPL,Mac版「Cyberpunk 2077: Ultimate Edition」が無償アップデートPatch 2.5でMetalFXノイズ除去や2丁拳銃、クロスプラットフォームMODに対応。,0.040543,Neutral
 2026-10-22,AAPL,OT Seasonal,-0.009518,Neutral
+2026-10-22,AAPL,Mac版「Cyberpunk 2077: Ultimate Edition」が無償アップデートPatch 2.5でMetalFXノイズ除去や2丁拳銃、クロスプラットフォームMODに対応。,0.040543,Neutral
+2026-10-22,AAPL,Apple shares hit new all-time intraday and closing highs,0.82372,Positive
+2026-10-22,AAPL,"Apple's $1,999 foldable iPhone to hit stores amid limited supplies",0.853532,Positive
+2026-10-22,AAPL,"How To Trade SPY, QQQ, AAPL, MSFT, NVDA, GOOGL, META, And TSLA As Oil Rises And AI Concerns Persist",-0.001303,Neutral
+2026-10-22,AAPL,Show HN: Finance Toolkit MCP with 500 financial metrics for Claude and others,0.127274,Neutral
+2026-10-22,AAPL,"Apple's $1,999 iPhone Duo hits stores Friday amid limited supplies",0.232899,Positive
+2026-10-23,AAPL,Mac上のWindows＆Linux仮想マシンをiPhoneから操作できる「UTM Remote」がiPhone Duoに対応。,0.032666,Neutral
+2026-10-23,AAPL,Questrade Brings Extended-Hours Trading for Pre-Market Equity Options,0.013766,Neutral
 2026-10-23,AAPL,"Top Stock Reports for Apple, Berkshire Hathaway & Goldman Sachs",-0.020293,Neutral
 2026-10-23,AAPL,apiverve-companylookup added to PyPI,0.022317,Neutral
 2026-10-23,AAPL,aurastream-mcp added to PyPI,0.057138,Neutral
-2026-10-23,AAPL,Mac上のWindows＆Linux仮想マシンをiPhoneから操作できる「UTM Remote」がiPhone Duoに対応。,0.032666,Neutral
-2026-10-23,AAPL,How Apple dethroned Nvidia to become world's most valuable company,0.091431,Neutral
 2026-10-23,AAPL,Apple Duo goes on sale in-store as iPhone 18 demand disappoints,-0.745763,Negative
-2026-10-23,AAPL,Questrade Brings Extended-Hours Trading for Pre-Market Equity Options,0.013766,Neutral
-2026-10-23,AAPL,Apple's iPhone Duo hits stores today with limited supplies and long lines,-0.954775,Negative
-2026-10-23,AAPL,Apple could be about to dethrone Nvidia as world's most valuable company,-0.083658,Neutral
+2026-10-23,AAPL,How Apple dethroned Nvidia to become world's most valuable company,0.091431,Neutral
 2026-10-23,AAPL,Readdle、iPhone Duoに対応したメールクライアント「Spark」、PDFエディタ「PDF Expert」、ファイラー「Documents」などをリリース。,0.066775,Neutral
 2026-10-23,AAPL,"Apple's $1,999 foldable iPhone hits stores today, but getting one won't be easy",0.130412,Neutral
 2026-10-23,AAPL,Apple’s cash-flow machine makes it investors’ favorite AI hedge,0.152184,Neutral
 2026-10-23,AAPL,New Book Helps Physicians Navigate the Changing Landscape of Retirement,0.34608,Neutral
+2026-10-23,AAPL,Apple's iPhone Duo hits stores today with limited supplies and long lines,-0.954775,Negative
+2026-10-23,AAPL,Apple could be about to dethrone Nvidia as world's most valuable company,-0.083658,Neutral
+2026-10-24,AAPL,nautilus-finzdata added to PyPI,0.025724,Neutral
 2026-10-24,AAPL,Apple Is One of the Most Profitable Businesses in the World. Here's Why the Stock Is Worth $295 a Share Right Now,0.021125,Neutral
 2026-10-24,AAPL,Here's How Many Shares of Apple Stock You'd Need for $100 in Yearly Dividends,0.009062,Neutral
 2026-10-24,AAPL,Apple's new hardware push is meeting AI-worried investors at the right moment,0.687785,Positive
-2026-10-24,AAPL,nautilus-finzdata added to PyPI,0.025724,Neutral
 2026-10-25,AAPL,alphadataforge added to PyPI,0.015148,Neutral
 2026-10-25,AAPL,MacOS Extensions Pack for the Apple Network Server v1.0,0.08734,Neutral
 2026-10-25,AAPL,Apple's Market Cap Grew From $350 Billion to $4.6 Trillion During Tim Cook's 15 Years as CEO. Here's What That Growth Curve Means for Apple's Next Chapter Under John Ternus,0.037925,Neutral
-2026-10-26,AAPL,tickhub-us added to PyPI,0.048025,Neutral
-2026-10-26,AAPL,pyalloq-viz added to PyPI,-0.001355,Neutral
 2026-10-26,AAPL,1 Reason Apple Could Outperform in 2027,0.569327,Positive
 2026-10-26,AAPL,Calpers pulls back from big tech as AI jitters deepen neocloud sell-off,-0.905643,Negative
+2026-10-26,AAPL,tickhub-us added to PyPI,0.048025,Neutral
+2026-10-26,AAPL,pyalloq-viz added to PyPI,-0.001355,Neutral
 2026-10-26,AAPL,ETFs Are Buying Apple (AAPL) on Oct. 22,0.04807,Neutral
-2026-10-26,AAPL,Microsoft、「Word、Excel、PowerPoint for iPhone/iPad」でiOS/iPadOS 18やwatchOS 11のサポートを終了。,0.021412,Neutral
 2026-10-26,AAPL,"Tesla stock leaves rest of the Magnificent 7 in the dust, surging to October’s top spot",-0.504556,Negative
+2026-10-26,AAPL,Microsoft、「Word、Excel、PowerPoint for iPhone/iPad」でiOS/iPadOS 18やwatchOS 11のサポートを終了。,0.021412,Neutral
+2026-10-26,AAPL,Belkin、iPhone Duoのアウターディスプレイを傷や落下の衝撃から守るEasy Alignトレイ付きの「Titan SmartShield 保護フィルム for iPhone Duo」を発売。,0.062132,Neutral
 2026-10-26,AAPL,Apple’s iPhone Duo Buyers Face a Wait That Could Stretch Into January,-0.879691,Negative
 2026-10-26,AAPL,Apple、Intel/Apple Silicon Mac向けに210件以上の脆弱性を修正した「macOS Tahoe 26.7.2」や「macOS Sequoia 15.8.2」、「Safari 27.2」向けにリリース。,0.048777,Neutral
 2026-10-26,AAPL,"S&P 500, Nasdaq, Dow Begin Week Higher As Anthropic IPO Filing Rekindles AI Enthusiasm — MSFT, AAPL, CART, VZ In Focus",0.368808,Positive
-2026-10-26,AAPL,Belkin、iPhone Duoのアウターディスプレイを傷や落下の衝撃から守るEasy Alignトレイ付きの「Titan SmartShield 保護フィルム for iPhone Duo」を発売。,0.062132,Neutral
-2026-10-27,AAPL,vs. MSFT and GOOGL: Is the Post-Earnings Selloff Creating a Long-Term Buying Opportunity?,0.030454,Neutral
+2026-10-27,AAPL,"PrimeXBT Brings Tesla, SpaceX, NVIDIA and More to Crypto Futures with New Tokenised Stocks",0.357158,Neutral
 2026-10-27,AAPL,"How To Trade SPY, QQQ, AAPL, MSFT, NVDA, GOOGL, META, And TSLA",0.01021,Neutral
 2026-10-27,AAPL,"Apple’s iPhone 18 Pro series posts 3.1% higher initial global sales than hit iPhone 17 Pro, Counterpoint says",0.939223,Positive
 2026-10-27,AAPL,"'We're Trading Them Like Baseball Cards': Mark Cuban Warns ‘Everything’s a Meme Stock’ as AAPL, GOOGL and MU Fuel Market Bubble Fears",-0.624498,Negative
-2026-10-27,AAPL,"PrimeXBT Brings Tesla, SpaceX, NVIDIA and More to Crypto Futures with New Tokenised Stocks",0.357158,Neutral
-2026-10-27,AAPL,"PrimeXBT Expands Into Tokenized Stocks, Bringing Tesla, SpaceX, and NVIDIA to Crypto Futures",0.352185,Neutral
+2026-10-27,AAPL,vs. MSFT and GOOGL: Is the Post-Earnings Selloff Creating a Long-Term Buying Opportunity?,0.030454,Neutral
 2026-10-27,AAPL,shortfall added to PyPI,-0.940265,Negative
 2026-10-27,AAPL,Belkin、USB-C PD 3.2 PPS/AVSに対応しiPhone 18 ProやMacBook Airの高速充電も可能なUSB充電器「UltraCharge 75W GaN 充電器 ZSP」のブルーモデルを発売。,0.049881,Neutral
 2026-10-27,AAPL,finzdata-backtest added to PyPI,0.328004,Neutral
 2026-10-27,AAPL,"'We're Trading Them Like Baseball Cards': Mark Cuban Warns ‘Everything’s a Meme Stock’ as AAPL, GOOGL and MU…",-0.099737,Neutral
+2026-10-27,AAPL,"PrimeXBT Expands Into Tokenized Stocks, Bringing Tesla, SpaceX, and NVIDIA to Crypto Futures",0.352185,Neutral
 2026-10-28,AAPL,Apple stock flashes rare signal before crucial earnings,0.006134,Neutral
-2026-10-28,AAPL,"3 ""Magnificent Seven"" Stocks to Buy Hand Over Fist in November",0.082855,Neutral
 2026-10-28,AAPL,UAG、iPhone Duoを傷や落下の衝撃から守る耐衝撃スマホケース「Mouve XTE for iPhone Duo」を発売。,0.046956,Neutral
-2026-10-28,AAPL,iPhoneやiPadをMacのディスプレイにできる「OpenDisplay」がiPhone Duoに対応。今後はLinuxやAndroidにも対応予定。,0.063134,Neutral
+2026-10-28,AAPL,"3 ""Magnificent Seven"" Stocks to Buy Hand Over Fist in November",0.082855,Neutral
 2026-10-28,AAPL,Canva、MacとWindows向けに無料提供のクリエイティブアプリ「Affinity by Canva」のiPad版の予約注文をApp Storeで開始。,0.039848,Neutral
+2026-10-28,AAPL,iPhoneやiPadをMacのディスプレイにできる「OpenDisplay」がiPhone Duoに対応。今後はLinuxやAndroidにも対応予定。,0.063134,Neutral
 2026-10-29,AAPL,Apple shares hit new all-time closing high,0.677925,Positive
 2026-10-29,AAPL,Thursday links: voting share design,0.020378,Neutral
 2026-10-29,AAPL,Nvidia Is Getting Dangerously Close to Getting Surpassed by Apple in Market Cap. Here's the Better Growth Stock to Buy Now,0.007104,Neutral
 2026-10-29,AAPL,Apple Stock Heads Toward All-Time High: What's Going On?,-0.539656,Negative
 2026-10-30,AAPL,"Apple’s iPhone Duo wait times trend lower but remain elevated, UBS says",-0.857741,Negative
-2026-10-30,AAPL,BofA Says Wall Street May Be Misreading Apple,-0.882332,Negative
-2026-10-30,AAPL,Parallels、Windows仮想マシンでOpenGLを利用したCADや3Dモデリング、ゲームに発生していた問題など20件以上の不具合を修正した「Parallels Desktop for Mac v27.1.0」をリリース。,0.063756,Neutral
 2026-10-30,AAPL,Stock Market APIs: Build Your Own Stock Monitoring Platform,0.035133,Neutral
-2026-10-30,AAPL,The Magnificent 7 stocks are seeing stunning declines,0.883452,Positive
+2026-10-30,AAPL,Parallels、Windows仮想マシンでOpenGLを利用したCADや3Dモデリング、ゲームに発生していた問題など20件以上の不具合を修正した「Parallels Desktop for Mac v27.1.0」をリリース。,0.063756,Neutral
+2026-10-30,AAPL,BofA Says Wall Street May Be Misreading Apple,-0.882332,Negative
 2026-10-30,AAPL,arche-sdk added to PyPI,0.011903,Neutral
+2026-10-30,AAPL,The Magnificent 7 stocks are seeing stunning declines,0.883452,Positive
 2026-10-30,AAPL,vizdesk added to PyPI,0.024462,Neutral
 2026-10-30,AAPL,"Stocks plunge as Amazon, Intel and Alphabet fuel a broad tech sell-off",-0.942338,Negative
-2026-10-31,AAPL,Apple Is Near a Record. Netflix Is Down More Than Half. I'd Buy Only 1 of Them,-0.922875,Negative
 2026-10-31,AAPL,etrade-mcp added to PyPI,0.035782,Neutral
+2026-10-31,AAPL,Apple Is Near a Record. Netflix Is Down More Than Half. I'd Buy Only 1 of Them,-0.922875,Negative
 2026-10-31,AAPL,Apple、最新のmacOS 27 Golden GateやiOS/iPadOS 27、visionOS 27でフルサイズミラーレスカメラ「Canon EOS R8 Mark II」や「Nikon Z5IIC」などのRAWフォーマットをネイティブサポート。,0.049211,Neutral
+2026-11-01,AAPL,portfolio-analytics-mcp added to PyPI,0.047396,Neutral
 2026-11-01,AAPL,smt16-quantkit added to PyPI,0.011299,Neutral
 2026-11-01,AAPL,"What To Expect In Markets This Week: AAPL, PLTR, AMD, SMCI, SHOP, Earnings, Jobs Report And More",-0.04642,Neutral
-2026-11-01,AAPL,portfolio-analytics-mcp added to PyPI,0.047396,Neutral
 2026-11-01,AAPL,Warren Buffett's Apple Bet Is Still Berkshire Hathaway's Biggest Stock Holding at 22% of the Portfolio,0.029239,Neutral
 2026-11-01,AAPL,macOS 27.2 Golden Gateでは、Mission Controlで仮想デスクトップが切り替えられない不具合が修正。,0.076229,Neutral
 2026-11-01,AAPL,Apple earnings: what to look for from AAPL,0.004204,Neutral
+2026-11-02,AAPL,Jim Cramer explains the 'AI cheat code' driving Apple stock higher,-0.360534,Neutral
+2026-11-02,AAPL,Apple's Fourth-Quarter Results Beat Estimates Amid Strong iPhone Sales,0.913797,Positive
+2026-11-02,AAPL,Even RAMageddon can’t stop Apple’s record-setting revenues,0.172478,Neutral
+2026-11-02,AAPL,AAPL Stock Ekes Out Minor Gains After-Hours After Tapering Q4 China Sales Growth Offsets Earnings Beat,0.152666,Positive
+2026-11-02,AAPL,"Apple Flat After Mixed Results: Strong iPhone Sales Offset By Weak China Revenue, Declining Margins And Buybacks",-0.955968,Negative
+2026-11-02,AAPL,MacDailyNews presents live notes from Apple’s Q426 conference call,0.002879,Neutral
+2026-11-02,AAPL,Apple earnings live updates: New CEO John Ternus faces first Wall Street test - CNBC,0.032774,Neutral
+2026-11-02,AAPL,Apple’s $1 Trillion Rally Leaves No Room for Error on Earnings - Bloomberg.com,-0.020522,Neutral
+2026-11-02,AAPL,Stock Market Today: Dow Rallies As Amazon Pops; Oil Stocks Skid On These Hopes (Live Coverage),-0.930604,Negative
+2026-11-02,AAPL,RedStone powers new Apple perpetual futures market on Hyperliquid,0.023698,Neutral
+2026-11-02,AAPL,Is Apple the right anti-AI stock for investors to 'hide' in?,0.014088,Neutral
+2026-11-02,AAPL,Live: Will Apple Crush Q4 Earnings Tonight in New CEO John Ternus’s First Quarter?,-0.554495,Negative
+2026-11-02,AAPL,Apple reports after the bell. Options traders expect a big move,0.018679,Neutral
+2026-11-02,AAPL,John Ternus Hosting His First Earnings Call as Apple CEO Today,0.036121,Neutral
+2026-11-02,AAPL,"Apple stock price down: Why is AAPL share price falling ahead of earnings call, iPhone sales report?",-0.934709,Negative
+2026-11-02,AAPL,Apple has turned into Wall Street's hedge against the AI trade: Chart of the Day,0.069216,Neutral
+2026-11-02,AAPL,Apple results beat Wall Street expectations on strong iPhone sales,0.918924,Positive
+2026-11-02,AAPL,Apple Is Up 24% in 2026: Will AAPL Stock Hit $300 or $400 Next?,0.311766,Neutral
+2026-11-02,AAPL,"Big Quarterly Beats After the Close: AAPL, PLTR, LSCC, ROKU",0.089349,Neutral
+2026-11-02,AAPL,"S&P 500, Nasdaq Futures Rise Premarket After Wall Street’s Worst Week In Months: AAPL, PLTR, GOOGL, INTC, TGTX In Focus",-0.727055,Negative
 2026-11-02,AAPL,"If I Could Only Buy and Hold 1 ""Magnificent Seven"" Stock Through 2030, It Would Be This One",0.023118,Neutral
+2026-11-02,AAPL,"Earnings from Apple, Palantir, and jobs report data: What to Watch",-0.048782,Neutral
+2026-11-03,AAPL,finport-datapipeline added to PyPI,0.028886,Neutral
+2026-11-03,AAPL,"S&P 500, Nasdaq Drop As Capex Concerns Grip Tech Investors, Outweighing US-Iran Diplomacy Hope — ORCL, META, PLTR, AAPL In Focus",-0.917198,Negative
+2026-11-03,AAPL,"Apple just made twice as much free cash as Microsoft, Meta, Alphabet and Amazon combined: Chart of the Day",0.166504,Neutral
+2026-11-03,AAPL,Apple showed once again that consumers will complain — but still tap to pay,-0.351389,Negative
+2026-11-03,AAPL,ETFs Bought $470.0 Million of Apple (AAPL) on Friday,0.063592,Neutral
+2026-11-03,AAPL,"Tech Jumps Over Apple Q3 Report on Wall Street Pre-Bell; Asia, Europe Off",0.5673,Positive
+2026-11-03,AAPL,"Stock Market Today (Nov. 3, 2026): Dow futures fall ahead of U.S. elections",-0.964851,Negative
+2026-11-03,AAPL,Apple earnings suggest the iPhone 18 launch strategy is really working,0.185659,Neutral
+2026-11-03,AAPL,"Despite posting record earnings, Apple stock swoons",-0.892848,Negative
+2026-11-03,AAPL,"Apple tried to 'sit out' AI, and now it's paying the price",-0.58726,Negative
+2026-11-03,AAPL,The iPhone Won’t Save Apple,0.040881,Neutral
+2026-11-03,AAPL,Apple CEO John Ternus criticized for delivering scripted first earnings call,-0.901947,Negative
+2026-11-03,AAPL,"Apple stock falls, chip stocks rebound as oil extends decline: AlphaCheck",-0.694878,Negative
+2026-11-03,AAPL,"Mid-term facts & refrigerator hacks, tech sell-off continues, Binance CEO addresses issues",-0.096456,Neutral
+2026-11-03,AAPL,Apple just had its best year ever. So why is its stock falling?,-0.932371,Negative
+2026-11-03,AAPL,Apple earnings analysis: questions answered and next catalysts,-0.010632,Neutral
+2026-11-03,AAPL,T. Rowe Price’s Tony Wang: Apple proves consumer demand remains resilient amid AI-driven margin pressures,0.901314,Positive
+2026-11-03,AAPL,openbb-etfiq added to PyPI,0.010811,Neutral
+2026-11-03,AAPL,"S&P 500, Nasdaq Recover From AI Rout On US Midterm Election Day — META, AAPL, AMD, SKHY In Focus",0.118471,Neutral
+2026-11-03,AAPL,Appleが2026年度第4四半期の業績を発表、前年同期比で12％増の18兆円超の売上高を記録,0.109139,Neutral
+2026-11-03,AAPL,AAPL 8-K & SEC Filings,-0.079839,Neutral
+2026-11-03,AAPL,Parallels、macOS 27 Golden Gateをサポートした「Parallels Desktop 27 for Mac」のStandard/Proのサブスクリプションを50%OFFで提供するブラックフライデーセールを開催。,0.110134,Neutral
+2026-11-04,AAPL,"Dow jumps over 1,500 points in response to Democrats' control of Congress",0.418979,Positive
+2026-11-04,AAPL,Apple shares hit new all-time intraday and closing highs,0.82372,Positive
+2026-11-04,AAPL,Jim Cramer warns investors may be reading too much into Wall Street's post-election rally,-0.886472,Negative
+2026-11-04,AAPL,"US stock perpetuals win clearance, but stock-market halts can still block exits",-0.794649,Negative
+2026-11-04,AAPL,trading-r1 added to PyPI,0.117518,Neutral
+2026-11-04,AAPL,Amazonスマイルセールで、USB PD 3.2 AVS＆PPSに対応したSatechi ChargeView 140W GaN卓上充電器やQi2折りたたみ式充電スタンド、Mac mini＆MacBook Neoアクセサリーがセール中。,0.081855,Neutral
+2026-11-04,AAPL,Zacks Investment Ideas feature highlights: Apple and Palantir Technologies,0.035138,Neutral
+2026-11-04,AAPL,The AI sell-off saved Apple from a sell-off of its own,-0.128518,Negative
+2026-11-04,AAPL,"Apple, Microsoft hit all-time highs as Nasdaq surges 2% in post-election rally: AlphaCheck",0.719913,Positive
+2026-11-04,AAPL,Apple's AI problem could reach your next iPhone,-0.7649,Negative
+2026-11-04,AAPL,Apple stock price today hits record high: Why AAPL market cap surpasses $5 trillion after Democrats win midterm elections,0.77678,Positive
+2026-11-05,AAPL,Markets plunge as Wall Street heads for its worst post-midterm day ever,-0.933674,Negative
+2026-11-05,AAPL,Blackmagic Design、MacBook Pro PROLED XDRディスプレイでのタッチ操作に対応した「DaVinci Resolve v21.2」をリリース。,0.016505,Neutral
+2026-11-05,AAPL,"Apple Stock Is Up 22%, but 1 Slowing Business Could Test That Valuation",0.912649,Positive
+2026-11-05,AAPL,nlalpha-yfinance added to PyPI,0.048649,Neutral
+2026-11-05,AAPL,Markets plunge as Wall Street heads for its worst post-midterm day since 1896,-0.936258,Negative
+2026-11-06,AAPL,US stock market today: Why is the Nasdaq up 1% while the Dow Jones falls? S&P 500 turns green amid tech stock volatility and Fed rate hike fears over strong October jobs report,0.007693,Positive
+2026-11-07,AAPL,Elise Japan、Magic Mouse (USB-C/Lightning)を裏返さずに充電できる「XOHO Magic Mouse 充電ドック」の予約販売を開始。,0.037918,Neutral
+2026-11-07,AAPL,"Tech Stock Sell-Off 'Golden Buying Opportunity,' Says Dan Ives",0.905586,Positive
+2026-11-07,AAPL,deriweave added to PyPI,0.030835,Neutral
+2026-11-07,AAPL,apiverve-financialratios added to PyPI,0.007835,Neutral
+2026-11-07,AAPL,alvaindes added to PyPI,0.022209,Neutral
+2026-11-07,AAPL,MacBook Pro PROLED XDRディスプレイとMagic Trackpadのタッチ操作比較まとめ。,0.033741,Neutral
+2026-11-08,AAPL,Show HN: SEC Fundamentals – free financial API,0.054806,Neutral
+2026-11-08,AAPL,stock-embeddings added to PyPI,0.113044,Neutral
+2026-11-08,AAPL,This Is the Best-Performing Magnificent Seven Stock of 2026. Is It Still a Buy?,0.012715,Neutral
