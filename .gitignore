@@ -82,3 +82,12 @@ htmlcov/
 
 # Local SQLite HTTP Caches
 *.sqlite
+
+# Secrets and credentials (security audit, Task 10): never commit these
+.env.*
+!.env.example
+*.pem
+*.key
+*.jks
+*.keystore
+key.properties

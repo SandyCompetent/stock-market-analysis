@@ -10,8 +10,8 @@ on:
       - '.streamlit/**'
       - '.github/workflows/streamlit-deploy.yml'
   schedule:
-    # Ping the deployed Streamlit Community Cloud app every 12 hours to prevent hibernation
-    - cron: '0 */12 * * *'
+    # Ping the deployed Streamlit Community Cloud app every 6 hours (well before the 12-hour sleep limit)
+    - cron: '0 */6 * * *'
   workflow_dispatch:
 
 jobs:
@@ -56,13 +56,21 @@ jobs:
   streamlit-keep-alive:
     runs-on: ubuntu-24.04
     steps:
-      - name: Wake up deployed Streamlit Community Cloud instance
+      - name: Validate Streamlit URL configuration
+        id: check-url
         env:
           STREAMLIT_APP_URL: ${{ vars.STREAMLIT_APP_URL || secrets.STREAMLIT_APP_URL }}
         run: |
           if [ -z "$STREAMLIT_APP_URL" ]; then
-            echo "STREAMLIT_APP_URL is not configured in repository variables/secrets. Skipping remote ping."
-            exit 0
+            echo "configured=false" >> "$GITHUB_OUTPUT"
+            echo "::warning::STREAMLIT_APP_URL is not configured in repository variables or secrets. Keep-alive skipped."
+          else
+            echo "configured=true" >> "$GITHUB_OUTPUT"
           fi
-          echo "Pinging deployed Streamlit app at $STREAMLIT_APP_URL..."
-          curl -fsSL "$STREAMLIT_APP_URL" > /dev/null && echo "Ping succeeded!"
+
+      - name: Keep Streamlit Community Cloud instance awake
+        if: steps.check-url.outputs.configured == 'true'
+        uses: gpenessot/streamlit-keep-alive@v1
+        with:
+          app-urls: ${{ vars.STREAMLIT_APP_URL || secrets.STREAMLIT_APP_URL }}
+          timeout: 120
