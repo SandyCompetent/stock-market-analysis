@@ -70,7 +70,7 @@ jobs:
 
       - name: Keep Streamlit Community Cloud instance awake
         if: steps.check-url.outputs.configured == 'true'
-        uses: gpenessot/streamlit-keep-alive@v1
+        uses: gpenessot/streamlit-keep-alive@1640101c229364726a5f3adf78ad095c53ef2283
         with:
           app-urls: ${{ vars.STREAMLIT_APP_URL || secrets.STREAMLIT_APP_URL }}
           timeout: 120
